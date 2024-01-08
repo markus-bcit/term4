@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "31c254e1590be5d7",
+        "id": "7850336e7f0c1923",
         "type": "tabs",
         "children": [
           {
-            "id": "e2dfe71afa00f5fb",
+            "id": "7b765a3fa279df7b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
-                "mode": "preview",
+                "file": "ACIT-4850-Enterprise-System-Integration.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "file": "ACIT-4850-Enterprise-System-Integration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "file": "ACIT-4850-Enterprise-System-Integration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md"
+                "file": "ACIT-4850-Enterprise-System-Integration.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2dfe71afa00f5fb",
+  "active": "7b765a3fa279df7b",
   "lastOpenFiles": [
-    "handy.md",
     "ACIT-3855-Service-Based-Architectures.md",
+    "ACIT-4850-Enterprise-System-Integration.md",
+    "handy.md",
     "New Text Document.txt",
     "ACIT-3420-Windows-Server-Administration.md",
     "ACIT-3475-Web-Server-Administration.md",

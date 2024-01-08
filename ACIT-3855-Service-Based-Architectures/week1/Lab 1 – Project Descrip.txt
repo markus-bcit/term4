@@ -1,0 +1,18 @@
+ACIT 3855 – Lab 1 – Project Description and RESTful API
+Markus Afonso
+Set C
+January 8, 2024
+
+
+Description: This API is used for fitness planning and tracking. Users can create a tailored workout plan depending on their goals and keep track of their progress.
+
+Two Events: 
+	/workout POST -> Creates a workout plan based off given parameters.
+	/workout/log POST -> creates a log of the given training day for the specified workout. 
+
+Peak Events:
+	Log events are expected to correlate with gym hours, peeking in the evening with as many as 10000 requests per second. 	Workout creation events are expected to peak during the new year and spring times.
+ 
+Users with descriptions:
+	Users: Request workouts and record training days.
+	Trainers: Create workout plans based off user parameters and view client's workouts.
