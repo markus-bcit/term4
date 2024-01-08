@@ -1,0 +1,200 @@
+openapi: 3.0.0
+servers: []
+info:
+  description: This is a simple API for fitness tracking. Users can create a tailored workout plan depending on their goals, 
+  version: "1.0.0"
+  title: Fitness Planning API
+  contact:
+    email: mafonso4@my.bcit.ca
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: users
+    description: Operations available to regular users
+paths:
+  /workout:
+    post:
+      tags:
+        - users
+      summary: creates a workout plan
+      operationId: app.createWorkout
+      description: |
+        By passing in the appropriate options, you can create a tailored workout plan for a specific goal depending on your minimum and maximum perfered frequency and total length
+      parameters:
+        - in: query
+          name: type
+          description: pass a required goal for a workout plan
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: startDate
+          description: start of workout plan
+          required: true
+          schema:
+            type: string
+            format: int32
+            minimum: 0
+        - in: query
+          name: endDate
+          description: end of workout plan
+          schema:
+            type: string
+        - in: query
+          name: frequency
+          description: preferred training days a week
+          schema:
+            type: integer
+        
+      responses:
+        '200':
+          description: results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/workout'
+        '400':
+          description: bad input parameter
+  /workout/log:
+    post:
+      tags:
+        - users
+      summary: log an ex
+      operationId: app.logWorkout
+      description: |
+        By passing in the appropriate options, log a training day of a workout
+      parameters:
+        - in: query
+          name: workoutId
+          description: pass a required workoutId
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: userId
+          description: pass a required userId
+          required: true
+          schema:
+            type: string
+            format: int32
+            minimum: 0
+        - in: query
+          name: startDate
+          description: start of training day
+          required: true
+          schema:
+            type: string
+            format: int32
+            minimum: 0
+        - in: query
+          name: endDate
+          description: end of training day
+          schema:
+            type: string
+        - in: query
+          name: exercises
+          description: array of exercises done
+          required: true
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                exerciseName:
+                  type: string
+                  example: Chest Press
+                sets:
+                  type: integer
+                  example: 3
+                reps:
+                  type: integer
+                  example: 10
+      responses:
+        '200':
+          description: results matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/trainingLog'
+        '400':
+          description: bad input parameter
+components:
+  schemas:
+    workout:
+      type: object
+      required:
+        - workoutId
+        - name
+        - description
+        - startDate
+        - endDate
+        - trainingDays
+        - blocks
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        name:
+          type: string
+          example: Resistance Training
+        description:
+          type: string
+          example: Resistance training plan consisting of 8 days across 6 blocks
+        startDate:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+        endDate:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+        trainingDays:
+          type: integer
+          example: 6
+        blocks:
+          type: integer
+          example: 6
+    trainingLog:
+      type: object
+      required:
+        - trainingDayID
+        - name
+        - startDate
+        - endDate
+        - exercises
+      properties:
+        trainingDayID:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        name:
+          type: string
+          example: Push
+        startDate:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+        endDate:
+          type: string
+          format: date-time
+          example: '2016-08-29T09:12:33.001Z'
+        exercises:
+          type: array
+          items:
+            type: object
+            properties:
+              exerciseName:
+                type: string
+                example: Chest Press
+              sets:
+                type: integer
+                example: 3
+              reps:
+                type: integer
+                example: 10
