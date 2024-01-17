@@ -44,7 +44,7 @@
 
 .cm-header-1,
 h1 {
-	color: #02fefe;
+	color: #02feae;
 }
 
 .cm-header-2,
@@ -111,7 +111,6 @@ blockquote p {
 }
 
 .markdown-preview-view blockquote {
-	border: 1px solid;
 	border-image: rgba(102, 49, 154, 0.05);
 	border-image-slice: 1;
 	border-left-width: 1px;
