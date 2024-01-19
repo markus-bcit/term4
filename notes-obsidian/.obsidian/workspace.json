@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc.md"
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "3183f652e846c16a",
   "lastOpenFiles": [
+    "ACIT-3855-Service-Based-Architectures.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "misc.md",
     "4640_notes_w24/4640_Notes/Week2.md",
     "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
     "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
@@ -159,13 +162,11 @@
     "4640_notes_w24/Untitled 2.canvas",
     "4640_notes_w24/Week1.md",
     "4640_notes_w24/attachments/DevOps_feedback-diagram.ff668bfc299abada00b2dcbdc9ce2389bd3dce3f.png",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "ACIT-4850-Enterprise-System-Integration.md",
     "ACIT-4630-Info-Assurance-and-Security.md",
     "images/Pasted image 20240116093417.png",
     "images/Pasted image 20240116093228.png",
     "images/Pasted image 20240116093157.png",
-    "ACIT-3855-Service-Based-Architectures.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "images/Pasted image 20240111142653.png",
     "images/Pasted image 20240111142520.png",
@@ -173,7 +174,6 @@
     "images/Pasted image 20240111142435.png",
     "images/Pasted image 20240111142400.png",
     "images/Pasted image 20240111135842.png",
-    "misc.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled 3.canvas",
