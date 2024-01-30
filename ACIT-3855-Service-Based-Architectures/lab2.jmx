@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -18,7 +20,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -55,7 +57,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request /workout/log">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request /workout/log" enabled="true">
           <stringProp name="HTTPSampler.domain">127.0.0.1</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -77,13 +79,13 @@
   &quot;exercises&quot;: [&#xd;
     {&#xd;
       &quot;exerciseName&quot;: &quot;Chest Press&quot;,&#xd;
-      &quot;sets&quot;: 3,&#xd;
-      &quot;reps&quot;: 10&#xd;
+      &quot;sets&quot;: ${__Random(0,3)},&#xd;
+      &quot;reps&quot;: ${__Random(5,10)}&#xd;
     },&#xd;
     {&#xd;
       &quot;exerciseName&quot;: &quot;Leg Press&quot;,&#xd;
-      &quot;sets&quot;: 4,&#xd;
-      &quot;reps&quot;: 12&#xd;
+      &quot;sets&quot;: ${__Random(0,3)},&#xd;
+      &quot;reps&quot;: ${__Random(5,10)}&#xd;
     }&#xd;
   ]&#xd;
 }&#xd;
@@ -94,7 +96,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request /workout">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request /workout" enabled="true">
           <stringProp name="HTTPSampler.domain">127.0.0.1</stringProp>
           <stringProp name="HTTPSampler.port">8080</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -112,7 +114,7 @@
   &quot;type&quot;: &quot;Strength Training&quot;,&#xd;
   &quot;startDate&quot;: &quot;2023-01-20T00:00:00Z&quot;,&#xd;
   &quot;endDate&quot;: &quot;2023-02-20T00:00:00Z&quot;,&#xd;
-  &quot;frequency&quot;: 3&#xd;
+  &quot;frequency&quot;: ${__Random(0,7)}&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -121,7 +123,7 @@
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Content-Type</stringProp>
