@@ -38,3 +38,5 @@
 6. **Infrastructure Automation**: Emphasizes automated deployment and management of services to support continuous delivery and efficient scaling. 
 7. **Design for Failure**: Microservices are designed to handle the failure of individual components gracefully, ensuring overall system resilience.
 8. **Evolutionary Design**: Microservices support and encourage evolutionary changes in the system, with services being independently replaceable and upgradeable.
+![[Pasted image 20240129161838.png]]
+![[Pasted image 20240129161946.png]]

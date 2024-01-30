@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "ACIT-3855-Service-Based-Architectures.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -148,6 +148,11 @@
   },
   "active": "e24eb4d047d22677",
   "lastOpenFiles": [
+    "images/Confluence.png",
+    "images/Pasted image 20240129161946.png",
+    "images/Pasted image 20240129161838.png",
+    "images/Jira.png",
+    "ACIT-3855-Service-Based-Architectures.md",
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
   ]
 }
