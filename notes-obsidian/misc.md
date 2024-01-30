@@ -19,5 +19,9 @@ Function Get-FolderSizes {
 
 Set-Alias -Name Get-FolderSizesAlias -Value Get-FolderSizes
 
+```
 
+undo local commits
+```powershell
+git reset --soft HEAD^
 ```
