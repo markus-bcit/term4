@@ -21,7 +21,18 @@ Set-Alias -Name Get-FolderSizesAlias -Value Get-FolderSizes
 
 ```
 
-undo local commits
+undo local commits and keep changes
 ```powershell
 git reset --soft HEAD^
 ```
+
+Git LFS
+- Install
+```powershell
+git lfs install
+```
+- Track
+```powershell
+git lfs track "large_file.bin"
+```
+- commit and push

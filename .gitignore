@@ -5,3 +5,4 @@ venv
 node_modules/
 fitness.sqlite
 .terraform
+workspace.json

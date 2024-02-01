@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc.md"
+                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md"
               }
             }
           }
@@ -148,10 +148,29 @@
   },
   "active": "e24eb4d047d22677",
   "lastOpenFiles": [
-    "ACIT-4630-Info-Assurance-and-Security.md",
-    "ACIT-4850-Enterprise-System-Integration.md",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "4640_notes_w24/assignments/Assignment-1.md",
+    "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
+    "4640_notes_w24/solutions/week02_inclass/readme.md",
+    "4640_notes_w24/solutions/week03_inclass/main.tf",
+    "4640_notes_w24/solutions/week03_inclass/ec2_host_setup.sh",
+    "4640_notes_w24/solutions/week03_inclass",
+    "4640_notes_w24/4640_Notes/Week4.md",
+    "4640_notes_w24/4640_Notes/Week3.md",
+    "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
     "ACIT-3855-Service-Based-Architectures.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "ACIT-4630-Info-Assurance-and-Security.md",
+    "4640_notes_w24/utility/tagged_cleanup/vpc_cleanup_lib.sh",
+    "4640_notes_w24/utility/tagged_cleanup/ec2_cleanup_lib.sh",
+    "4640_notes_w24/utility/tagged_cleanup/del_tagged_resources.sh",
+    "4640_notes_w24/utility/tagged_cleanup",
+    "4640_notes_w24/utility/install_terraform.sh",
+    "4640_notes_w24/solutions/week02_inclass/03_ec2_setup.sh",
+    "4640_notes_w24/solutions/week02_inclass/02_vpc_setup.sh",
+    "4640_notes_w24/4640_Notes/resources.md",
+    "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
+    "misc.md",
+    "ACIT-4850-Enterprise-System-Integration.md",
     "images/Confluence.png",
     "images/Pasted image 20240129161946.png",
     "images/Pasted image 20240129161838.png",
