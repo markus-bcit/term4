@@ -278,3 +278,115 @@ Try to Retrieve HTML Content from `web_server` Container (from a Container on `n
 # This should fail as the containers are on different networks
 curl web_server/index.html
 ```
+## Week 4
+
+Delete old images
+```bash
+docker rmi -f $(docker image ls -aq)
+```
+### edit image (manual)
+Pull Image
+```bash
+docker pull ubuntu:latest
+```
+Create container
+```bash
+docker run -it ubuntu
+```
+Make changes
+```bash
+# install vim, curl, ping
+apt-get update
+apt-get install -y vim
+apt-get install -y curl
+apt-get install -y iputils-ping
+```
+commit 
+```bash
+docker commit container-ID image-name
+```
+
+### Using dockerfile
+
+```
+#Dockerfile
+❯ cat Dockerfile
+FROM ubuntu
+
+RUN apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y curl
+RUN apt-get install -y iputils-ping
+
+CMD ["bash"]
+```
+Build
+```bash
+docker build -t l3-ubuntu:v2 .
+```
+Upload
+```bash
+docker tag <image_id> markusbcit/l3-ubuntu:v2
+```
+Push
+```bash
+docker push markusbcit/l3-ubuntu:v2
+```
+Pull new image
+```bash
+docker pull markusbcit/l3-ubuntu:v2
+```
+Run
+```bash
+docker run -it markusbcit/l3-ubuntu:v2
+```
+## inspect docker images
+```bash
+docker inspect <image id>
+```
+
+## Running code (python)
+python file
+```bash
+❯ cat python-app.py
+print('Hello')
+```
+Dockerfile
+```bash
+❯ cat Dockerfile
+FROM node:14
+WORKDIR /usr/src/app
+COPY python-app.py ./
+CMD ["python", "python-app.py"]
+```
+build
+```bash
+docker build -t python .
+```
+run
+```bash
+docker run python
+```
+### using [node](https://learn.bcit.ca/d2l/le/content/1007217/viewContent/9694522/View)
+
+## using docker-componse.yml
+
+```
+docker-compose up -d
+```
+
+#lab 
+- q1
+	- ![[Pasted image 20240201085832.png]]
+	- ![[Pasted image 20240201085903.png]]
+	- ![[Pasted image 20240201090308.png]]
+- q2
+	- ![[Pasted image 20240201093643.png]]
+	- ![[Pasted image 20240201093701.png]]
+	- ![[Pasted image 20240201094002.png]]
+	- ![[Pasted image 20240201094246.png]]
+- Q3
+	- the layers show the changes we made
+	  ![[Pasted image 20240201094514.png]]
+- q5
+	- ![[Pasted image 20240201100245.png]]

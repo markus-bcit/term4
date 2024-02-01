@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
-                "mode": "preview",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md"
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
               }
             }
           }
@@ -148,6 +148,18 @@
   },
   "active": "e24eb4d047d22677",
   "lastOpenFiles": [
+    "images/Pasted image 20240201100245.png",
+    "images/Pasted image 20240201094514.png",
+    "images/Pasted image 20240201094246.png",
+    "images/Pasted image 20240201094002.png",
+    "images/Pasted image 20240201093701.png",
+    "images/Pasted image 20240201093643.png",
+    "images/Pasted image 20240201090308.png",
+    "images/Pasted image 20240201085903.png",
+    "images/Pasted image 20240201085832.png",
+    "images/Pasted image 20240201085821.png",
+    "images/Pasted image 20240201085819.png",
+    "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
     "4640_notes_w24/assignments/Assignment-1.md",
     "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
     "4640_notes_w24/solutions/week02_inclass/readme.md",
@@ -170,10 +182,6 @@
     "4640_notes_w24/4640_Notes/resources.md",
     "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
     "misc.md",
-    "ACIT-4850-Enterprise-System-Integration.md",
-    "images/Confluence.png",
-    "images/Pasted image 20240129161946.png",
-    "images/Pasted image 20240129161838.png",
-    "images/Jira.png"
+    "ACIT-4850-Enterprise-System-Integration.md"
   ]
 }
