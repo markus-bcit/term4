@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
-                "mode": "preview",
+                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "file": "ACIT-3855-Service-Based-Architectures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "file": "ACIT-3855-Service-Based-Architectures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md"
+                "file": "ACIT-3855-Service-Based-Architectures.md"
               }
             }
           }
@@ -148,11 +148,11 @@
   },
   "active": "e24eb4d047d22677",
   "lastOpenFiles": [
-    "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "ACIT-4630-Info-Assurance-and-Security.md",
+    "ACIT-3855-Service-Based-Architectures.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "ACIT-4850-Enterprise-System-Integration.md",
-    "ACIT-3855-Service-Based-Architectures.md",
     "images/Pasted image 20240201104747.png",
     "images/Pasted image 20240201104340.png",
     "images/Pasted image 20240201100245.png",

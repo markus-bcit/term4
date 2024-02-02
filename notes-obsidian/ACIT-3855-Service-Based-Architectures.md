@@ -38,5 +38,70 @@
 6. **Infrastructure Automation**: Emphasizes automated deployment and management of services to support continuous delivery and efficient scaling. 
 7. **Design for Failure**: Microservices are designed to handle the failure of individual components gracefully, ensuring overall system resilience.
 8. **Evolutionary Design**: Microservices support and encourage evolutionary changes in the system, with services being independently replaceable and upgradeable.
-![[Pasted image 20240129161838.png]]
-![[Pasted image 20240129161946.png]]
+#jenkin
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+```
+install 
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+verify
+```bash
+sudo docker run hello-world
+```
+perms
+```bash
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+newgrp docker
+
+docker run hello-world
+
+```
+docker file 
+```
+FROM jenkins/jenkins:lts-jdk17
+LABEL maintainer="mmulder10@bcit.ca"
+USER root
+RUN mkdir /var/log/jenkins
+RUN mkdir /var/cache/jenkins
+RUN chown -R jenkins:jenkins /var/log/jenkins
+RUN chown -R jenkins:jenkins /var/cache/jenkins
+RUN apt-get update
+RUN apt-get install -y python3 python3-pip
+USER jenkins
+ENV JAVA_OPTS="-Xmx4096m"
+ENV JENKINS_OPTS="--logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war"
+```
+build
+```bash
+docker build -t myjenkins .
+```
+start 
+```bash
+docker run -p 8080:8080 -p 50000:50000 --restart always --name=jenkins-master --mount source=jenkins-log,target=/var/log/jenkins --mount source=jenkinsdata,target=/var/jenkins_home -d myjenkins
+```
+bash into it 
+```bash
+docker exec -it id bash
+```
+get pass
+```bash
+cat $JENKINS_HOME/secrets/initialAdminPassword
+```
