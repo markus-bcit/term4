@@ -34,7 +34,10 @@ For installing Jira ○ Will use Work Management capabilities
 - Make sure to open up port 88 to use JIRA 
 	- To connect to to MySQL from jira use localhost:3306 And port 22 for the SSH access 
 - The goal of this is to feel the pain 
-- tail -f <log filename> will show active running logs 
-- Tail <n> will show the last n logs 
+- tail -f log filename will show active running logs 
+- Tail n will show the last n logs 
 	- There are commands for starting and stopping the services, DON’T JUST SYSTEMCTL IT 
 	- Jira installation folder should also be /opt/atlassian/jira
+
+#helpful
+- 

@@ -388,5 +388,53 @@ docker-compose up -d
 - Q3
 	- the layers show the changes we made
 	  ![[Pasted image 20240201094514.png]]
+- q4
+	- ![[Pasted image 20240201104747.png]]
 - q5
 	- ![[Pasted image 20240201100245.png]]
+- q6
+	- ![[Pasted image 20240201104340.png]]
+```yml
+❯ cat docker-compose.yml
+version: '3.3'
+
+#networking
+networks:
+  network:
+    # Use a custom driver
+    driver: bridge
+
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+      - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: somewordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+     networks:
+       - network
+   wordpress:
+     depends_on:
+       - db
+     image: wordpress:latest
+     volumes:
+      - wp_data:/var/www/html
+     ports:
+       - "8000:80"
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_NAME: wordpress
+     networks:
+       - network
+
+volumes:
+  db_data:
+  wp_data:
+```
