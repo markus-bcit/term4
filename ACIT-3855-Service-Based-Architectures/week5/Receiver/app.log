@@ -1,0 +1,368 @@
+2024-01-29 14:08:47,508 - basicLogger - INFO - Received event 0be8f63b-3542-4371-84be-595fd62c054c request with a trace id of 64015565-d546-40d4-ab16-29b2995bf7f1
+2024-01-29 14:08:49,580 - basicLogger - INFO - Returned event 0be8f63b-3542-4371-84be-595fd62c054c response (Id: 64015565-d546-40d4-ab16-29b2995bf7f1) with status 201
+2024-01-29 14:15:38,494 - basicLogger - INFO - Received event 37c34f6f-549d-4683-a1c9-c7ab0347d964 request with a trace id of a4046f23-e6d5-440c-9d1d-63e51592f91b
+2024-01-29 14:15:40,576 - basicLogger - INFO - Returned event 37c34f6f-549d-4683-a1c9-c7ab0347d964 response (Id: a4046f23-e6d5-440c-9d1d-63e51592f91b) with status 400
+2024-01-29 14:16:22,115 - basicLogger - INFO - Received event 228ff915-d53d-4b6a-b8e1-1008360aaeae request with a trace id of 24d6250d-c741-48ff-a90a-d4426e7dd342
+2024-01-29 14:16:25,965 - basicLogger - INFO - Received event 2ab2a680-6a98-4a34-a3d8-4b972e414203 request with a trace id of eee1f4a1-8397-4895-a978-de96c52b3822
+2024-01-29 14:16:53,530 - basicLogger - INFO - Received event cff6b99f-585e-4626-a3cc-8749fe36b7ed request with a trace id of 7fcf94a3-6b0b-43e4-ba0e-e64ff67e78ae
+2024-01-29 14:17:03,582 - basicLogger - INFO - Received event 977500a3-8608-4b65-b348-48180ad70c09 request with a trace id of 1ee3c2c7-98a5-4e41-b891-c739adff7907
+2024-01-29 14:17:43,313 - basicLogger - INFO - Received event 2035fe07-b057-4d2c-b66f-e8c094546606 request with a trace id of 6caceffb-2256-4888-9bbf-9facda0bb198
+2024-01-29 14:18:11,736 - basicLogger - INFO - Received event 27809f6a-957d-4873-8a49-c0131ad1c603 request with a trace id of ae59456d-7cb0-43e4-a62a-e2200be7d87b
+2024-01-29 14:18:28,468 - basicLogger - INFO - Received event f13ba26d-052c-41e3-9d6b-1d52ca56afa3 request with a trace id of 061f9f88-df3a-4cf5-a28b-3d1100176896
+2024-01-29 14:18:30,578 - basicLogger - INFO - Returned event f13ba26d-052c-41e3-9d6b-1d52ca56afa3 response (Id: 061f9f88-df3a-4cf5-a28b-3d1100176896) with status 201
+2024-01-29 15:10:36,933 - basicLogger - INFO - Received event eda55a2e-e047-4af9-b2a2-b46ff6cb73b5 request with a trace id of 2575d7e7-4211-42a3-ad52-10fcd64d5334
+2024-01-29 15:10:39,067 - basicLogger - INFO - Returned event eda55a2e-e047-4af9-b2a2-b46ff6cb73b5 response (Id: 2575d7e7-4211-42a3-ad52-10fcd64d5334) with status 500
+2024-01-29 15:14:53,824 - basicLogger - INFO - Received event 22b13b31-e275-493f-9f24-542508df797d request with a trace id of a1803efc-3553-4a76-abbe-8adb1f56ac00
+2024-01-29 15:14:55,895 - basicLogger - INFO - Returned event 22b13b31-e275-493f-9f24-542508df797d response (Id: a1803efc-3553-4a76-abbe-8adb1f56ac00) with status 500
+2024-01-29 15:16:39,140 - basicLogger - INFO - Received event 880ff940-2b90-470e-9a57-8ca7a26c8109 request with a trace id of f3edbf6f-adf0-4a97-aeef-d931da6ce479
+2024-01-29 15:16:41,225 - basicLogger - INFO - Returned event 880ff940-2b90-470e-9a57-8ca7a26c8109 response (Id: f3edbf6f-adf0-4a97-aeef-d931da6ce479) with status 500
+2024-01-29 15:17:05,781 - basicLogger - INFO - Received event 5aadd375-9058-4455-aae9-6a38fdbf1d05 request with a trace id of 39323834-4a55-458d-8d5f-7af3a3fc3ad1
+2024-01-29 15:17:07,873 - basicLogger - INFO - Returned event 5aadd375-9058-4455-aae9-6a38fdbf1d05 response (Id: 39323834-4a55-458d-8d5f-7af3a3fc3ad1) with status 500
+2024-01-29 15:18:07,964 - basicLogger - INFO - Received event 6947ccf7-60cc-4643-9586-327049a78034 request with a trace id of f0974f0f-4c0f-4f9f-89b9-f587d4571f38
+2024-01-29 15:18:10,012 - basicLogger - INFO - Returned event 6947ccf7-60cc-4643-9586-327049a78034 response (Id: f0974f0f-4c0f-4f9f-89b9-f587d4571f38) with status 500
+2024-01-29 15:18:45,129 - basicLogger - INFO - Received event 10d06f67-202a-44b4-bd18-23905cd6a355 request with a trace id of c29a44b9-2a26-418c-a6f1-7140e2cb1d80
+2024-01-29 15:18:47,196 - basicLogger - INFO - Returned event 10d06f67-202a-44b4-bd18-23905cd6a355 response (Id: c29a44b9-2a26-418c-a6f1-7140e2cb1d80) with status <Response [500]>
+2024-01-29 15:19:33,740 - basicLogger - INFO - Received event 69e12a93-379f-4622-b0ec-69ab7d096599 request with a trace id of 5425b402-b4e5-444e-b292-3f38a37c7296
+2024-01-29 15:19:35,902 - basicLogger - INFO - Returned event 69e12a93-379f-4622-b0ec-69ab7d096599 response (Id: 5425b402-b4e5-444e-b292-3f38a37c7296) with status 500
+2024-01-29 15:21:06,025 - basicLogger - INFO - Received event 0486ec48-0cae-4762-bcd0-37d8becbd601 request with a trace id of 9fd39d35-5e69-4cc3-a0a5-92655f3cad00
+2024-01-29 15:21:08,129 - basicLogger - INFO - Returned event 0486ec48-0cae-4762-bcd0-37d8becbd601 response (Id: 9fd39d35-5e69-4cc3-a0a5-92655f3cad00) with status 201
+2024-01-29 15:21:49,846 - basicLogger - INFO - Received event 91be3638-5446-4687-9d96-1e173a4d4bd2 request with a trace id of 9c027c1e-2577-4f69-ae68-e0aa5b0a2f28
+2024-01-29 15:21:51,930 - basicLogger - INFO - Returned event 91be3638-5446-4687-9d96-1e173a4d4bd2 response (Id: 9c027c1e-2577-4f69-ae68-e0aa5b0a2f28) with status 201
+2024-01-29 15:23:35,992 - basicLogger - INFO - Received event f5fe5ce8-da48-4d5f-911d-66cd4f00d545 request with a trace id of c786508e-6f52-4ff2-aadd-13a051f53ac6
+2024-01-29 15:23:35,992 - basicLogger - INFO - Received event 827f1a5a-4c64-40b9-bb73-7addd2e10a9a request with a trace id of baa36637-5a8a-41f2-8756-092df3e5aaf6
+2024-01-29 15:23:35,993 - basicLogger - INFO - Received event ab8fd164-a3af-424b-922f-ab5e348c6fa0 request with a trace id of b54176a2-b9d6-4be8-a930-df75745818c0
+2024-01-29 15:23:35,993 - basicLogger - INFO - Received event 696e6a5d-2878-4101-9184-ca79f20aeca9 request with a trace id of ed0322cf-72f8-4fa0-825d-fe952c306959
+2024-01-29 15:23:36,270 - basicLogger - INFO - Received event 008a3ac8-6ac2-45ec-9db5-36cb897abc72 request with a trace id of c65d5f1f-2c49-4d8d-a339-2d9302471bf0
+2024-01-29 15:23:36,763 - basicLogger - INFO - Received event 6968405d-e24f-4ec5-95ba-27c6e8508e73 request with a trace id of 9e795b62-e98a-4b51-b39d-73f9bcea0ab2
+2024-01-29 15:23:37,263 - basicLogger - INFO - Received event 8e5b5b34-c91b-4ad9-87ca-d1da05f73a21 request with a trace id of 4e61e663-0854-46e2-a7d0-7e81f1e0e856
+2024-01-29 15:23:37,763 - basicLogger - INFO - Received event e27107f9-dd97-4679-88c8-611be072bb5f request with a trace id of 628d51f0-c1cc-4f66-bae6-c16eb29104b4
+2024-01-29 15:23:38,117 - basicLogger - INFO - Returned event 696e6a5d-2878-4101-9184-ca79f20aeca9 response (Id: ed0322cf-72f8-4fa0-825d-fe952c306959) with status 500
+2024-01-29 15:23:38,117 - basicLogger - INFO - Returned event f5fe5ce8-da48-4d5f-911d-66cd4f00d545 response (Id: c786508e-6f52-4ff2-aadd-13a051f53ac6) with status 500
+2024-01-29 15:23:38,118 - basicLogger - INFO - Returned event 827f1a5a-4c64-40b9-bb73-7addd2e10a9a response (Id: baa36637-5a8a-41f2-8756-092df3e5aaf6) with status 500
+2024-01-29 15:23:38,119 - basicLogger - INFO - Returned event ab8fd164-a3af-424b-922f-ab5e348c6fa0 response (Id: b54176a2-b9d6-4be8-a930-df75745818c0) with status 500
+2024-01-29 15:23:38,159 - basicLogger - INFO - Received event bdb42a4c-03df-4b67-a438-29d546ca206f request with a trace id of 73899dd2-9e28-41f3-a170-5522ea141340
+2024-01-29 15:23:38,161 - basicLogger - INFO - Received event b152fcf3-a5a6-435b-bf79-24849d526ed2 request with a trace id of 228cca2a-3f89-4295-8302-8532955a0685
+2024-01-29 15:23:38,161 - basicLogger - INFO - Received event c2d7b99f-1e7c-4fd9-9783-190a002cc5ca request with a trace id of 6f1bab39-f87e-4ef5-a540-7404c9b6b457
+2024-01-29 15:23:38,161 - basicLogger - INFO - Received event c93ef06d-1415-440c-bf8f-50e960149331 request with a trace id of deb24c46-c0ea-4688-b6aa-b71676f8778e
+2024-01-29 15:23:38,262 - basicLogger - INFO - Received event f2679abe-b5e4-4716-9a08-478115de2f83 request with a trace id of 83d02f0b-1c0e-4d29-a842-7972a2d1b98d
+2024-01-29 15:23:38,336 - basicLogger - INFO - Returned event 008a3ac8-6ac2-45ec-9db5-36cb897abc72 response (Id: c65d5f1f-2c49-4d8d-a339-2d9302471bf0) with status 500
+2024-01-29 15:23:38,344 - basicLogger - INFO - Received event e477c308-479f-4085-8274-8563cb340ef7 request with a trace id of f7b68fae-a6cb-4c5c-8fe8-4ff14a4e6801
+2024-01-29 15:23:38,760 - basicLogger - INFO - Received event 180d54d1-a256-417c-9859-7085542b0b8c request with a trace id of 40fe0419-8a4b-42ed-b7f1-04cf05ea390e
+2024-01-29 15:23:38,820 - basicLogger - INFO - Returned event 6968405d-e24f-4ec5-95ba-27c6e8508e73 response (Id: 9e795b62-e98a-4b51-b39d-73f9bcea0ab2) with status 500
+2024-01-29 15:23:38,831 - basicLogger - INFO - Received event 4045514e-69f1-4feb-8553-40649be52ca8 request with a trace id of 8c19a4e0-1cc7-4759-9ebb-22c57fd47c54
+2024-01-29 15:23:39,322 - basicLogger - INFO - Returned event 8e5b5b34-c91b-4ad9-87ca-d1da05f73a21 response (Id: 4e61e663-0854-46e2-a7d0-7e81f1e0e856) with status 500
+2024-01-29 15:23:39,328 - basicLogger - INFO - Received event dd7c0ea4-2f95-46ce-996e-e4fc2d74b252 request with a trace id of c69ef026-28ff-4956-8fee-d8533e62240f
+2024-01-29 15:23:39,842 - basicLogger - INFO - Returned event e27107f9-dd97-4679-88c8-611be072bb5f response (Id: 628d51f0-c1cc-4f66-bae6-c16eb29104b4) with status 500
+2024-01-29 15:23:39,850 - basicLogger - INFO - Received event d3b3ae12-c822-4f5c-a7f7-9dae781b8c4b request with a trace id of d5c7b413-390f-4033-881e-d16b75665f36
+2024-01-29 15:23:40,272 - basicLogger - INFO - Returned event c93ef06d-1415-440c-bf8f-50e960149331 response (Id: deb24c46-c0ea-4688-b6aa-b71676f8778e) with status 201
+2024-01-29 15:23:40,275 - basicLogger - INFO - Returned event c2d7b99f-1e7c-4fd9-9783-190a002cc5ca response (Id: 6f1bab39-f87e-4ef5-a540-7404c9b6b457) with status 201
+2024-01-29 15:23:40,276 - basicLogger - INFO - Returned event b152fcf3-a5a6-435b-bf79-24849d526ed2 response (Id: 228cca2a-3f89-4295-8302-8532955a0685) with status 201
+2024-01-29 15:23:40,277 - basicLogger - INFO - Returned event bdb42a4c-03df-4b67-a438-29d546ca206f response (Id: 73899dd2-9e28-41f3-a170-5522ea141340) with status 201
+2024-01-29 15:23:40,282 - basicLogger - INFO - Received event c57367af-30db-43ec-994b-4fee0f97b845 request with a trace id of ce173a57-3a3e-48b3-8ab6-1ab2e6d17ae0
+2024-01-29 15:23:40,293 - basicLogger - INFO - Received event 293b1a8a-88dd-42bd-a3c5-7d51abf7900d request with a trace id of 585c9b9b-8485-4c5c-a44e-a8a25b463d8a
+2024-01-29 15:23:40,302 - basicLogger - INFO - Received event 23627818-6db9-42fb-8c83-b64304ffca96 request with a trace id of 5af47c68-0798-471f-9bf2-3fcfd274fffa
+2024-01-29 15:23:40,303 - basicLogger - INFO - Received event ccc9a4b5-8984-4fae-a160-9e504b2570b7 request with a trace id of 1fa2204c-f0f2-4e15-b9e4-6c937093ce7f
+2024-01-29 15:23:40,317 - basicLogger - INFO - Returned event f2679abe-b5e4-4716-9a08-478115de2f83 response (Id: 83d02f0b-1c0e-4d29-a842-7972a2d1b98d) with status 500
+2024-01-29 15:23:40,326 - basicLogger - INFO - Received event 23a569d3-55e9-48ac-9357-13804eb3adc1 request with a trace id of 742b3eaf-9e76-4b34-b1c4-8e5286161db8
+2024-01-29 15:23:40,396 - basicLogger - INFO - Returned event e477c308-479f-4085-8274-8563cb340ef7 response (Id: f7b68fae-a6cb-4c5c-8fe8-4ff14a4e6801) with status 201
+2024-01-29 15:23:40,403 - basicLogger - INFO - Received event b1a7c295-ed69-4f24-bd67-cba50cea619d request with a trace id of 05e2d476-2b25-4848-982f-a80bb180ea02
+2024-01-29 15:23:40,799 - basicLogger - INFO - Returned event 180d54d1-a256-417c-9859-7085542b0b8c response (Id: 40fe0419-8a4b-42ed-b7f1-04cf05ea390e) with status 500
+2024-01-29 15:23:40,807 - basicLogger - INFO - Received event ddde9f47-0cf1-4dba-84c6-f4cffe387f2a request with a trace id of 151dcfc5-88af-446c-81ee-fc1e6678d3cf
+2024-01-29 15:23:40,867 - basicLogger - INFO - Returned event 4045514e-69f1-4feb-8553-40649be52ca8 response (Id: 8c19a4e0-1cc7-4759-9ebb-22c57fd47c54) with status 201
+2024-01-29 15:23:40,875 - basicLogger - INFO - Received event 11116505-3040-450a-ad52-01295c0390b4 request with a trace id of 0f542236-c02c-480a-9c7f-5a17671c6bd7
+2024-01-29 15:23:41,390 - basicLogger - INFO - Returned event dd7c0ea4-2f95-46ce-996e-e4fc2d74b252 response (Id: c69ef026-28ff-4956-8fee-d8533e62240f) with status 201
+2024-01-29 15:23:41,398 - basicLogger - INFO - Received event 7716127d-83af-4c5a-9cf5-c6eaea1456d7 request with a trace id of e8ff0e02-bd57-47c1-b5a4-4a0489ecd439
+2024-01-29 15:23:41,910 - basicLogger - INFO - Returned event d3b3ae12-c822-4f5c-a7f7-9dae781b8c4b response (Id: d5c7b413-390f-4033-881e-d16b75665f36) with status 201
+2024-01-29 15:23:41,917 - basicLogger - INFO - Received event 4fa195d6-df60-4cae-812e-fdb4444a2766 request with a trace id of d3bd5d5e-23fd-4ab6-94bf-f1907dcf4b20
+2024-01-29 15:23:42,330 - basicLogger - INFO - Returned event c57367af-30db-43ec-994b-4fee0f97b845 response (Id: ce173a57-3a3e-48b3-8ab6-1ab2e6d17ae0) with status 500
+2024-01-29 15:23:42,338 - basicLogger - INFO - Received event d7de810f-f3e7-464f-aa7a-b1e4701740e5 request with a trace id of 667db2e0-d4d5-47f0-90cc-6067fd515024
+2024-01-29 15:23:42,356 - basicLogger - INFO - Returned event 23627818-6db9-42fb-8c83-b64304ffca96 response (Id: 5af47c68-0798-471f-9bf2-3fcfd274fffa) with status 500
+2024-01-29 15:23:42,357 - basicLogger - INFO - Returned event 293b1a8a-88dd-42bd-a3c5-7d51abf7900d response (Id: 585c9b9b-8485-4c5c-a44e-a8a25b463d8a) with status 500
+2024-01-29 15:23:42,366 - basicLogger - INFO - Returned event ccc9a4b5-8984-4fae-a160-9e504b2570b7 response (Id: 1fa2204c-f0f2-4e15-b9e4-6c937093ce7f) with status 500
+2024-01-29 15:23:42,367 - basicLogger - INFO - Received event 95f0c95c-fc25-47e0-b6af-9e8a8e3d5d03 request with a trace id of cd9b794d-c6a7-4b08-8f76-b0e4ee0984d7
+2024-01-29 15:23:42,367 - basicLogger - INFO - Received event dbe87c60-fc25-4357-9d84-f54721097d7c request with a trace id of cb9ad3d5-6d48-416c-be70-805cd713c545
+2024-01-29 15:23:42,377 - basicLogger - INFO - Received event ad699917-eede-4c4b-ba58-00477cf6f183 request with a trace id of 48b48314-2c1b-4082-927b-f19a506b5c57
+2024-01-29 15:23:42,392 - basicLogger - INFO - Returned event 23a569d3-55e9-48ac-9357-13804eb3adc1 response (Id: 742b3eaf-9e76-4b34-b1c4-8e5286161db8) with status 201
+2024-01-29 15:23:42,400 - basicLogger - INFO - Received event baa563a4-9c36-4442-b2ed-2e835cd1ba86 request with a trace id of 0c8e899c-9063-46e1-8f7d-edeb9c7d9471
+2024-01-29 15:23:42,437 - basicLogger - INFO - Returned event b1a7c295-ed69-4f24-bd67-cba50cea619d response (Id: 05e2d476-2b25-4848-982f-a80bb180ea02) with status 500
+2024-01-29 15:23:42,446 - basicLogger - INFO - Received event 42770916-7255-451e-a9ef-e31ae343f260 request with a trace id of f14b92e8-959a-4cc5-99b8-03b624a711d2
+2024-01-29 15:23:42,869 - basicLogger - INFO - Returned event ddde9f47-0cf1-4dba-84c6-f4cffe387f2a response (Id: 151dcfc5-88af-446c-81ee-fc1e6678d3cf) with status 201
+2024-01-29 15:23:42,876 - basicLogger - INFO - Received event 762fc99d-670b-4b24-9881-511b42db2931 request with a trace id of 3230fbcd-706e-4730-938d-2f906212f940
+2024-01-29 15:23:42,919 - basicLogger - INFO - Returned event 11116505-3040-450a-ad52-01295c0390b4 response (Id: 0f542236-c02c-480a-9c7f-5a17671c6bd7) with status 500
+2024-01-29 15:23:42,927 - basicLogger - INFO - Received event ffed6b60-29bf-4394-b0e0-4df7d3fee32c request with a trace id of 7aa190dc-f339-4d42-b5b3-7cdde4783bd2
+2024-01-29 15:23:43,438 - basicLogger - INFO - Returned event 7716127d-83af-4c5a-9cf5-c6eaea1456d7 response (Id: e8ff0e02-bd57-47c1-b5a4-4a0489ecd439) with status 500
+2024-01-29 15:23:43,446 - basicLogger - INFO - Received event 29bbf5dc-0f63-476b-9d8c-db05d3e9aabc request with a trace id of 79cd4f57-002c-436f-b7d8-c7d54e387488
+2024-01-29 15:23:43,953 - basicLogger - INFO - Returned event 4fa195d6-df60-4cae-812e-fdb4444a2766 response (Id: d3bd5d5e-23fd-4ab6-94bf-f1907dcf4b20) with status 500
+2024-01-29 15:23:43,961 - basicLogger - INFO - Received event 319ef430-f201-4caf-b959-b8b0bcd39c36 request with a trace id of b96c2381-686d-43f7-a44b-da9f858eb54d
+2024-01-29 15:23:44,384 - basicLogger - INFO - Returned event d7de810f-f3e7-464f-aa7a-b1e4701740e5 response (Id: 667db2e0-d4d5-47f0-90cc-6067fd515024) with status 201
+2024-01-29 15:23:44,392 - basicLogger - INFO - Received event fca9bc74-77fe-4f0c-91e9-e108365c2945 request with a trace id of 98b6c9c4-a1cd-444f-bab4-d9438fda9b74
+2024-01-29 15:23:44,403 - basicLogger - INFO - Returned event dbe87c60-fc25-4357-9d84-f54721097d7c response (Id: cb9ad3d5-6d48-416c-be70-805cd713c545) with status 201
+2024-01-29 15:23:44,409 - basicLogger - INFO - Returned event 95f0c95c-fc25-47e0-b6af-9e8a8e3d5d03 response (Id: cd9b794d-c6a7-4b08-8f76-b0e4ee0984d7) with status 201
+2024-01-29 15:23:44,413 - basicLogger - INFO - Received event e6474beb-636b-4764-a0f1-9b582cf694ff request with a trace id of 7327ce57-7bd4-4249-a246-8e2a334c55e7
+2024-01-29 15:23:44,420 - basicLogger - INFO - Received event 502169ae-a97d-4473-9948-00d56da761e5 request with a trace id of b823f934-cdfa-4e81-bd92-e0faf1d8ed6e
+2024-01-29 15:23:44,436 - basicLogger - INFO - Returned event ad699917-eede-4c4b-ba58-00477cf6f183 response (Id: 48b48314-2c1b-4082-927b-f19a506b5c57) with status 201
+2024-01-29 15:23:44,441 - basicLogger - INFO - Returned event baa563a4-9c36-4442-b2ed-2e835cd1ba86 response (Id: 0c8e899c-9063-46e1-8f7d-edeb9c7d9471) with status 500
+2024-01-29 15:23:44,447 - basicLogger - INFO - Received event 88d70967-920b-424b-9fb9-b8594735a60b request with a trace id of 40deb4e1-8702-4dc0-842f-196c610e94df
+2024-01-29 15:23:44,451 - basicLogger - INFO - Received event adf6d7ba-daf6-4e9a-afe7-4a8fe297c76d request with a trace id of c9a53e43-813b-4674-906a-97c01bde8779
+2024-01-29 15:23:44,493 - basicLogger - INFO - Returned event 42770916-7255-451e-a9ef-e31ae343f260 response (Id: f14b92e8-959a-4cc5-99b8-03b624a711d2) with status 201
+2024-01-29 15:23:44,502 - basicLogger - INFO - Received event 23dae32a-c8b4-4b77-9239-03be0eea81e4 request with a trace id of 6779c848-7a85-40a1-9353-3a15fb46fd29
+2024-01-29 15:23:44,933 - basicLogger - INFO - Returned event 762fc99d-670b-4b24-9881-511b42db2931 response (Id: 3230fbcd-706e-4730-938d-2f906212f940) with status 500
+2024-01-29 15:23:44,939 - basicLogger - INFO - Received event 2d238726-9bed-4e1c-b788-51a62fd920be request with a trace id of 4b8670c8-d516-4275-96db-74478b65006f
+2024-01-29 15:23:45,005 - basicLogger - INFO - Returned event ffed6b60-29bf-4394-b0e0-4df7d3fee32c response (Id: 7aa190dc-f339-4d42-b5b3-7cdde4783bd2) with status 201
+2024-01-29 15:23:45,014 - basicLogger - INFO - Received event d1736655-63dd-4e6a-9e64-70c85b25315d request with a trace id of 3d1260b7-bb10-4a40-9e6d-caca25a339b1
+2024-01-29 15:23:45,506 - basicLogger - INFO - Returned event 29bbf5dc-0f63-476b-9d8c-db05d3e9aabc response (Id: 79cd4f57-002c-436f-b7d8-c7d54e387488) with status 201
+2024-01-29 15:23:45,514 - basicLogger - INFO - Received event d920b4a3-030c-4de0-bfbf-ad25252360ac request with a trace id of 44cffc2a-fab9-436b-8104-e3f085b9ee41
+2024-01-29 15:23:46,024 - basicLogger - INFO - Returned event 319ef430-f201-4caf-b959-b8b0bcd39c36 response (Id: b96c2381-686d-43f7-a44b-da9f858eb54d) with status 201
+2024-01-29 15:23:46,032 - basicLogger - INFO - Received event 9cb799ea-39be-42b2-aef0-8ac755a912dc request with a trace id of 1f961dd8-296a-4a64-8544-f4ef1426f194
+2024-01-29 15:23:46,435 - basicLogger - INFO - Returned event fca9bc74-77fe-4f0c-91e9-e108365c2945 response (Id: 98b6c9c4-a1cd-444f-bab4-d9438fda9b74) with status 500
+2024-01-29 15:23:46,442 - basicLogger - INFO - Received event 181585f1-6631-4d32-9894-43d5b3e7f9f7 request with a trace id of 191d49f0-9a54-4fb5-b815-11e0c1b03517
+2024-01-29 15:23:46,488 - basicLogger - INFO - Returned event e6474beb-636b-4764-a0f1-9b582cf694ff response (Id: 7327ce57-7bd4-4249-a246-8e2a334c55e7) with status 500
+2024-01-29 15:23:46,493 - basicLogger - INFO - Returned event 88d70967-920b-424b-9fb9-b8594735a60b response (Id: 40deb4e1-8702-4dc0-842f-196c610e94df) with status 500
+2024-01-29 15:23:46,496 - basicLogger - INFO - Received event 4d16a043-9d75-492c-a76d-bda8f78915ab request with a trace id of 815d1204-1a49-4600-a3ad-e1c547be1d9b
+2024-01-29 15:23:46,503 - basicLogger - INFO - Received event 0c099146-0184-42a0-a063-44be90eb8f72 request with a trace id of 1d3649f9-c117-4a39-937e-b3e120be13cb
+2024-01-29 15:23:48,573 - basicLogger - INFO - Returned event d1736655-63dd-4e6a-9e64-70c85b25315d response (Id: 3d1260b7-bb10-4a40-9e6d-caca25a339b1) with status 500
+2024-01-29 15:23:48,574 - basicLogger - INFO - Returned event d920b4a3-030c-4de0-bfbf-ad25252360ac response (Id: 44cffc2a-fab9-436b-8104-e3f085b9ee41) with status 500
+2024-01-29 15:23:48,574 - basicLogger - INFO - Returned event 9cb799ea-39be-42b2-aef0-8ac755a912dc response (Id: 1f961dd8-296a-4a64-8544-f4ef1426f194) with status 500
+2024-01-29 15:23:48,575 - basicLogger - INFO - Returned event 502169ae-a97d-4473-9948-00d56da761e5 response (Id: b823f934-cdfa-4e81-bd92-e0faf1d8ed6e) with status 500
+2024-01-29 15:23:48,575 - basicLogger - INFO - Returned event 23dae32a-c8b4-4b77-9239-03be0eea81e4 response (Id: 6779c848-7a85-40a1-9353-3a15fb46fd29) with status 500
+2024-01-29 15:23:48,579 - basicLogger - INFO - Returned event adf6d7ba-daf6-4e9a-afe7-4a8fe297c76d response (Id: c9a53e43-813b-4674-906a-97c01bde8779) with status 201
+2024-01-29 15:23:48,586 - basicLogger - INFO - Returned event 2d238726-9bed-4e1c-b788-51a62fd920be response (Id: 4b8670c8-d516-4275-96db-74478b65006f) with status 201
+2024-01-29 15:23:48,589 - basicLogger - INFO - Received event 9ae93b1b-380a-4e62-a111-f6d165ea077c request with a trace id of 9e3b2596-b450-482f-95a6-98a86f04d8a1
+2024-01-29 15:23:48,590 - basicLogger - INFO - Received event fad078ff-8e57-48cc-848c-9493ec4b0ebb request with a trace id of e040ca47-5c16-40c1-9807-317ea1a3bde2
+2024-01-29 15:23:48,591 - basicLogger - INFO - Returned event 181585f1-6631-4d32-9894-43d5b3e7f9f7 response (Id: 191d49f0-9a54-4fb5-b815-11e0c1b03517) with status 201
+2024-01-29 15:23:48,592 - basicLogger - INFO - Returned event 4d16a043-9d75-492c-a76d-bda8f78915ab response (Id: 815d1204-1a49-4600-a3ad-e1c547be1d9b) with status 201
+2024-01-29 15:23:48,593 - basicLogger - INFO - Received event 98145d1e-e3bc-4eba-b434-b93cc19e8176 request with a trace id of 97e8f71d-d8ee-459a-8b13-bac3df0566ae
+2024-01-29 15:23:48,600 - basicLogger - INFO - Returned event 0c099146-0184-42a0-a063-44be90eb8f72 response (Id: 1d3649f9-c117-4a39-937e-b3e120be13cb) with status 201
+2024-01-29 15:23:48,613 - basicLogger - INFO - Received event 246ed91c-7967-4da5-a908-23e997512a8b request with a trace id of 08c51fbc-7726-4bed-8d99-27460c98e4aa
+2024-01-29 15:23:48,615 - basicLogger - INFO - Received event 8f10cd63-695d-49fc-9634-29d4f717506a request with a trace id of 57a70097-2841-4a7d-9c7f-a149eed049d7
+2024-01-29 15:23:48,619 - basicLogger - INFO - Received event 5f26609d-8b0c-441e-8b83-ba3d29c467de request with a trace id of b7270115-975e-4971-82bd-7420e0a1434b
+2024-01-29 15:23:48,625 - basicLogger - INFO - Received event b92dfccb-c875-433e-83ce-e282df23fa54 request with a trace id of c186b598-1cc6-4e20-a3f4-958e552c874a
+2024-01-29 15:23:48,630 - basicLogger - INFO - Received event 10dbdf41-60dc-4d79-8cb0-dce9e09d51e8 request with a trace id of 521608b3-f936-4886-9586-4f3742370ac5
+2024-01-29 15:23:48,640 - basicLogger - INFO - Received event 38724953-2b60-4ba4-88c8-9fc3a970e186 request with a trace id of be469e94-1ffa-4392-834f-0765a034548d
+2024-01-29 15:23:48,642 - basicLogger - INFO - Received event 0d284ea1-49e0-445c-92aa-bb22442d4962 request with a trace id of 1bf18e24-5a75-4ae5-8f61-4c300770ffa3
+2024-01-29 15:23:50,703 - basicLogger - INFO - Returned event 9ae93b1b-380a-4e62-a111-f6d165ea077c response (Id: 9e3b2596-b450-482f-95a6-98a86f04d8a1) with status 201
+2024-01-29 15:23:50,705 - basicLogger - INFO - Returned event fad078ff-8e57-48cc-848c-9493ec4b0ebb response (Id: e040ca47-5c16-40c1-9807-317ea1a3bde2) with status 201
+2024-01-29 15:23:50,705 - basicLogger - INFO - Returned event 98145d1e-e3bc-4eba-b434-b93cc19e8176 response (Id: 97e8f71d-d8ee-459a-8b13-bac3df0566ae) with status 201
+2024-01-29 15:23:50,721 - basicLogger - INFO - Returned event 246ed91c-7967-4da5-a908-23e997512a8b response (Id: 08c51fbc-7726-4bed-8d99-27460c98e4aa) with status 201
+2024-01-29 15:23:50,723 - basicLogger - INFO - Received event 7f4136df-dad9-4ed0-979c-30c74f41315a request with a trace id of 44e25b2e-eb92-4f4e-9fb1-78ba5cfca4c0
+2024-01-29 15:23:50,724 - basicLogger - INFO - Received event fbf4dfe7-f924-4396-90b2-2b1116205a85 request with a trace id of 1e4857dd-f8e8-4fef-b784-704a67b79fda
+2024-01-29 15:23:50,725 - basicLogger - INFO - Received event 681fc801-9509-4d4d-8225-1709d02b842c request with a trace id of b5e92733-d93f-46b5-bd59-ebdcbf2c67dc
+2024-01-29 15:23:50,741 - basicLogger - INFO - Received event 6ad6d4e4-e855-4cb7-949f-72b879d96f2d request with a trace id of 1a91b1c6-dea7-4475-87f1-70d563f4f398
+2024-01-29 15:23:50,846 - basicLogger - INFO - Returned event 5f26609d-8b0c-441e-8b83-ba3d29c467de response (Id: b7270115-975e-4971-82bd-7420e0a1434b) with status 500
+2024-01-29 15:23:50,847 - basicLogger - INFO - Returned event 38724953-2b60-4ba4-88c8-9fc3a970e186 response (Id: be469e94-1ffa-4392-834f-0765a034548d) with status 500
+2024-01-29 15:23:50,848 - basicLogger - INFO - Returned event 0d284ea1-49e0-445c-92aa-bb22442d4962 response (Id: 1bf18e24-5a75-4ae5-8f61-4c300770ffa3) with status 500
+2024-01-29 15:23:50,856 - basicLogger - INFO - Received event aec4f1e8-3601-449d-b3a4-9d327a42b951 request with a trace id of 8ba83418-d636-4817-95a0-9916d2d9b2c6
+2024-01-29 15:23:50,857 - basicLogger - INFO - Received event ddced3be-88f2-45f6-8197-aa64baeb4174 request with a trace id of 54632802-1005-450c-888d-933d78ea701f
+2024-01-29 15:23:50,857 - basicLogger - INFO - Received event ba909863-d7f5-4dc3-bb58-544fc29806ac request with a trace id of ee69c44b-3b8a-4d92-abdb-fd9f539a151a
+2024-01-29 15:24:20,702 - basicLogger - INFO - Returned event b92dfccb-c875-433e-83ce-e282df23fa54 response (Id: c186b598-1cc6-4e20-a3f4-958e552c874a) with status 500
+2024-01-29 15:24:20,708 - basicLogger - INFO - Received event fefb353f-ee89-41e7-a419-51d08318ad5b request with a trace id of bba7d1fe-4dcc-424b-895c-37b3d0b0b882
+2024-01-29 15:24:20,717 - basicLogger - INFO - Returned event 10dbdf41-60dc-4d79-8cb0-dce9e09d51e8 response (Id: 521608b3-f936-4886-9586-4f3742370ac5) with status 500
+2024-01-29 15:24:20,717 - basicLogger - INFO - Returned event 8f10cd63-695d-49fc-9634-29d4f717506a response (Id: 57a70097-2841-4a7d-9c7f-a149eed049d7) with status 500
+2024-01-29 15:24:20,731 - basicLogger - INFO - Received event 96195bd8-98b7-467f-9ce3-24a4f167aed7 request with a trace id of 33872053-280b-46af-92b7-221b6e315750
+2024-01-29 15:24:20,732 - basicLogger - INFO - Received event d7f0c787-da10-4772-8b90-096299cc7375 request with a trace id of 3a430cfe-b1b1-4db3-9e66-28787f788671
+2024-01-29 15:24:22,792 - basicLogger - INFO - Returned event 6ad6d4e4-e855-4cb7-949f-72b879d96f2d response (Id: 1a91b1c6-dea7-4475-87f1-70d563f4f398) with status 500
+2024-01-29 15:24:22,793 - basicLogger - INFO - Returned event 681fc801-9509-4d4d-8225-1709d02b842c response (Id: b5e92733-d93f-46b5-bd59-ebdcbf2c67dc) with status 500
+2024-01-29 15:24:22,794 - basicLogger - INFO - Returned event 7f4136df-dad9-4ed0-979c-30c74f41315a response (Id: 44e25b2e-eb92-4f4e-9fb1-78ba5cfca4c0) with status 500
+2024-01-29 15:24:22,794 - basicLogger - INFO - Returned event fbf4dfe7-f924-4396-90b2-2b1116205a85 response (Id: 1e4857dd-f8e8-4fef-b784-704a67b79fda) with status 500
+2024-01-29 15:24:22,809 - basicLogger - INFO - Received event c80566b8-dc20-428e-a7df-ad87a6b317f3 request with a trace id of f1e619c6-2e8e-4ef2-8b02-62764efd418a
+2024-01-29 15:24:22,809 - basicLogger - INFO - Received event efd3891d-47ec-4dfc-bcae-72efc9b87be5 request with a trace id of 23bf7ce9-d7c4-46c3-a36b-adcbe194e23e
+2024-01-29 15:24:22,810 - basicLogger - INFO - Received event 5b1886bf-11cd-41ce-b2e9-152eee418494 request with a trace id of f9824cd7-4dd0-4f41-a203-399c02e76925
+2024-01-29 15:24:22,810 - basicLogger - INFO - Received event 0b0f9e46-bd03-452b-834d-b5ecdf92aff9 request with a trace id of 1f9317f5-bc26-4f98-b8a0-a65e3a5bf9b9
+2024-01-29 15:24:22,918 - basicLogger - INFO - Returned event ba909863-d7f5-4dc3-bb58-544fc29806ac response (Id: ee69c44b-3b8a-4d92-abdb-fd9f539a151a) with status 500
+2024-01-29 15:24:22,920 - basicLogger - INFO - Returned event ddced3be-88f2-45f6-8197-aa64baeb4174 response (Id: 54632802-1005-450c-888d-933d78ea701f) with status 500
+2024-01-29 15:24:22,921 - basicLogger - INFO - Returned event aec4f1e8-3601-449d-b3a4-9d327a42b951 response (Id: 8ba83418-d636-4817-95a0-9916d2d9b2c6) with status 500
+2024-01-29 15:24:22,932 - basicLogger - INFO - Received event 1f2c122e-24de-458d-8af1-f2dbf77d1080 request with a trace id of ab69006a-2c9b-4f94-8974-0452eafdee37
+2024-01-29 15:24:22,932 - basicLogger - INFO - Received event c208e81b-9c76-4c89-a74b-aaf9b3db09a0 request with a trace id of 32dac631-6efa-4f9b-b5ae-2114ab6522ec
+2024-01-29 15:24:22,933 - basicLogger - INFO - Received event 81b8da6a-f30c-4e43-bd14-4cc0f135ede2 request with a trace id of 3a40b038-c1a3-4335-beb2-5663bd2f4946
+2024-01-29 15:24:24,987 - basicLogger - INFO - Returned event 96195bd8-98b7-467f-9ce3-24a4f167aed7 response (Id: 33872053-280b-46af-92b7-221b6e315750) with status 500
+2024-01-29 15:24:24,994 - basicLogger - INFO - Received event f02c6fbc-edae-4b99-a754-de26d98fa2cf request with a trace id of 9e097d51-11fb-4afd-a8b1-5ee28f46d940
+2024-01-29 15:24:25,011 - basicLogger - INFO - Returned event fefb353f-ee89-41e7-a419-51d08318ad5b response (Id: bba7d1fe-4dcc-424b-895c-37b3d0b0b882) with status 201
+2024-01-29 15:24:25,014 - basicLogger - INFO - Returned event d7f0c787-da10-4772-8b90-096299cc7375 response (Id: 3a430cfe-b1b1-4db3-9e66-28787f788671) with status 201
+2024-01-29 15:24:25,023 - basicLogger - INFO - Returned event c80566b8-dc20-428e-a7df-ad87a6b317f3 response (Id: f1e619c6-2e8e-4ef2-8b02-62764efd418a) with status 201
+2024-01-29 15:24:25,024 - basicLogger - INFO - Returned event 5b1886bf-11cd-41ce-b2e9-152eee418494 response (Id: f9824cd7-4dd0-4f41-a203-399c02e76925) with status 201
+2024-01-29 15:24:25,025 - basicLogger - INFO - Received event 0015f994-940b-4b8a-8543-843c5b6bb2fe request with a trace id of fbf61263-c2c5-4f1e-8b69-914357990d14
+2024-01-29 15:24:25,026 - basicLogger - INFO - Received event 7d35bf81-8213-4fa2-925a-33503c921fa3 request with a trace id of a06fdb38-7008-4c49-8712-60f92b8d3bd4
+2024-01-29 15:24:25,036 - basicLogger - INFO - Returned event efd3891d-47ec-4dfc-bcae-72efc9b87be5 response (Id: 23bf7ce9-d7c4-46c3-a36b-adcbe194e23e) with status 201
+2024-01-29 15:24:25,041 - basicLogger - INFO - Returned event 1f2c122e-24de-458d-8af1-f2dbf77d1080 response (Id: ab69006a-2c9b-4f94-8974-0452eafdee37) with status 500
+2024-01-29 15:24:25,044 - basicLogger - INFO - Received event 13a2854f-6194-43cd-a5c7-34062aac2e25 request with a trace id of 7e7ba5f2-fd91-4cee-af3b-3d612ba6b087
+2024-01-29 15:24:25,048 - basicLogger - INFO - Returned event c208e81b-9c76-4c89-a74b-aaf9b3db09a0 response (Id: 32dac631-6efa-4f9b-b5ae-2114ab6522ec) with status 500
+2024-01-29 15:24:25,049 - basicLogger - INFO - Returned event 0b0f9e46-bd03-452b-834d-b5ecdf92aff9 response (Id: 1f9317f5-bc26-4f98-b8a0-a65e3a5bf9b9) with status 201
+2024-01-29 15:24:25,052 - basicLogger - INFO - Received event 739327aa-ccea-4ee8-8dd8-8617ef300e3f request with a trace id of a62563f4-35dc-4bf7-ba8b-36bc13481b9f
+2024-01-29 15:24:25,063 - basicLogger - INFO - Received event 3036287f-86ee-4a47-ab7d-b5a1e4a21121 request with a trace id of 7a5d4350-91d1-4af6-a816-e10bd3fed06b
+2024-01-29 15:24:25,065 - basicLogger - INFO - Received event 4cb83482-5432-408d-a36e-b803c16d2cb3 request with a trace id of b1694cbe-330d-4f81-b787-956c9e33cc60
+2024-01-29 15:24:25,068 - basicLogger - INFO - Received event 4df43e2c-f743-4499-970f-52b083289d38 request with a trace id of fa6b0934-ecbf-4467-8b16-31ba9d04c4db
+2024-01-29 15:24:25,069 - basicLogger - INFO - Received event 0b7f5978-a54f-442e-be17-34ad7383395a request with a trace id of a2c3866b-3b78-4944-a988-38bc0ccbf399
+2024-01-29 15:24:27,187 - basicLogger - INFO - Returned event f02c6fbc-edae-4b99-a754-de26d98fa2cf response (Id: 9e097d51-11fb-4afd-a8b1-5ee28f46d940) with status 201
+2024-01-29 15:24:27,190 - basicLogger - INFO - Returned event 0015f994-940b-4b8a-8543-843c5b6bb2fe response (Id: fbf61263-c2c5-4f1e-8b69-914357990d14) with status 500
+2024-01-29 15:24:27,190 - basicLogger - INFO - Returned event 81b8da6a-f30c-4e43-bd14-4cc0f135ede2 response (Id: 3a40b038-c1a3-4335-beb2-5663bd2f4946) with status 500
+2024-01-29 15:24:27,198 - basicLogger - INFO - Returned event 7d35bf81-8213-4fa2-925a-33503c921fa3 response (Id: a06fdb38-7008-4c49-8712-60f92b8d3bd4) with status 500
+2024-01-29 15:24:27,205 - basicLogger - INFO - Received event 4763fdc0-16a3-4147-b6a9-4d179f49beb2 request with a trace id of 3c4131ab-a98c-4e39-913d-977120f1eece
+2024-01-29 15:24:27,207 - basicLogger - INFO - Received event 1f7cef76-6e45-4103-a67f-3b0358f13b6f request with a trace id of 1727e555-01c5-4ab6-8b45-0c714ff9813b
+2024-01-29 15:24:27,208 - basicLogger - INFO - Received event 13115b29-0a3a-4e1a-b2ee-1550b0f3688c request with a trace id of 4728e4d4-a222-4b8f-ba8d-ea60ae752a0f
+2024-01-29 15:24:27,215 - basicLogger - INFO - Returned event 739327aa-ccea-4ee8-8dd8-8617ef300e3f response (Id: a62563f4-35dc-4bf7-ba8b-36bc13481b9f) with status 500
+2024-01-29 15:24:27,217 - basicLogger - INFO - Returned event 13a2854f-6194-43cd-a5c7-34062aac2e25 response (Id: 7e7ba5f2-fd91-4cee-af3b-3d612ba6b087) with status 500
+2024-01-29 15:24:27,218 - basicLogger - INFO - Returned event 0b7f5978-a54f-442e-be17-34ad7383395a response (Id: a2c3866b-3b78-4944-a988-38bc0ccbf399) with status 500
+2024-01-29 15:24:27,219 - basicLogger - INFO - Returned event 4df43e2c-f743-4499-970f-52b083289d38 response (Id: fa6b0934-ecbf-4467-8b16-31ba9d04c4db) with status 201
+2024-01-29 15:24:27,220 - basicLogger - INFO - Received event 5692f4cb-d0b6-4a45-8e2c-399e213fff49 request with a trace id of ba8a4df5-a278-4d82-a671-17e04542cbee
+2024-01-29 15:24:27,223 - basicLogger - INFO - Returned event 4cb83482-5432-408d-a36e-b803c16d2cb3 response (Id: b1694cbe-330d-4f81-b787-956c9e33cc60) with status 201
+2024-01-29 15:24:27,225 - basicLogger - INFO - Returned event 3036287f-86ee-4a47-ab7d-b5a1e4a21121 response (Id: 7a5d4350-91d1-4af6-a816-e10bd3fed06b) with status 500
+2024-01-29 15:24:27,245 - basicLogger - INFO - Received event f33fb48a-c8ac-4d26-bb55-789ff942df5a request with a trace id of caec0287-d08c-4ba3-9307-37809b35716e
+2024-01-29 15:24:27,250 - basicLogger - INFO - Received event 6b415434-2a5f-42ab-aca0-f4ac67269ff0 request with a trace id of 27b9e1f7-dcf9-4628-8f8b-f149c7583098
+2024-01-29 15:24:27,254 - basicLogger - INFO - Received event 0e872544-b23b-4c3f-8506-aedd96a35598 request with a trace id of b42e22b3-4636-40cd-9639-a3526a679356
+2024-01-29 15:24:27,255 - basicLogger - INFO - Received event 62d44608-e298-4e18-9ef1-c0e3e47c9776 request with a trace id of 7c0334cd-cf22-4dea-9405-725642d725ac
+2024-01-29 15:24:27,256 - basicLogger - INFO - Received event 98e64ad4-2d28-43d0-97c3-bc1941bd5880 request with a trace id of 2984fe0a-95d6-43ef-9b79-7fbd932d1eab
+2024-01-29 15:24:27,257 - basicLogger - INFO - Received event 432e11a2-4ac4-448d-ad87-68ffb0258dc0 request with a trace id of 4053dfb0-6bd1-4733-aec3-b8e5e29f0214
+2024-01-29 15:24:29,256 - basicLogger - INFO - Returned event 4763fdc0-16a3-4147-b6a9-4d179f49beb2 response (Id: 3c4131ab-a98c-4e39-913d-977120f1eece) with status 500
+2024-01-29 15:24:29,263 - basicLogger - INFO - Received event eff179ed-4d9b-4798-b69d-2418fed7ddf7 request with a trace id of 1d5d21f4-89ce-4dd0-b822-26e60987804e
+2024-01-29 15:24:29,276 - basicLogger - INFO - Returned event 1f7cef76-6e45-4103-a67f-3b0358f13b6f response (Id: 1727e555-01c5-4ab6-8b45-0c714ff9813b) with status 201
+2024-01-29 15:24:29,284 - basicLogger - INFO - Returned event 13115b29-0a3a-4e1a-b2ee-1550b0f3688c response (Id: 4728e4d4-a222-4b8f-ba8d-ea60ae752a0f) with status 201
+2024-01-29 15:24:29,284 - basicLogger - INFO - Received event d3930f65-1f69-4646-85c4-9add3c081281 request with a trace id of 06c1cd32-4ba7-4845-825f-5f8adcbef3de
+2024-01-29 15:24:29,288 - basicLogger - INFO - Returned event 5692f4cb-d0b6-4a45-8e2c-399e213fff49 response (Id: ba8a4df5-a278-4d82-a671-17e04542cbee) with status 201
+2024-01-29 15:24:29,303 - basicLogger - INFO - Received event 54abc5c5-e2fc-4027-afe4-892d52ed4eda request with a trace id of 0b1b2e83-4bc3-4a52-b81f-50689c0ebe88
+2024-01-29 15:24:29,303 - basicLogger - INFO - Received event 8828dc05-f35f-4fb4-b414-5377beaac6a6 request with a trace id of d74c2c70-94bf-46d2-8c12-705912fbf3ac
+2024-01-29 15:24:29,378 - basicLogger - INFO - Returned event 6b415434-2a5f-42ab-aca0-f4ac67269ff0 response (Id: 27b9e1f7-dcf9-4628-8f8b-f149c7583098) with status 201
+2024-01-29 15:24:29,378 - basicLogger - INFO - Returned event 432e11a2-4ac4-448d-ad87-68ffb0258dc0 response (Id: 4053dfb0-6bd1-4733-aec3-b8e5e29f0214) with status 500
+2024-01-29 15:24:29,380 - basicLogger - INFO - Returned event 62d44608-e298-4e18-9ef1-c0e3e47c9776 response (Id: 7c0334cd-cf22-4dea-9405-725642d725ac) with status 500
+2024-01-29 15:24:29,381 - basicLogger - INFO - Returned event 98e64ad4-2d28-43d0-97c3-bc1941bd5880 response (Id: 2984fe0a-95d6-43ef-9b79-7fbd932d1eab) with status 201
+2024-01-29 15:24:29,385 - basicLogger - INFO - Returned event 0e872544-b23b-4c3f-8506-aedd96a35598 response (Id: b42e22b3-4636-40cd-9639-a3526a679356) with status 201
+2024-01-29 15:24:29,391 - basicLogger - INFO - Returned event f33fb48a-c8ac-4d26-bb55-789ff942df5a response (Id: caec0287-d08c-4ba3-9307-37809b35716e) with status 201
+2024-01-29 15:24:29,402 - basicLogger - INFO - Received event 3248fe41-68eb-4ef2-aa0c-9b7900834dd9 request with a trace id of 37098eb9-7f98-40b3-84f5-db3fdbbec560
+2024-01-29 15:24:29,403 - basicLogger - INFO - Received event 3f335a91-1e2d-4021-8795-fa6850ace340 request with a trace id of 159e88e7-116b-49e9-9a50-5b204f792995
+2024-01-29 15:24:29,404 - basicLogger - INFO - Received event 825b9990-1920-4633-a356-35e5f03e49d6 request with a trace id of 6d5c5e3f-71c1-4256-91e2-265b6a833d06
+2024-01-29 15:24:29,405 - basicLogger - INFO - Received event fcd6c531-8d78-4a57-9071-5b9b15e6ed5a request with a trace id of 1c8238a1-0078-49dd-b01e-689aa82a7899
+2024-01-29 15:24:29,406 - basicLogger - INFO - Received event e4b11436-85e2-42af-87ea-7e10b31afa89 request with a trace id of 855005d6-210a-405a-8e03-a5175293d2c3
+2024-01-29 15:24:29,408 - basicLogger - INFO - Received event 0fecdd4e-abb7-4cb9-a334-54ead0a088de request with a trace id of 67fdd14c-4295-4154-ba09-589fd8b13eb2
+2024-01-29 15:24:31,324 - basicLogger - INFO - Returned event eff179ed-4d9b-4798-b69d-2418fed7ddf7 response (Id: 1d5d21f4-89ce-4dd0-b822-26e60987804e) with status 201
+2024-01-29 15:24:31,332 - basicLogger - INFO - Returned event d3930f65-1f69-4646-85c4-9add3c081281 response (Id: 06c1cd32-4ba7-4845-825f-5f8adcbef3de) with status 500
+2024-01-29 15:24:31,338 - basicLogger - INFO - Received event 0cb57310-8148-454a-8898-f1b33fa73609 request with a trace id of 4f235051-4d5e-46da-ae14-729475b7c1a5
+2024-01-29 15:24:31,348 - basicLogger - INFO - Received event 76b318a1-8884-4f51-946f-a363712831c7 request with a trace id of 6b8ab742-ef8e-4506-a45c-b386d1bc69fe
+2024-01-29 15:24:31,359 - basicLogger - INFO - Returned event 8828dc05-f35f-4fb4-b414-5377beaac6a6 response (Id: d74c2c70-94bf-46d2-8c12-705912fbf3ac) with status 500
+2024-01-29 15:24:31,360 - basicLogger - INFO - Returned event 54abc5c5-e2fc-4027-afe4-892d52ed4eda response (Id: 0b1b2e83-4bc3-4a52-b81f-50689c0ebe88) with status 500
+2024-01-29 15:24:31,375 - basicLogger - INFO - Received event 69ea087c-be3c-4618-9bab-df2150b02608 request with a trace id of d714b686-2b21-4af7-814a-96443584f47e
+2024-01-29 15:24:31,376 - basicLogger - INFO - Received event 2c8e8c23-946f-4200-b6b7-6e2c8eaa9846 request with a trace id of a92cb95a-86d2-4ec3-b14d-edafdbb8d268
+2024-01-29 15:24:31,501 - basicLogger - INFO - Returned event 3248fe41-68eb-4ef2-aa0c-9b7900834dd9 response (Id: 37098eb9-7f98-40b3-84f5-db3fdbbec560) with status 500
+2024-01-29 15:24:31,510 - basicLogger - INFO - Returned event 3f335a91-1e2d-4021-8795-fa6850ace340 response (Id: 159e88e7-116b-49e9-9a50-5b204f792995) with status 201
+2024-01-29 15:24:31,521 - basicLogger - INFO - Returned event fcd6c531-8d78-4a57-9071-5b9b15e6ed5a response (Id: 1c8238a1-0078-49dd-b01e-689aa82a7899) with status 500
+2024-01-29 15:24:31,527 - basicLogger - INFO - Returned event 825b9990-1920-4633-a356-35e5f03e49d6 response (Id: 6d5c5e3f-71c1-4256-91e2-265b6a833d06) with status 201
+2024-01-29 15:24:31,528 - basicLogger - INFO - Returned event e4b11436-85e2-42af-87ea-7e10b31afa89 response (Id: 855005d6-210a-405a-8e03-a5175293d2c3) with status 500
+2024-01-29 15:24:31,530 - basicLogger - INFO - Returned event 0fecdd4e-abb7-4cb9-a334-54ead0a088de response (Id: 67fdd14c-4295-4154-ba09-589fd8b13eb2) with status 500
+2024-01-29 15:24:31,554 - basicLogger - INFO - Received event eb3aeda0-7043-4c31-943a-121ee27e29b9 request with a trace id of b446d1cc-57d0-45d3-b44c-f1d6411bfb11
+2024-01-29 15:24:31,554 - basicLogger - INFO - Received event 0f1e6943-fb42-4262-a66b-6b5a44bb93ca request with a trace id of 3702cad7-2820-4ff0-8157-124776cd1812
+2024-01-29 15:24:31,555 - basicLogger - INFO - Received event ea1c0d5f-eae6-4114-b11a-9a030f9192b6 request with a trace id of 25b7317b-ef3b-4aa2-97eb-45777c46fb8f
+2024-01-29 15:24:31,556 - basicLogger - INFO - Received event ca81a924-ca45-4f5f-a892-8b8efc02b107 request with a trace id of c72d5215-4471-45c9-9e3d-e5fa31b00938
+2024-01-29 15:24:31,557 - basicLogger - INFO - Received event 5d3ed561-b498-48ad-aabe-c7bfd4061476 request with a trace id of 7ebe9da1-8dca-4f9e-9416-6fda48dd6a3a
+2024-01-29 15:24:31,558 - basicLogger - INFO - Received event 9acc415d-e3d7-4bea-b55c-9848a7b54de2 request with a trace id of b3e60023-5ca9-41ea-bd9a-9d5cd7967be5
+2024-01-29 15:24:33,400 - basicLogger - INFO - Returned event 0cb57310-8148-454a-8898-f1b33fa73609 response (Id: 4f235051-4d5e-46da-ae14-729475b7c1a5) with status 500
+2024-01-29 15:24:33,406 - basicLogger - INFO - Received event 215add30-3642-4a79-9770-c623f610e50e request with a trace id of 225ff95f-b782-488b-b682-014fe1ac913f
+2024-01-29 15:24:33,417 - basicLogger - INFO - Returned event 76b318a1-8884-4f51-946f-a363712831c7 response (Id: 6b8ab742-ef8e-4506-a45c-b386d1bc69fe) with status 201
+2024-01-29 15:24:33,425 - basicLogger - INFO - Received event d502f893-f12e-4011-9586-f9c53aaa854d request with a trace id of 0638c562-86d9-4ad1-bcb9-248cb9418e5b
+2024-01-29 15:24:33,440 - basicLogger - INFO - Returned event 2c8e8c23-946f-4200-b6b7-6e2c8eaa9846 response (Id: a92cb95a-86d2-4ec3-b14d-edafdbb8d268) with status 201
+2024-01-29 15:24:33,448 - basicLogger - INFO - Received event 4106b851-5f69-43aa-955d-1e59713d95e3 request with a trace id of 5fa32ffd-b442-4101-8bf7-d89d04376b06
+2024-01-29 15:24:33,448 - basicLogger - INFO - Returned event 69ea087c-be3c-4618-9bab-df2150b02608 response (Id: d714b686-2b21-4af7-814a-96443584f47e) with status 201
+2024-01-29 15:24:33,457 - basicLogger - INFO - Received event 052f6af1-1911-4a28-ac2d-3263bcd95b71 request with a trace id of fbaefa74-27e2-4fc8-a795-46eec4cab52f
+2024-01-29 15:24:33,625 - basicLogger - INFO - Returned event 5d3ed561-b498-48ad-aabe-c7bfd4061476 response (Id: 7ebe9da1-8dca-4f9e-9416-6fda48dd6a3a) with status 500
+2024-01-29 15:24:33,632 - basicLogger - INFO - Received event 3b877f1c-b4c2-411e-a458-34ccc25b205e request with a trace id of 5e8edc3e-466f-437c-930c-8809923d29ea
+2024-01-29 15:24:33,646 - basicLogger - INFO - Returned event ea1c0d5f-eae6-4114-b11a-9a030f9192b6 response (Id: 25b7317b-ef3b-4aa2-97eb-45777c46fb8f) with status 201
+2024-01-29 15:24:33,648 - basicLogger - INFO - Returned event eb3aeda0-7043-4c31-943a-121ee27e29b9 response (Id: b446d1cc-57d0-45d3-b44c-f1d6411bfb11) with status 201
+2024-01-29 15:24:33,655 - basicLogger - INFO - Returned event 0f1e6943-fb42-4262-a66b-6b5a44bb93ca response (Id: 3702cad7-2820-4ff0-8157-124776cd1812) with status 201
+2024-01-29 15:24:33,661 - basicLogger - INFO - Received event 50202b0b-2c44-493a-9098-fc7482a02b36 request with a trace id of 25cfd3e3-aadb-459d-8b6b-3ea69f4a402f
+2024-01-29 15:24:33,662 - basicLogger - INFO - Returned event 9acc415d-e3d7-4bea-b55c-9848a7b54de2 response (Id: b3e60023-5ca9-41ea-bd9a-9d5cd7967be5) with status 201
+2024-01-29 15:24:33,662 - basicLogger - INFO - Returned event ca81a924-ca45-4f5f-a892-8b8efc02b107 response (Id: c72d5215-4471-45c9-9e3d-e5fa31b00938) with status 500
+2024-01-29 15:24:33,667 - basicLogger - INFO - Received event 496859d1-d054-4792-9186-514a1204a7f1 request with a trace id of 21e784ef-833f-451b-b8ab-da5a7b94a4d4
+2024-01-29 15:24:33,679 - basicLogger - INFO - Received event 5e496220-072a-4f35-af42-aa58a574554e request with a trace id of 48041c59-7779-480b-9238-7b1406947cc4
+2024-01-29 15:24:33,679 - basicLogger - INFO - Received event fd947e3d-5dbe-44bc-884e-1a82cbf07710 request with a trace id of 6bfca284-a9ec-484e-8580-50fb9d211d76
+2024-01-29 15:24:33,680 - basicLogger - INFO - Received event e3a49d20-2bef-4f4e-9273-b14cce0a1585 request with a trace id of dba5b1c1-da39-4ff8-866d-1fcb0899307e
+2024-01-29 15:24:35,469 - basicLogger - INFO - Returned event d502f893-f12e-4011-9586-f9c53aaa854d response (Id: 0638c562-86d9-4ad1-bcb9-248cb9418e5b) with status 500
+2024-01-29 15:24:35,475 - basicLogger - INFO - Received event 5f3f314d-adca-40c2-b132-c0e29f579b46 request with a trace id of 295e3e11-fe9b-45a0-987c-26e9d1b4695f
+2024-01-29 15:24:35,485 - basicLogger - INFO - Returned event 215add30-3642-4a79-9770-c623f610e50e response (Id: 225ff95f-b782-488b-b682-014fe1ac913f) with status 201
+2024-01-29 15:24:35,493 - basicLogger - INFO - Received event 5567152e-b2c8-402e-9801-7dacceafca23 request with a trace id of b9fdddff-f143-41f6-889f-9353301ceb3c
+2024-01-29 15:24:35,511 - basicLogger - INFO - Returned event 052f6af1-1911-4a28-ac2d-3263bcd95b71 response (Id: fbaefa74-27e2-4fc8-a795-46eec4cab52f) with status 500
+2024-01-29 15:24:35,512 - basicLogger - INFO - Returned event 4106b851-5f69-43aa-955d-1e59713d95e3 response (Id: 5fa32ffd-b442-4101-8bf7-d89d04376b06) with status 500
+2024-01-29 15:24:35,519 - basicLogger - INFO - Received event 01b363ab-2be6-43c5-8c3c-f6dd420cee9d request with a trace id of f6d14d25-c6ed-46f4-a1bd-47e1488f627e
+2024-01-29 15:24:35,519 - basicLogger - INFO - Received event 6c5bfd5e-d1b2-44be-9f89-be8d73a1ede3 request with a trace id of 5096e4ce-8863-4195-8db2-3e5b274d4fe1
+2024-01-29 15:24:35,702 - basicLogger - INFO - Returned event 3b877f1c-b4c2-411e-a458-34ccc25b205e response (Id: 5e8edc3e-466f-437c-930c-8809923d29ea) with status 201
+2024-01-29 15:24:35,710 - basicLogger - INFO - Received event 0a339c1f-d920-42f1-96f6-cb129f68b446 request with a trace id of 6d4cd8af-64f1-4232-930b-89e7eed2fae6
+2024-01-29 15:24:35,724 - basicLogger - INFO - Returned event 496859d1-d054-4792-9186-514a1204a7f1 response (Id: 21e784ef-833f-451b-b8ab-da5a7b94a4d4) with status 500
+2024-01-29 15:24:35,726 - basicLogger - INFO - Returned event 50202b0b-2c44-493a-9098-fc7482a02b36 response (Id: 25cfd3e3-aadb-459d-8b6b-3ea69f4a402f) with status 500
+2024-01-29 15:24:35,735 - basicLogger - INFO - Received event a67ad75c-fa01-4896-b097-c752e095c644 request with a trace id of f80930d1-d99a-4568-a38a-cf44201e77a8
+2024-01-29 15:24:35,735 - basicLogger - INFO - Received event f1e92a87-4f08-43a0-ae11-6b5be051c3fe request with a trace id of 89cdf4b7-3647-48b3-904f-e3c6514efe39
+2024-01-29 15:24:35,747 - basicLogger - INFO - Returned event 5e496220-072a-4f35-af42-aa58a574554e response (Id: 48041c59-7779-480b-9238-7b1406947cc4) with status 500
+2024-01-29 15:24:35,756 - basicLogger - INFO - Received event 76dd15f9-6257-4568-9533-f91373d7b855 request with a trace id of 124863d5-bbce-4a31-a16b-82e1f7e12876
+2024-01-29 15:24:35,760 - basicLogger - INFO - Returned event fd947e3d-5dbe-44bc-884e-1a82cbf07710 response (Id: 6bfca284-a9ec-484e-8580-50fb9d211d76) with status 500
+2024-01-29 15:24:35,767 - basicLogger - INFO - Received event adfcee08-4f62-4f39-9adc-c0fd1d3a6a91 request with a trace id of fe9627f3-77e2-4b54-830b-422280d2bba3
+2024-01-29 15:24:35,771 - basicLogger - INFO - Returned event e3a49d20-2bef-4f4e-9273-b14cce0a1585 response (Id: dba5b1c1-da39-4ff8-866d-1fcb0899307e) with status 201
+2024-01-29 15:24:35,781 - basicLogger - INFO - Received event b81966a0-dad7-41c0-9005-16ce9ed055bb request with a trace id of 2c845dfb-c2fa-4a0e-b132-d866431e00c2
+2024-01-29 15:24:37,534 - basicLogger - INFO - Returned event 5f3f314d-adca-40c2-b132-c0e29f579b46 response (Id: 295e3e11-fe9b-45a0-987c-26e9d1b4695f) with status 201
+2024-01-29 15:24:37,540 - basicLogger - INFO - Received event abc74daa-749d-412a-a894-092177edd5ca request with a trace id of c8714596-c455-43f0-873c-525890c34bab
+2024-01-29 15:24:37,547 - basicLogger - INFO - Returned event 5567152e-b2c8-402e-9801-7dacceafca23 response (Id: b9fdddff-f143-41f6-889f-9353301ceb3c) with status 500
+2024-01-29 15:24:37,555 - basicLogger - INFO - Received event 938a3b66-86d1-4b7f-964e-a4c2562e4ec9 request with a trace id of cd4e78db-fbbc-4991-b916-7752d0e2ea77
+2024-01-29 15:24:37,582 - basicLogger - INFO - Returned event 01b363ab-2be6-43c5-8c3c-f6dd420cee9d response (Id: f6d14d25-c6ed-46f4-a1bd-47e1488f627e) with status 201
+2024-01-29 15:24:37,583 - basicLogger - INFO - Returned event 6c5bfd5e-d1b2-44be-9f89-be8d73a1ede3 response (Id: 5096e4ce-8863-4195-8db2-3e5b274d4fe1) with status 201
+2024-01-29 15:24:37,673 - basicLogger - INFO - Received event d5666806-627e-4265-a4a9-5f9ef2ace3a5 request with a trace id of 951a78da-1d89-4c4d-8564-bbb8bcf36899
+2024-01-29 15:24:37,674 - basicLogger - INFO - Received event 4e09a30c-dfb8-4045-93eb-65b44f8f9ecb request with a trace id of e47c9e97-951c-4cbe-881f-3fd6b2f74f48
+2024-01-29 15:24:37,738 - basicLogger - INFO - Returned event 0a339c1f-d920-42f1-96f6-cb129f68b446 response (Id: 6d4cd8af-64f1-4232-930b-89e7eed2fae6) with status 500
+2024-01-29 15:24:37,745 - basicLogger - INFO - Received event cc71dff9-bba4-4b5f-997b-4b1da0751631 request with a trace id of 15b83b3d-e9e5-444c-b3dd-060e3020e47f
+2024-01-29 15:24:37,790 - basicLogger - INFO - Returned event a67ad75c-fa01-4896-b097-c752e095c644 response (Id: f80930d1-d99a-4568-a38a-cf44201e77a8) with status 201
+2024-01-29 15:24:37,798 - basicLogger - INFO - Received event 4fc535c0-a475-4da9-8605-0dc7c35214c8 request with a trace id of 9cfcbfc0-c78c-40e3-9d69-22d45ea1972c
+2024-01-29 15:24:37,815 - basicLogger - INFO - Returned event adfcee08-4f62-4f39-9adc-c0fd1d3a6a91 response (Id: fe9627f3-77e2-4b54-830b-422280d2bba3) with status 201
+2024-01-29 15:24:37,819 - basicLogger - INFO - Returned event f1e92a87-4f08-43a0-ae11-6b5be051c3fe response (Id: 89cdf4b7-3647-48b3-904f-e3c6514efe39) with status 201
+2024-01-29 15:24:37,826 - basicLogger - INFO - Returned event b81966a0-dad7-41c0-9005-16ce9ed055bb response (Id: 2c845dfb-c2fa-4a0e-b132-d866431e00c2) with status 500
+2024-01-29 15:24:37,827 - basicLogger - INFO - Returned event 76dd15f9-6257-4568-9533-f91373d7b855 response (Id: 124863d5-bbce-4a31-a16b-82e1f7e12876) with status 201
+2024-01-29 15:24:37,829 - basicLogger - INFO - Received event 0f21b9a1-b093-4a50-ab3d-d468ca6c3a36 request with a trace id of 50fdc4c3-2050-4ba7-bd97-3139b1ee670d
+2024-01-29 15:24:37,840 - basicLogger - INFO - Received event 25d86c8f-6ace-4dfd-a559-f4d684b659ff request with a trace id of 751e5f2c-7d90-4bef-9b65-63beaf25e0ee
+2024-01-29 15:24:37,843 - basicLogger - INFO - Received event f0701c6d-db99-49d2-acac-97713f6efeb3 request with a trace id of edfdaa8a-332b-4d6c-97a2-05fc609d5ee9
+2024-01-29 15:24:37,843 - basicLogger - INFO - Received event 2db2c938-1d35-46f6-b99c-d4906eae2cbf request with a trace id of 23c0ce39-6f36-4504-923a-c62424e2bdfd
+2024-01-29 15:24:39,595 - basicLogger - INFO - Returned event abc74daa-749d-412a-a894-092177edd5ca response (Id: c8714596-c455-43f0-873c-525890c34bab) with status 500
+2024-01-29 15:24:39,602 - basicLogger - INFO - Received event 8927f757-883f-4416-aea6-950894624ddb request with a trace id of 21eb9c20-a7e7-4785-8f06-204eb62e5cb0
+2024-01-29 15:24:39,651 - basicLogger - INFO - Returned event 938a3b66-86d1-4b7f-964e-a4c2562e4ec9 response (Id: cd4e78db-fbbc-4991-b916-7752d0e2ea77) with status 201
+2024-01-29 15:24:39,713 - basicLogger - INFO - Received event 9547ef4b-7915-4e6d-9737-c44fc22ba0ad request with a trace id of 4b088392-0f70-4a29-bc36-a839d8518619
+2024-01-29 15:24:39,743 - basicLogger - INFO - Returned event d5666806-627e-4265-a4a9-5f9ef2ace3a5 response (Id: 951a78da-1d89-4c4d-8564-bbb8bcf36899) with status 500
+2024-01-29 15:24:39,743 - basicLogger - INFO - Returned event 4e09a30c-dfb8-4045-93eb-65b44f8f9ecb response (Id: e47c9e97-951c-4cbe-881f-3fd6b2f74f48) with status 500
+2024-01-29 15:24:39,752 - basicLogger - INFO - Received event 24fe0421-41be-4aef-8c5d-ef3305a905bf request with a trace id of 90c8ea02-8ef1-4b4e-a866-17dd1653f0e1
+2024-01-29 15:24:39,756 - basicLogger - INFO - Received event fba5f910-82cb-4eb0-9c9a-ab8e756905de request with a trace id of d6cc867d-d349-41a5-b984-14a1cd3c7241
+2024-01-29 15:24:41,807 - basicLogger - INFO - Returned event 4fc535c0-a475-4da9-8605-0dc7c35214c8 response (Id: 9cfcbfc0-c78c-40e3-9d69-22d45ea1972c) with status 500
+2024-01-29 15:24:41,809 - basicLogger - INFO - Returned event 0f21b9a1-b093-4a50-ab3d-d468ca6c3a36 response (Id: 50fdc4c3-2050-4ba7-bd97-3139b1ee670d) with status 500
+2024-01-29 15:24:41,818 - basicLogger - INFO - Returned event 25d86c8f-6ace-4dfd-a559-f4d684b659ff response (Id: 751e5f2c-7d90-4bef-9b65-63beaf25e0ee) with status 500
+2024-01-29 15:24:41,819 - basicLogger - INFO - Received event 1b7dfc56-4047-43d3-91ef-5af365dd6773 request with a trace id of 0827f9e2-112b-4cb0-8cbc-b6c0f6d6e74f
+2024-01-29 15:24:41,819 - basicLogger - INFO - Returned event 2db2c938-1d35-46f6-b99c-d4906eae2cbf response (Id: 23c0ce39-6f36-4504-923a-c62424e2bdfd) with status 500
+2024-01-29 15:24:41,819 - basicLogger - INFO - Received event e3bab51b-7b3f-4429-99db-e98f40f173e0 request with a trace id of 8ef4100c-e9c8-436f-9196-c99bd2a06e91
+2024-01-29 15:24:41,822 - basicLogger - INFO - Returned event 9547ef4b-7915-4e6d-9737-c44fc22ba0ad response (Id: 4b088392-0f70-4a29-bc36-a839d8518619) with status 500
+2024-01-29 15:24:41,830 - basicLogger - INFO - Returned event cc71dff9-bba4-4b5f-997b-4b1da0751631 response (Id: 15b83b3d-e9e5-444c-b3dd-060e3020e47f) with status 201
+2024-01-29 15:24:41,836 - basicLogger - INFO - Returned event f0701c6d-db99-49d2-acac-97713f6efeb3 response (Id: edfdaa8a-332b-4d6c-97a2-05fc609d5ee9) with status 201
+2024-01-29 15:24:41,837 - basicLogger - INFO - Returned event 8927f757-883f-4416-aea6-950894624ddb response (Id: 21eb9c20-a7e7-4785-8f06-204eb62e5cb0) with status 201
+2024-01-29 15:24:41,839 - basicLogger - INFO - Received event 526a99ee-82a3-4991-bb5c-5b7b62e9e9c2 request with a trace id of 39002411-0e05-4a60-86fb-ca437e0b5503
+2024-01-29 15:24:41,842 - basicLogger - INFO - Returned event fba5f910-82cb-4eb0-9c9a-ab8e756905de response (Id: d6cc867d-d349-41a5-b984-14a1cd3c7241) with status 201
+2024-01-29 15:24:41,848 - basicLogger - INFO - Received event 4aad3484-04f9-495a-a7f2-62e3e569d461 request with a trace id of 19d77aeb-1226-40ad-97ab-4a853106d6bf
+2024-01-29 15:24:41,850 - basicLogger - INFO - Received event 1640ae41-9d6e-4ba0-a23f-6ca469dbc841 request with a trace id of b086e43a-eb7b-4c83-bf7f-baa19979ebb7
+2024-01-29 15:24:41,854 - basicLogger - INFO - Returned event 24fe0421-41be-4aef-8c5d-ef3305a905bf response (Id: 90c8ea02-8ef1-4b4e-a866-17dd1653f0e1) with status 201
+2024-01-29 15:24:41,860 - basicLogger - INFO - Received event 6d20991f-1c98-4b9b-bc1e-f0d9cd2de70a request with a trace id of 715665f5-d256-4803-a521-6d5ccaa04da4
+2024-01-29 15:24:41,862 - basicLogger - INFO - Received event 2d894693-2d0f-477f-a6de-12913d1df7c2 request with a trace id of 27757fe8-ce7b-4dc3-84ea-b0df6e893b2d
+2024-01-29 15:24:41,866 - basicLogger - INFO - Received event 30f0e9df-0ac0-403f-a73a-6d5c68e88e91 request with a trace id of 202eb424-87aa-4596-9e9f-b4ac1cc4d56f
+2024-01-29 15:24:41,868 - basicLogger - INFO - Received event eccfe12e-0e8a-4be0-b232-415c3141c847 request with a trace id of 2bf46589-93e0-4f44-809c-29dbd9550d08
+2024-01-29 15:24:41,884 - basicLogger - INFO - Received event 24d830dc-f7df-4d3f-911a-c2382e3d72dd request with a trace id of 20b37252-af5e-4bb8-89d3-317813468f52
+2024-01-29 15:24:43,902 - basicLogger - INFO - Returned event e3bab51b-7b3f-4429-99db-e98f40f173e0 response (Id: 8ef4100c-e9c8-436f-9196-c99bd2a06e91) with status 201
+2024-01-29 15:24:43,904 - basicLogger - INFO - Returned event 1b7dfc56-4047-43d3-91ef-5af365dd6773 response (Id: 0827f9e2-112b-4cb0-8cbc-b6c0f6d6e74f) with status 201
+2024-01-29 15:24:43,913 - basicLogger - INFO - Received event 69754cc6-7cb6-44b6-afd9-68276e788885 request with a trace id of b5341710-4855-498a-81b5-6dfa421c92bf
+2024-01-29 15:24:43,914 - basicLogger - INFO - Received event f4e860fb-672c-4ba3-89eb-794adb6765fd request with a trace id of 5edd71db-66fc-402c-b865-9e0b05b0b4d3
+2024-01-29 15:24:43,929 - basicLogger - INFO - Returned event 4aad3484-04f9-495a-a7f2-62e3e569d461 response (Id: 19d77aeb-1226-40ad-97ab-4a853106d6bf) with status 201
+2024-01-29 15:24:43,930 - basicLogger - INFO - Returned event 526a99ee-82a3-4991-bb5c-5b7b62e9e9c2 response (Id: 39002411-0e05-4a60-86fb-ca437e0b5503) with status 201
+2024-01-29 15:24:43,939 - basicLogger - INFO - Received event f951c3ff-f1a8-4b2e-a199-da30f381a5a5 request with a trace id of 8b01d4d8-39ba-4c21-b0a9-cfa705216ff4
+2024-01-29 15:24:43,940 - basicLogger - INFO - Received event 21100f02-7a04-4e22-aeeb-2bd805d0c7e4 request with a trace id of a15b07ec-b72c-4fe7-bf17-e228a0d043fc
+2024-01-29 15:24:43,949 - basicLogger - INFO - Returned event 30f0e9df-0ac0-403f-a73a-6d5c68e88e91 response (Id: 202eb424-87aa-4596-9e9f-b4ac1cc4d56f) with status 500
+2024-01-29 15:24:43,950 - basicLogger - INFO - Returned event 2d894693-2d0f-477f-a6de-12913d1df7c2 response (Id: 27757fe8-ce7b-4dc3-84ea-b0df6e893b2d) with status 500
+2024-01-29 15:24:43,953 - basicLogger - INFO - Returned event 1640ae41-9d6e-4ba0-a23f-6ca469dbc841 response (Id: b086e43a-eb7b-4c83-bf7f-baa19979ebb7) with status 201
+2024-01-29 15:24:43,953 - basicLogger - INFO - Returned event 6d20991f-1c98-4b9b-bc1e-f0d9cd2de70a response (Id: 715665f5-d256-4803-a521-6d5ccaa04da4) with status 500
+2024-01-29 15:24:43,962 - basicLogger - INFO - Received event ad015e48-d37f-4df2-8498-8f0ac6f59238 request with a trace id of 5ad565f1-5069-43b0-bf8d-8a9b9a78d7d4
+2024-01-29 15:24:43,965 - basicLogger - INFO - Received event 415cf06b-ed06-4907-91e3-4ef219387d0b request with a trace id of ef389eea-18f4-4da2-b8f7-a970b3903910
+2024-01-29 15:24:43,968 - basicLogger - INFO - Received event f92518b7-ddd2-4c86-93e2-a8020d09e953 request with a trace id of a433315f-5898-4402-bf79-d669f1e2abe7
+2024-01-29 15:24:43,968 - basicLogger - INFO - Received event 4c68adf3-d2dd-4541-acca-4a996bb24aba request with a trace id of 23391ccc-7b6f-485b-aae8-634bf2fd90c2
+2024-01-29 15:25:13,961 - basicLogger - INFO - Returned event eccfe12e-0e8a-4be0-b232-415c3141c847 response (Id: 2bf46589-93e0-4f44-809c-29dbd9550d08) with status 500
+2024-01-29 15:25:13,962 - basicLogger - INFO - Returned event 24d830dc-f7df-4d3f-911a-c2382e3d72dd response (Id: 20b37252-af5e-4bb8-89d3-317813468f52) with status 500
+2024-01-29 15:25:15,980 - basicLogger - INFO - Returned event 69754cc6-7cb6-44b6-afd9-68276e788885 response (Id: b5341710-4855-498a-81b5-6dfa421c92bf) with status 500
+2024-01-29 15:25:15,981 - basicLogger - INFO - Returned event f4e860fb-672c-4ba3-89eb-794adb6765fd response (Id: 5edd71db-66fc-402c-b865-9e0b05b0b4d3) with status 500
+2024-01-29 15:25:15,996 - basicLogger - INFO - Returned event f951c3ff-f1a8-4b2e-a199-da30f381a5a5 response (Id: 8b01d4d8-39ba-4c21-b0a9-cfa705216ff4) with status 500
+2024-01-29 15:25:15,997 - basicLogger - INFO - Returned event 21100f02-7a04-4e22-aeeb-2bd805d0c7e4 response (Id: a15b07ec-b72c-4fe7-bf17-e228a0d043fc) with status 500
+2024-01-29 15:25:16,027 - basicLogger - INFO - Returned event f92518b7-ddd2-4c86-93e2-a8020d09e953 response (Id: a433315f-5898-4402-bf79-d669f1e2abe7) with status 500
+2024-01-29 15:25:16,028 - basicLogger - INFO - Returned event ad015e48-d37f-4df2-8498-8f0ac6f59238 response (Id: 5ad565f1-5069-43b0-bf8d-8a9b9a78d7d4) with status 500
+2024-01-29 15:25:16,043 - basicLogger - INFO - Returned event 4c68adf3-d2dd-4541-acca-4a996bb24aba response (Id: 23391ccc-7b6f-485b-aae8-634bf2fd90c2) with status 500
+2024-01-29 15:25:16,043 - basicLogger - INFO - Returned event 415cf06b-ed06-4907-91e3-4ef219387d0b response (Id: ef389eea-18f4-4da2-b8f7-a970b3903910) with status 500

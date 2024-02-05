@@ -5,7 +5,7 @@ import datetime
 class WorkoutLog(Base):
     """ WorkoutLog table """
 
-    __tablename__ = "workoutlog"
+    __tablename__ = "workoutLog"
 
     id = Column(Integer, primary_key=True)
     workoutId = Column(String(250), nullable=False)

@@ -34,7 +34,7 @@ def create_workout(body):
     session.commit()
     session.close()
     
-    logger.info("Stored event %s request with a trace id of %s", body['eventId'], body['traceId']) 
+    logger.debug("Stored event %s request with a trace id of %s", body['eventId'], body['traceId']) 
     return NoContent, 201
 
 
@@ -52,7 +52,7 @@ def log_workout(body):
     session.commit()
     session.close()
 
-    logger.info("Stored event %s request with a trace id of %s", body['eventId'], body['traceId']) 
+    logger.debug("Stored event %s request with a trace id of %s", body['eventId'], body['traceId']) 
     return NoContent, 201
 
 
