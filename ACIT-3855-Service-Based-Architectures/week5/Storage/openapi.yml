@@ -82,6 +82,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/GetWorkout'
+        '201':
+          description: Successful response with an empty list
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+                example: []
         '400':
           description: Invalid request
           content:
@@ -183,7 +191,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/WorkoutLog'
+                $ref: '#/components/schemas/GetWorkoutLog'
         '400':
           description: Invalid request
           content:
@@ -260,18 +268,14 @@ components:
         type: object
         properties:
           id:
-            type: string
-            format: uuid
+            type: integer
           name:
             type: string
           startDate:
             type: string
-            format: date-time
           endDate:
             type: string
-            format: date-time
           exercises:
-            type: array
-            items:
-              $ref: '#/components/schemas/Exercise'
+            type: string
+
     

@@ -31,6 +31,17 @@ def log_workout(body):
     logger.info('Returned event log_workout %s response (Id: %s) with status %s', event, trace, req.status_code)
     return NoContent, 201
 
+# def stats():
+#     event = uuid.uuid4()
+#     trace = uuid.uuid4()
+#     body = {}
+#     logger.info('Received event %s request with a trace id of %s', event, trace)
+#     body['traceId'] = str(trace)
+#     body['eventId'] = str(event)
+#     req = requests.get(app_config['stats']['url'], json=body)
+#     logger.info('Returned event log_workout %s response (Id: %s) with status %s', event, trace, req.status_code)
+#     return NoContent, 201
+
 
 app = connexion.FlaskApp(__name__, specification_dir='')
 app.add_api("openapi.yml", strict_validation=True, validate_responses=True)

@@ -65,10 +65,8 @@ def log_workout(body):
 
 def get_workout(start_timestamp=None, end_timestamp=None):
     """ Gets new workouts created between the start and end timestamps """
-    if start_timestamp is None:
-        seven_days_ago = datetime.datetime.now() - datetime.timedelta(days=7)
-        start_timestamp_datetime = seven_days_ago
-        end_timestamp_datetime = datetime.datetime.now()
+    if (start_timestamp is None) or (end_timestamp is None):
+        return [], 201
     else:
         start_timestamp_datetime = datetime.datetime.strptime(
             start_timestamp, "%Y-%m-%dT%H:%M:%S")
@@ -90,10 +88,8 @@ def get_workout(start_timestamp=None, end_timestamp=None):
 
 def get_workout_log(start_timestamp=None, end_timestamp=None):
     """ Gets new workouts created between the start and end timestamps """
-    if start_timestamp is None:
-        seven_days_ago = datetime.datetime.now() - datetime.timedelta(days=7)
-        start_timestamp_datetime = seven_days_ago
-        end_timestamp_datetime = datetime.datetime.now()
+    if (start_timestamp is None) or (end_timestamp is None):
+        return [], 201
     else:
         start_timestamp_datetime = datetime.datetime.strptime(
             start_timestamp, "%Y-%m-%dT%H:%M:%S")

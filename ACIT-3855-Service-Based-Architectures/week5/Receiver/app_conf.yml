@@ -3,3 +3,5 @@ eventstore1:
  url: http://localhost:8090/workout
 eventstore2:
  url: http://localhost:8090/workout/log
+stats:
+ url: http://localhost:8100/stats

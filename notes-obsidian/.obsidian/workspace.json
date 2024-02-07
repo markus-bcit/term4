@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e24eb4d047d22677",
+            "id": "47d9ee71c6510e61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "file": "4640_notes_w24/4640_Notes/Week5.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "file": "4640_notes_w24/4640_Notes/Week5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md",
+                "file": "4640_notes_w24/4640_Notes/Week5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-3855-Service-Based-Architectures.md"
+                "file": "4640_notes_w24/4640_Notes/Week5.md"
               }
             }
           }
@@ -146,11 +146,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e24eb4d047d22677",
+  "active": "0aeaa309ff23529b",
   "lastOpenFiles": [
+    "4640_notes_w24/inclass-labs",
+    "4640_notes_w24/lab-4-markus-afonso.md",
+    "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
+    "4640_notes_w24/4640_Notes/Week5.md",
+    "().md",
+    "images/Pasted image 20240206163623.png",
+    "4640_notes_w24/subject_notes/ansible_notes.md",
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
-    "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-3855-Service-Based-Architectures.md",
+    "misc.md",
+    "4640_notes_w24/4640_Notes/Week4.md",
+    "4640_notes_w24/4640_Notes/Week2.md",
+    "4640_notes_w24/4640_Notes/resources.md",
+    "4640_notes_w24/subject_notes",
+    "4640_notes_w24/starter_code/week05_vpc/main.tf",
+    "4640_notes_w24/starter_code/week05_vpc",
+    "4640_notes_w24/starter_code",
+    "4640_notes_w24/solutions/week03_inclass/main.tf",
+    "4640_notes_w24/solutions/week03_inclass/ec2_host_setup.sh",
+    "4640_notes_w24/solutions/week03_inclass",
+    "4640_notes_w24/solutions",
+    "4640_notes_w24/README.md",
+    "4640_notes_w24/4640_Notes",
+    "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
+    "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
+    "4640_notes_w24/assignments/Assignment-1.md",
+    "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "ACIT-4850-Enterprise-System-Integration.md",
     "images/Pasted image 20240201104747.png",
@@ -162,26 +186,10 @@
     "images/Pasted image 20240201093701.png",
     "images/Pasted image 20240201093643.png",
     "images/Pasted image 20240201090308.png",
-    "images/Pasted image 20240201085903.png",
     "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
-    "4640_notes_w24/assignments/Assignment-1.md",
     "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
     "4640_notes_w24/solutions/week02_inclass/readme.md",
-    "4640_notes_w24/solutions/week03_inclass/main.tf",
-    "4640_notes_w24/solutions/week03_inclass/ec2_host_setup.sh",
-    "4640_notes_w24/solutions/week03_inclass",
-    "4640_notes_w24/4640_Notes/Week4.md",
     "4640_notes_w24/4640_Notes/Week3.md",
-    "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
-    "4640_notes_w24/utility/tagged_cleanup/vpc_cleanup_lib.sh",
-    "4640_notes_w24/utility/tagged_cleanup/ec2_cleanup_lib.sh",
-    "4640_notes_w24/utility/tagged_cleanup/del_tagged_resources.sh",
-    "4640_notes_w24/utility/tagged_cleanup",
-    "4640_notes_w24/utility/install_terraform.sh",
-    "4640_notes_w24/solutions/week02_inclass/03_ec2_setup.sh",
-    "4640_notes_w24/solutions/week02_inclass/02_vpc_setup.sh",
-    "4640_notes_w24/4640_Notes/resources.md",
-    "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
-    "misc.md"
+    "4640_notes_w24/utility/tagged_cleanup/vpc_cleanup_lib.sh"
   ]
 }

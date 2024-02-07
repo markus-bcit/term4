@@ -1,0 +1,321 @@
+Potentially gonna be on final so keeping note of this
+
+## **Question 1 (1 point)**
+
+Terraform configuration is writen in which style?
+
+Question 1 options:
+
+Object-oriented
+
+procedural
+
+declarative
+
+functional
+
+## **Question 2 (1 point)**
+
+To view your Terraform state file in a human readable format, which command would you use?
+
+Question 2 options:
+
+terraform ouput
+
+terraform show
+
+terraform state
+
+terraform state list
+
+## **Question 3 (1 point)**
+
+Which of the following is a prime example of PaaS?
+
+Question 3 options:
+
+A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application 
+
+A platform that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+
+A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process 
+
+A service that allows you to build infrastructure using code for repeat deployments in different environments
+
+## **Question 4 (1 point)**
+
+True or False: SSH Keys are plain text files.
+
+Question 4 options:
+
+True
+
+False
+
+## **Question 5 (1 point)**
+
+Which of the following options is an example of "command substitution" syntax in Bash scripting?
+
+Question 5 options:
+
+${command}
+
+$[command]
+
+&command
+
+$(command)
+
+## **Question 6 (1 point)**
+
+To delete any infrastructure you have created with your terraform configuration, which command would you use?
+
+Question 6 options:
+
+terraform destroy
+
+terraform delete
+
+terraform output
+
+terraform validate
+
+## **Question 7 (1 point)**
+
+True or False: Terraform is agentless
+
+Question 7 options:
+
+True
+
+False
+
+## **Question 8 (1 point)**
+
+Which of the Terraform commands below could you use to check that your configuration syntax is correct before running terraform plan?
+
+Question 8 options:
+
+terraform show
+
+terraform validate
+
+terraform state
+
+terraform fmt
+
+## **Question 9 (1 point)**
+
+A "provider" in Terraform is...
+
+Question 9 options:
+
+A set of resources managed by Terraform
+
+A plugin that enables interaction with an API.
+
+A programming language used in Terraform configuration.
+
+A cloud service managed by Terraform.
+
+## **Question 10 (1 point)**
+
+True or False: AWS CLI allows you to configure more than one profile on your local machine?
+
+Question 10 options:
+
+True
+
+False
+
+## **Question 11 (1 point)**
+
+Given the Terraform configuration below, which versions of the AWS provider would be used? (Multi-select)
+
+```
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.2"
+    }
+  }
+}
+```
+
+Question 11 options:
+
+[x] 5.1
+
+[ ] 3.2
+
+[x] 4.5
+
+[ ] 4.17
+
+## **Question 13 (1 point)**
+
+Which of the below would create a read only variable in bash?
+
+Question 13 options:
+
+const var=oneread 
+
+var=oneset 
+
+var=one
+
+declare -r var=one
+
+## **Question 14 (1 point)**
+
+Which of the following is a prime example of IaaS?
+
+Question 14 options:
+
+A service that abstracts the underlying infrastructure, allowing you to focus on your application code deployment process 
+
+A service that gives you access to configure underlying virtual compute, storage, and network resources to host your application 
+
+A service that allows you to consume hardware resources for a short lease period and pay on a metered basis
+
+A service that hosts and delivers a complete application via a public network, with no access to any underlying infrastructure
+
+## **Question 15 (1 point)**
+
+The '$?' variable in Bash stores:
+
+Question 15 options:The number of arguments passed to the scriptThe exit status of the last commandThe current working directoryThe process ID of the last command
+
+## **Question 16 (1 point)**
+
+To enable logging in Terraform which environment variable do you need to set?
+
+Question 16 options:
+
+TF_var_log
+
+TF_LOG
+
+Any of the other answers
+
+None of the other answers
+
+TF_DEBUG
+
+## **Question 17 (1 point)**
+
+Which command is used to initialize a Terraform working directory?
+
+Question 17 options:
+
+terraform configure
+
+terraform setup
+
+terraform init
+
+terraform start
+
+## **Question 18 (1 point)**
+
+True or False: The delimiter in a heredoc must be EOF.
+
+Question 18 options:
+
+True
+
+False
+
+## **Question 19 (1 point)**
+
+What language is used to write Terraform configuration?
+
+Question 19 options:
+
+YAML
+
+HCL
+
+TOML
+
+XML
+
+## **Question 20 (1 point)**
+
+Which of the below responses best describes how the && works in this bash command: "command 1 && command 2"
+
+Question 20 options:
+
+run command 1 then command 2
+
+run command 1 followed by command 2, if command 1 succeeds
+
+run command 1 and pass the output of command 1 to command 2 then run command 2.
+
+run command 1 and command 2 at the same time
+
+## **Question 21 (1 point)**
+
+True or False: All Terraform providers are written and maintained by HashiCorp.
+
+Question 21 options:
+
+True
+
+False
+
+## **Question 22 (1 point)**
+
+True or False: Terraform configuration must contain a main.tf file
+
+Question 22 options:
+
+True
+
+False
+
+## **Question 23 (1 point)**
+
+What is the purpose of Terraform state?
+
+Question 23 options:
+
+Keep track of the resources created by Terraform
+
+Manage secret configurations
+
+Define provider settings
+
+Store API keys
+
+## **Question 24 (1 point)**
+
+True or False: Terraform supports provisioning and managing both on-premises and cloud infrastructure.
+
+Question 24 options:
+
+True
+
+False
+
+## **Question 25 (1 point)**
+
+The `aws configure` command creates which of the following file structures.
+
+Question 25 options:
+
+~/.aws/
+    config
+    credentials
+
+~/aws/
+    config
+
+~/aws/
+    config
+    credentials
+
+~/.aws/
+    configuration
+    credentials
