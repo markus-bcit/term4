@@ -61,7 +61,6 @@ def populate_stats():
 
     session = DB_SESSION()
     
-    # whats the point of this ??? if we're writing the new data anyways
     current_stats = session.query(WorkoutStats).order_by(WorkoutStats.last_update.desc()).first()
     if current_stats:
         num_workouts = current_stats.num_workouts

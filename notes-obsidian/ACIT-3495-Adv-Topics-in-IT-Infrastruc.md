@@ -375,25 +375,27 @@ docker run python
 docker-compose up -d
 ```
 
-#lab 
-- q1
-	- ![[Pasted image 20240201085832.png]]
-	- ![[Pasted image 20240201085903.png]]
-	- ![[Pasted image 20240201090308.png]]
-- q2
-	- ![[Pasted image 20240201093643.png]]
-	- ![[Pasted image 20240201093701.png]]
-	- ![[Pasted image 20240201094002.png]]
-	- ![[Pasted image 20240201094246.png]]
-- Q3
-	- the layers show the changes we made
-	  ![[Pasted image 20240201094514.png]]
-- q4
-	- ![[Pasted image 20240201104747.png]]
-- q5
-	- ![[Pasted image 20240201100245.png]]
-- q6
-	- ![[Pasted image 20240201104340.png]]
+- #lab 
+	- q1
+		- ![[Pasted image 20240201085832.png]]
+		- ![[Pasted image 20240201085903.png]]
+		- ![[Pasted image 20240201090308.png]]
+	- q2
+		- ![[Pasted image 20240201093643.png]]
+		- ![[Pasted image 20240201093701.png]]
+		- ![[Pasted image 20240201094002.png]]
+		- ![[Pasted image 20240201094246.png]]
+	- Q3
+		- the layers show the changes we made
+		  ![[Pasted image 20240201094514.png]]
+	- q4
+		- ![[Pasted image 20240201104747.png]]
+	- q5
+		- ![[Pasted image 20240201100245.png]]
+		- 
+	- q6
+		- ![[Pasted image 20240201104340.png]]
+
 ```yml
 ❯ cat docker-compose.yml
 version: '3.3'
@@ -438,3 +440,118 @@ volumes:
   db_data:
   wp_data:
 ```
+# week 5
+
+## kubernetes
+
+#commands
+```bash
+kubectl cluster-info
+kubectl get nodes
+kubectl get pods
+kubectl get pods -o wide
+kubectl get pods --watch
+kubectl get svc
+kubectl get services
+kubectl get deployments
+kubectl get replicaset
+kubectl describe pods
+
+kubectl run tomcat --image tomcat:8.0 --port=8080
+kubectl delete pod tomcat
+kubectl expose pod tomcat --name=tomcat-svc --target-port=8080 --type=NodePort
+
+kubectl delete service tomcat-svc
+kubectl delete pod tomcat
+
+
+kubectl create deployment app1 --image aldiab/webapp
+kubectl get svc
+kubectl get pods
+kubectl describe pod .............
+kubectl get deployments
+kubectl get replicaset
+kubectl scale deployment app1 --replicas 3
+kubectl scale deployment app1 --replicas 2
+kubectl delete pod ................
+kubectl expose deployment app1 --type LoadBalancer --port 80 --target-port 8080
+kubectl delete service app1
+kubectl delete deployment app1
+kubectl get namespace
+kubectl get pods --namespace=ns1
+kubectl create namespace ns1
+kubectl get pods --show-labels
+kubectl run nginx --image=nginx --namespace=ns1
+kubectl create -f https://k8s.io/examples/admin/namespace-dev.json
+kubectl get pods -l 'env in (production, development)'
+kubectl get pods -l env=development
+kubectl run nginx --image=nginx --namespace=ns1
+kubectl label pods tomcat label3=healthy
+kubectl label --overwrite pods tomcat  status=unhealthy
+```
+
+#lab 
+- q2
+```bash
+kubectl run nginx --image=nginx --port=80
+kubectl expose pod nginx --name=nginx-service --port=80 --target-port=80 --type=NodePort
+kubectl get svc nginx-service
+```
+![[Pasted image 20240208111033.png]]
+![[Pasted image 20240208111335.png]]
+
+
+- q3
+```bash
+kubectl create namespace ns1
+kubectl run ns1-pod --image=nginx --namespace=ns1
+```
+![[Pasted image 20240208110049.png]]
+- q4
+```bash
+kubectl run pod1 --image=nginx --namespace=ns1 --labels=Label1=Frontend,Label2=Production
+
+kubectl run pod2 --image=nginx --namespace=ns1 --labels=Label1=Frontend,Label2=Test
+
+kubectl run pod3 --image=nginx --namespace=ns1 --labels=Label1=Backend,Label2=Production
+```
+![[Pasted image 20240208110108.png]]
+- q5
+```bash
+kubectl get pods -n ns1 --selector=Label2=Production
+kubectl get pods -n ns1 --selector=Label1=Frontend,Label2=Production
+```
+![[Pasted image 20240208110134.png]]
+- q6
+```basg
+docker build -t markusbcit/appname:tag .
+docker push markusbcit/appname:tag
+```
+![[Pasted image 20240208110158.png]]
+- q7
+```bash
+kubectl create deployment nginx-deployment --image=nginx --replicas=3
+```
+![[Pasted image 20240208110211.png]]
+- q8
+```bash
+kubectl expose deployment nginx-deployment --port=80 --target-port=80 --type=NodePort
+kubectl get svc nginx-deployment
+```
+
+- q9
+```bash
+kubectl delete namespace ns1
+```
+![[Pasted image 20240208110354.png]]
+- q10
+	- Kubernetes and Docker Swarm are both container orchestration platforms, but they have some differences:
+	    - Kubernetes:
+	        - More complex architecture with a master-node setup.
+	        - Richer feature set including advanced scheduling, auto-scaling, and rolling updates.
+	        - Supports larger clusters and more complex deployments.
+	    - Docker Swarm:
+	        - Simpler architecture with a manager-worker setup.
+	        - Easier to set up and manage for smaller-scale deployments.
+	        - Better integration with Docker tools and ecosystem.
+	        - Suitable for simpler applications and smaller teams.
