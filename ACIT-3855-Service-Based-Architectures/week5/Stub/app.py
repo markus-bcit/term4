@@ -56,7 +56,6 @@ def get_stats():
         return "Statistics do not exist", 404
 
 def populate_stats():
-    trace_id = uuid.uuid4() # why do we need a trace id for an automated task????
     logger.info("Periodic processing has started")
 
     session = DB_SESSION()
@@ -81,6 +80,12 @@ def populate_stats():
     req_workout_log = requests.get(app_config['eventstore']['url'] + '/workout/log', params={'start_timestamp': last_update.strftime("%Y-%m-%dT%H:%M:%S"), 'end_timestamp': current_datetime.strftime("%Y-%m-%dT%H:%M:%S")})
     workout_data = req_workout.json()
     workout_log_data = req_workout_log.json()
+    if workout_data:
+        for x in workout_data:
+            logger.info('Workout event being processed, trace ID: %s', x['traceId'])
+    if workout_log_data:
+        for x in workout_log_data:
+            logger.info('Workout Log event being processed, trace ID: %s', x['traceId'])
         
     if (req_workout_log not in [200, 201]) or (req_workout_log not in [200, 201]):
         logger.info('Workout events: %s - Workout Log events: %s', len(workout_data), len(workout_log_data))
