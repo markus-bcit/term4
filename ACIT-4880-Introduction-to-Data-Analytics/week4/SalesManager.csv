@@ -1,44 +1,44 @@
-,OrderDate,Region,Sales Manager,Item,Units,Price
-0,04-Jul-18,East,Mike,Notebook,62,4.99
-1,12-Jul-18,East,Sophie ,Binder,29,1.99
-2,21-Jul-18,Central,Tom ,Notebook,55,12.49
-3,29-Jul-18,East,Anne ,Binder,81,19.99
-4,07-Aug-18,Central,Jack ,Notebook,42,23.95
-5,15-Aug-18,East,Mike ,Pencil,35,4.99
-6,24-Aug-18,West,Header ,Desk,3,275.0
-7,01-Sep-18,Central,Bob ,Desk,2,125.0
-8,10-Sep-18,Central,Maria ,Pencil,7,1.29
-9,18-Sep-18,East,Mike ,Notebook,16,15.99
-10,27-Sep-18,West,Header,Pen,76,1.99
-11,05-Oct-18,Central,Tom ,Binder,28,8.99
-12,14-Oct-18,West,Rob,Binder,57,19.99
-13,22-Oct-18,East,Mike ,Pen,64,8.99
-14,31-Oct-18,Central,Diana ,Pencil,14,1.29
-15,08-Nov-18,East,Anne ,Pen,15,19.99
-16,17-Nov-18,Central,Alex,Binder,11,4.99
-17,25-Nov-18,Central,Jack ,Notebook,96,4.99
-18,04-Dec-18,Central,Alex,Binder,94,19.99
-19,12-Dec-18,Central,Bob ,Pencil,67,1.29
-20,21-Dec-18,Central,Diana ,Binder,28,4.99
-21,29-Dec-18,East,Anne ,Notebook,74,15.99
-22,06-Jan-19,East,Mike ,Pencil,95,1.99
-23,15-Jan-19,Central,Maria ,Binder,46,8.99
-24,23-Jan-19,Central,Jack ,Binder,50,19.99
-25,01-Feb-19,Central,Bob ,Binder,87,15.0
-27,18-Feb-19,East,Mike ,Binder,4,4.99
-28,26-Feb-19,Central,Maria ,Pen,27,19.99
-29,07-Mar-19,West,Header,Binder,7,19.99
-30,15-Mar-19,West,Header,Pencil,56,2.99
-31,24-Mar-19,Central,Alex,Notebook,50,4.99
-32,01-Apr-19,East,Mike ,Binder,60,4.99
-33,10-Apr-19,Central,Diana ,Pencil,66,1.99
-34,18-Apr-19,Central,Diana ,Pencil,75,1.99
-35,27-Apr-19,East,Sophie ,Pen,96,4.99
-36,05-May-19,Central,Alex,Pencil,90,4.99
-37,14-May-19,Central,Maria ,Pencil,53,1.29
-38,22-May-19,West,Rob,Pencil,32,1.99
-39,31-May-19,Central,Maria ,Binder,80,8.99
-40,08-Jun-19,East,Mike ,Binder,60,8.99
-41,17-Jun-19,Central,Jack,Desk,5,125.0
-42,25-Jun-19,Central,Tom ,Pencil,90,4.99
-43,12-Jul-23,South,Markus,Coffee,10,5.0
+,Unnamed: 0,OrderDate,Region,Sales Manager,Item,Units,Price
+0,0.0,04-Jul-18,East,Mike,Notebook,62,4.99
+1,1.0,12-Jul-18,East,Sophie ,Binder,29,1.99
+2,2.0,21-Jul-18,Central,Tom ,Notebook,55,12.49
+3,3.0,29-Jul-18,East,Anne ,Binder,81,19.99
+4,4.0,07-Aug-18,Central,Jack ,Notebook,42,23.95
+5,5.0,15-Aug-18,East,Mike ,Pencil,35,4.99
+6,6.0,24-Aug-18,West,Header ,Desk,3,275.0
+7,7.0,01-Sep-18,Central,Bob ,Desk,2,125.0
+8,8.0,10-Sep-18,Central,Maria ,Pencil,7,1.29
+9,9.0,18-Sep-18,East,Mike ,Notebook,16,15.99
+10,10.0,27-Sep-18,West,Header,Pen,76,1.99
+11,11.0,05-Oct-18,Central,Tom ,Binder,28,8.99
+12,12.0,14-Oct-18,West,Rob,Binder,57,19.99
+13,13.0,22-Oct-18,East,Mike ,Pen,64,8.99
+14,14.0,31-Oct-18,Central,Diana ,Pencil,14,1.29
+15,15.0,08-Nov-18,East,Anne ,Pen,15,19.99
+16,16.0,17-Nov-18,Central,Alex,Binder,11,4.99
+17,17.0,25-Nov-18,Central,Jack ,Notebook,96,4.99
+18,18.0,04-Dec-18,Central,Alex,Binder,94,19.99
+19,19.0,12-Dec-18,Central,Bob ,Pencil,67,1.29
+20,20.0,21-Dec-18,Central,Diana ,Binder,28,4.99
+21,21.0,29-Dec-18,East,Anne ,Notebook,74,15.99
+22,22.0,06-Jan-19,East,Mike ,Pencil,95,1.99
+23,23.0,15-Jan-19,Central,Maria ,Binder,46,8.99
+24,24.0,23-Jan-19,Central,Jack ,Binder,50,19.99
+25,25.0,01-Feb-19,Central,Bob ,Binder,87,15.0
+27,28.0,26-Feb-19,Central,Maria ,Pen,27,19.99
+28,29.0,07-Mar-19,West,Header,Binder,7,19.99
+29,30.0,15-Mar-19,West,Header,Pencil,56,2.99
+30,31.0,24-Mar-19,Central,Alex,Notebook,50,4.99
+31,32.0,01-Apr-19,East,Mike ,Binder,60,4.99
+32,33.0,10-Apr-19,Central,Diana ,Pencil,66,1.99
+33,34.0,18-Apr-19,Central,Diana ,Pencil,75,1.99
+34,35.0,27-Apr-19,East,Sophie ,Pen,96,4.99
+35,36.0,05-May-19,Central,Alex,Pencil,90,4.99
+36,37.0,14-May-19,Central,Maria ,Pencil,53,1.29
+37,38.0,22-May-19,West,Rob,Pencil,32,1.99
+38,39.0,31-May-19,Central,Maria ,Binder,80,8.99
+39,40.0,08-Jun-19,East,Mike ,Binder,60,8.99
+40,41.0,17-Jun-19,Central,Jack,Desk,5,125.0
+41,42.0,25-Jun-19,Central,Tom ,Pencil,90,4.99
+42,43.0,12-Jul-23,South,Markus,Coffee,10,5.0
+43,,12-Jul-23,South,Markus,Coffee,10,5.0
