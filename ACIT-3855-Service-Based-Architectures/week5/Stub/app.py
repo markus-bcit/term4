@@ -23,7 +23,7 @@ with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
     logging.config.dictConfig(log_config)
 
-logger = logging.getLogger('basic#Logger')
+logger = logging.getLogger('basicLogger')
 
 DB_ENGINE = create_engine(f"sqlite:///{app_config['datastore']['filename']}")
 Base.metadata.bind = DB_ENGINE
@@ -80,20 +80,20 @@ def populate_stats():
     req_workout_log = requests.get(app_config['eventstore']['url'] + '/workout/log', params={'start_timestamp': last_update.strftime("%Y-%m-%dT%H:%M:%S"), 'end_timestamp': current_datetime.strftime("%Y-%m-%dT%H:%M:%S")})
     workout_data = req_workout.json()
     workout_log_data = req_workout_log.json()
-    if workout_data:
-        for x in workout_data:
-            logger.info('Workout event being processed, trace ID: %s', x['traceId'])
-    if workout_log_data:
-        for x in workout_log_data:
-            logger.info('Workout Log event being processed, trace ID: %s', x['traceId'])
         
     if (req_workout_log not in [200, 201]) or (req_workout_log not in [200, 201]):
         logger.info('Workout events: %s - Workout Log events: %s', len(workout_data), len(workout_log_data))
+        if len(workout_log_data) >= 1:
+            for x in workout_log_data:
+                logger.debug('Workout Log event being processed, trace ID: %s', x['traceId'])
+        if len(workout_data) >= 1:
+            for x in workout_data:
+                logger.debug('Workout event being processed, trace ID: %s', x['traceId'])
     else:
         logger.error('Workout returned: %s - Workout Log returned: %s', req_workout.status_code, req_workout_log.status_code)
     
-    num_workouts = len(workout_data)
-    num_workout_logs = len(workout_log_data)
+    num_workouts = num_workouts + len(workout_data)
+    num_workout_logs = num_workout_logs + len(workout_log_data)
     frequencies = [entry['frequency'] for entry in workout_data]
     if frequencies:  
         max_freq_workout = max(frequencies)
@@ -112,7 +112,7 @@ def populate_stats():
     session.add(new_stats)
     session.commit()
 
-    logger.debug("Updated statistics: %s", new_stats)
+    logger.debug("Updated statistics ID: %s", new_stats.id)
 
     session.close()
 
