@@ -1,1 +1,5 @@
 old.zip filter=lfs diff=lfs merge=lfs -text
+4640.zip filter=lfs diff=lfs merge=lfs -text
+week06.zip filter=lfs diff=lfs merge=lfs -text
+ACIT-4640-IT-System-Network-Provisioning/4640.zip filter=lfs diff=lfs merge=lfs -text
+ACIT-4640-IT-System-Network-Provisioning/week06.zip filter=lfs diff=lfs merge=lfs -text

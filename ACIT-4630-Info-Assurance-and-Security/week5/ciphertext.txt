@@ -1,0 +1,63 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'python3 -m venv venv'
+                sh '. venv/bin/activate'
+                sh 'pip install -r requirements.txt --break-system-packages'
+                sh 'pip install --upgrade flask --break-system-packages'
+            }
+        }
+        stage('Python Lint') {
+            steps {
+                sh 'pylint --fail-under 5 *.py'
+            }
+        }
+        stage('Test and Coverage') {
+            steps {
+                script {
+                        def test_reports_exist = fileExists 'test-reports'
+                            if (test_reports_exist) {
+                                sh 'rm test-reports/*.xml || true'
+                        }
+                        def api_test_reports_exist = fileExists 'api-test-reports'
+                            if (api_test_reports_exist) {
+                                sh 'rm api-test-reports/*.xml || true'
+                        }
+                    }
+                sh '. venv/bin/activate'
+                sh 'pip install coverage --break-system-packages'
+                sh 'pip install pytest --break-system-packages'
+                sh 'python3 -m coverage run --omit */site-packages/*,*/dist-packages/* test_point_manager.py'
+                sh 'python3 -m coverage xml -o test-reports/coverage_manager.xml'
+                
+                sh 'python3 -m coverage run --omit */site-packages/*,*/dist-packages/* test_points_api.py'
+                sh 'python3 -m coverage xml -o api-test-reports/coverage_api.xml'
+                
+                sh 'python3 -m coverage report' 
+            }
+            post {
+                always {
+                    // Process the test results if they exist
+                    script {
+                    def test_reports_exist = fileExists 'test-reports'
+                        if (test_reports_exist) {
+                            junit 'test-reports/*.xml'
+                        }
+                        def api_test_reports_exist = fileExists 'api-test-reports'
+                            if (api_test_reports_exist) {
+                                junit 'api-test-reports/*.xml'
+                        }
+                    }
+                }
+            }
+
+        }
+        stage('Zip Artifacts') {
+            steps {
+                sh 'pylint --fail-under 5 *.py'
+            }
+        }
+    }
+}

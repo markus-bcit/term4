@@ -36,3 +36,9 @@ git lfs install
 git lfs track "large_file.bin"
 ```
 - commit and push
+
+Keypair
+```bash
+#makes a key named 4640-key to ~/.ssh/
+ssh-keygen -C "4640-key" -f ~/.ssh/4640-key -m PEM -t ed25519 -N ''
+```
