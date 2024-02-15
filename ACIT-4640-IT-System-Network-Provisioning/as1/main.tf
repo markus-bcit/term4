@@ -88,13 +88,9 @@ resource "aws_route" "default_route" {
 }
 
 resource "aws_route_table_association" "main" {
-  # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association
   subnet_id      = aws_subnet.public.id
   route_table_id = aws_route_table.main.id
 }
-
-# ############# security group public ####################
-
 resource "aws_security_group" "public" {
   # https://registry.terraform.io/providers/-/aws/latest/docs/resources/security_group
   name        = "${local.project_name}_public_sg"
