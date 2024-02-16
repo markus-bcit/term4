@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/assignments/Assignment-1.md",
                 "mode": "preview",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/assignments/Assignment-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc.md",
+                "file": "4640_notes_w24/assignments/Assignment-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc.md"
+                "file": "4640_notes_w24/assignments/Assignment-1.md"
               }
             }
           }
@@ -160,16 +160,17 @@
   },
   "active": "47d9ee71c6510e61",
   "lastOpenFiles": [
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "misc.md",
-    "as1.md",
+    "4640_notes_w24/assignments/Assignment-1.md",
     "4640_notes_w24/4640_Notes/Week6.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "ACIT-4880-Introduction-to-Data-Analytics.md",
+    "as1.md",
     "ACIT-4850-Enterprise-System-Integration.md",
     "images/Pasted image 20240213171842.png",
     "images/Pasted image 20240213171625.png",
     "images/Pasted image 20240213171551.png",
     "images/Pasted image 20240213165721.png",
-    "4640_notes_w24/assignments/Assignment-1.md",
     "4640_notes_w24/subject_notes/ansible_notes.md",
     "4640_notes_w24/README.md",
     "4640_notes_w24/4640_Notes/Week5.md",
@@ -186,7 +187,6 @@
     "4640_notes_w24/4640_Notes/resources.md",
     "4640_notes_w24/starter_code/week06/mod_demo.zip",
     "4640_notes_w24/starter_code/week06/main.tf",
-    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "images/Pasted image 20240208111335.png",
     "images/Pasted image 20240208111033.png",
     "images/Pasted image 20240208110354.png",
