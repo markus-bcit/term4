@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "47d9ee71c6510e61",
+            "id": "30fed6b8df4b9669",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,6 +16,16 @@
                 "file": "presentation.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "8c4feb0f30f2cc76",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "images/Pasted image 20240221184134.png"
               }
             }
           }
@@ -146,8 +156,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47d9ee71c6510e61",
+  "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
+    "ACIT-4880-Introduction-to-Data-Analytics.md",
+    "presentation.md",
+    "images/Pasted image 20240221184134.png",
+    "images/Pasted image 20240221184026.png",
+    "ACIT-3855-Service-Based-Architectures.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "4640_notes_w24/assignments/Assignment-1.md",
     "as1.md",
     "as1 1.md",
@@ -168,22 +184,17 @@
     "4640_notes_w24/4640_Notes/Week5.md",
     "4640_notes_w24/4640_Notes/Week4.md",
     "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "images/Pasted image 20240213171842.png",
     "images/Pasted image 20240213171625.png",
     "images/Pasted image 20240213171551.png",
     "images/Pasted image 20240213165721.png",
-    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "images/Pasted image 20240208111335.png",
     "images/Pasted image 20240208111033.png",
     "images/Pasted image 20240208110354.png",
     "images/Pasted image 20240208110337.png",
-    "images/Pasted image 20240208110211.png",
-    "images/Pasted image 20240208110158.png",
     "4640_notes_w24/lab-4-markus-afonso.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
     "().md",
-    "ACIT-3855-Service-Based-Architectures.md",
     "misc.md",
     "4640_notes_w24/4640_Notes/Week2.md",
     "4640_notes_w24/README.md",
@@ -191,7 +202,6 @@
     "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
     "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-4850-Enterprise-System-Integration.md",
-    "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md",
-    "4640_notes_w24/4640_Notes/Week3.md"
+    "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md"
   ]
 }

@@ -1,0 +1,83 @@
+version: '3'
+services:
+  web-app:
+    build:
+      context: ./web-app
+    ports:
+      - "5005:5005"
+    depends_on:
+      - mysql
+      - auth  # Add dependency on the authentication service
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.2
+
+  mysql:
+    build:
+      context: ./mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'db'
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    #   - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.3
+  auth:
+    build:
+      context: ./auth  # Specify the directory containing the Dockerfile for the authentication service
+    ports:
+      - "8000:8000"  # Assuming the authentication service runs on port 8000
+    depends_on:
+      - mysql  # Dependency on the MySQL database
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.4
+  node-app:
+    build: ./node-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.5  
+  mongodb:
+    build:
+      context: ./mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb-data:/data/db
+
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.6
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: 'password'
+      MONGO_INITDB_DATABASE: 'db'
+      MONGO_INITDB_ROOT_USERNAME: 'root'
+  analytics:
+    build:
+      context: ./analytics
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mysql
+      - mongodb
+    networks:
+      my-network:
+        ipv4_address: 172.20.0.7
+volumes:
+  mysql-data:
+
+networks:
+  my-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
