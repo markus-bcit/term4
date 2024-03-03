@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# 
+# ACIT 4640 IT System-Network Provisioning Assignment 1
+# Markus Afonso 
+# Set C
 # Configure a Ubuntu 23.04 server to host a static site using nginx
 # Requrements:
 #  - Must be run on 'new' instance of an Ubuntu 23.04 server
