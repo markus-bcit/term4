@@ -78,4 +78,67 @@ Standards #standards
 - [CVE](https://cve.mitre.org/) and [NVD](https://nvd.nist.gov/) databases
 - Common Vulnerability Scoring System [CVSS](https://nvd.nist.gov/vuln-metrics/cvss)
 	- ![[Pasted image 20240116093417.png]]
-- 
+-   
+
+of 18
+
+                     Automatic Zoom                     Actual Size                     Page Fit                     Page Width                                          50%                     75%                     100%                     125%                     150%                     200%                     300%                     400%                   
+
+1  
+Information Assurance and  
+Security – ACIT 4630  
+Hesam Alizadeh  
+Week 3 – Winter 2024
+
+3  
+▪ CVSS calculation  
+▪ Malware types and prevention  
+▪ Social engineering attacks’ success  
+▪ Zero-day vulnerabilities importance  
+▪ Advanced Persistent Threats  
+▪ Stuxnet malware attack characteristics  
+Learning Outcomes
+
+4  
+▪ Imagine you received the following brief description  
+of a vulnerability in your system:  
+“This vulnerability allow a remote unauthenticated user to execute  
+arbitrary code on the target system, potentially gaining access to  
+system components in the context of the current user”  
+▪ Analyze this vulnerability and apply CVSS 3.1 assessment  
+methodology to generate a base score and a vector string:  
+▪ Common Vulnerability Scoring System Version 3.1 Calculator (first.org)  
+CVSS calculation
+
+[](https://www.first.org/cvss/calculator/3.1 "https://www.first.org/cvss/calculator/3.1")
+
+5  
+▪ Virus: Spreads by attaching to  
+legitimate programs.  
+▪ Worm: Self-replicates and  
+spreads independently.  
+▪ Trojan: Disguises itself as a  
+legitimate program.  
+▪ Remote Access Trojan (RAT)  
+Malwares propagation  
+Image Source: Differences Between Viruses, Worms and Trojans
+
+[](https://www.baeldung.com/cs/virus-vs-worm-vs-trojan "https://www.baeldung.com/cs/virus-vs-worm-vs-trojan")
+
+6  
+Malware Payloads  
+Spyware: gathers  
+user's information Adware: displays  
+unwanted advertisements  
+Ransomware: encrypts  
+user's data for ransom  
+3 steps to prevent and recover from ransomware
+
+[](https://www.microsoft.com/en-us/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/ "https://www.microsoft.com/en-us/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/")
+
+7  
+Logic Bombs  
+Image source: Logic bombs
+
+[](https://www.baeldung.com/cs/logic-bombs "https://www.baeldung.com/cs/logic-bombs")
+
