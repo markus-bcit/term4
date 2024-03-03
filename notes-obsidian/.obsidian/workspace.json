@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "as1.md",
+                "file": "ACIT-4630-Info-Assurance-and-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "as1.md",
+                "file": "ACIT-4630-Info-Assurance-and-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "as1.md",
+                "file": "ACIT-4630-Info-Assurance-and-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "as1.md"
+                "file": "ACIT-4630-Info-Assurance-and-Security.md"
               }
             }
           }
@@ -160,11 +160,11 @@
   },
   "active": "47d9ee71c6510e61",
   "lastOpenFiles": [
+    "4640_notes_w24/4640_Notes/Week6.md",
+    "as1.md",
     "4640_notes_w24/assignments/Assignment-1.md",
     "misc.md",
-    "as1.md",
     "as1 1.md",
-    "4640_notes_w24/4640_Notes/Week6.md",
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "ACIT-4850-Enterprise-System-Integration.md",
