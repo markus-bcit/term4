@@ -86,3 +86,27 @@
 2024-03-02 17:58:06,072 - basicLogger - ERROR - No more messages found
 2024-03-02 17:58:06,072 - basicLogger - ERROR - Could not find BP at index 0
 2024-03-02 17:58:26,435 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-04 10:36:48,241 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-04 10:36:49,250 - basicLogger - ERROR - Could not find BP at index 0
+2024-03-04 11:33:31,269 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-04 11:33:36,738 - basicLogger - INFO - Retrieving BP at index 100
+2024-03-04 11:33:38,473 - basicLogger - ERROR - Could not find BP at index 100
+2024-03-04 11:33:41,885 - basicLogger - INFO - Retrieving BP at index 1
+2024-03-05 10:44:17,524 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-05 10:44:23,952 - basicLogger - INFO - Retrieving BP at index 1
+2024-03-05 10:44:25,019 - basicLogger - ERROR - Could not find BP at index 1
+2024-03-05 10:44:28,482 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-05 12:09:57,157 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-05 12:20:03,869 - basicLogger - INFO - Retrieving BP at index 0
+2024-03-05 12:20:12,066 - basicLogger - INFO - Retrieving BP at index 190
+2024-03-05 12:20:13,478 - basicLogger - ERROR - Could not find BP at index 190
+2024-03-05 12:20:19,537 - basicLogger - INFO - Retrieving BP at index 100
+2024-03-05 12:20:20,760 - basicLogger - ERROR - Could not find BP at index 100
+2024-03-05 12:20:27,523 - basicLogger - INFO - Retrieving BP at index 25
+2024-03-05 12:20:40,838 - basicLogger - INFO - Retrieving BP at index 26
+2024-03-05 12:20:47,083 - basicLogger - INFO - Retrieving BP at index 50
+2024-03-05 12:20:52,936 - basicLogger - INFO - Retrieving BP at index 51
+2024-03-05 12:20:54,236 - basicLogger - ERROR - Could not find BP at index 51
+2024-03-05 12:21:06,743 - basicLogger - INFO - Retrieving BP at index 51
+2024-03-05 12:21:07,954 - basicLogger - ERROR - Could not find BP at index 51
+2024-03-05 12:21:13,129 - basicLogger - INFO - Retrieving BP at index 50

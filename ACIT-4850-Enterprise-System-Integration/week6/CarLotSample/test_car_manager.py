@@ -1,5 +1,5 @@
-from unittest import TestCase
-
+import unittest
+import xmlrunner
 from car_manager import CarManager
 
 import sqlite3
@@ -7,8 +7,8 @@ import os
 import inspect
 
 
-class TestCarManager(TestCase):
-    """ Tests the CarManager class """
+class TestCarManager(unittest.TestCase):
+    """ Tests the CarManager class"""
 
     TEST_DB = 'test_carlot.sqlite'
 
@@ -142,3 +142,7 @@ class TestCarManager(TestCase):
         cars_after = self.car_mgr.get_all_cars()
         self.assertEqual(len(cars_after), 2)
 
+if __name__ == "__main__":
+    runner = xmlrunner.XMLTestRunner(output='test-reports')
+    unittest.main(testRunner=runner)
+    unittest.main()

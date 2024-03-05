@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-4630-Info-Assurance-and-Security.md",
+                "file": "misc.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-4630-Info-Assurance-and-Security.md",
+                "file": "misc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-4630-Info-Assurance-and-Security.md",
+                "file": "misc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-4630-Info-Assurance-and-Security.md"
+                "file": "misc.md"
               }
             }
           }
@@ -170,8 +170,11 @@
   },
   "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
-    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "presentation.md",
+    "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
+    "4640_notes_w24/assignments/Assignment-2.md",
+    "ACIT-4630-Info-Assurance-and-Security.md",
+    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "images/Pasted image 20240221184134.png",
     "images/Pasted image 20240221184026.png",
     "ACIT-3855-Service-Based-Architectures.md",
@@ -205,14 +208,12 @@
     "images/Pasted image 20240208110354.png",
     "images/Pasted image 20240208110337.png",
     "4640_notes_w24/lab-4-markus-afonso.md",
-    "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
     "().md",
     "misc.md",
     "4640_notes_w24/4640_Notes/Week2.md",
     "4640_notes_w24/README.md",
     "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
     "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
-    "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-4850-Enterprise-System-Integration.md",
     "4640_notes_w24/4640_Notes/Week1_wsl_supplement.md"
   ]
