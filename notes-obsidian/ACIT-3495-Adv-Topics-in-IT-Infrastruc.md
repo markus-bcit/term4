@@ -570,38 +570,146 @@ kubectl expose deployment nginx --port=80 --type=NodePort
 kubectl get svc
 ```
 
-```bash
-~/3495 on ☁️  acit4640_admin (us-west-2)
-❯ kubectl create deployment nginx --image=nginx
-deployment.apps/nginx created
+![[Pasted image 20240307093925.png]]
+![[Pasted image 20240307094250.png]]
 
-~/3495 on ☁️  acit4640_admin (us-west-2)
-❯ kubectl expose deployment nginx --port=80 --type=NodePort
-Error from server (AlreadyExists): services "nginx" already exists
-
-~/3495 on ☁️  acit4640_admin (us-west-2)
-❯ kubectl get svc
-NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
-kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        8m56s
-nginx        NodePort    10.110.203.162   <none>        80:30917/TCP   8m25s
-
-~/3495 on ☁️  acit4640_admin (us-west-2)
-❯ S
-```
 2.     Create a namespace **_ns1_** and a create a pod that belongs to ns1 (1 mark).
+```bash
+kubectl create namespace ns1
+kubectl run nginx-ns1 --image=nginx --namespace=ns1
+```
+![[Pasted image 20240307094310.png]]
 3.     Create 3 pods under ns1, and attach two labels to each one of them,  according to this table (2 marks)
 
-|   |   |   |
-|---|---|---|
-||Label1|Label2|
-|pod1|Frontend|Production|
-|pod2|Frontend|Test|
-|Pod3|Backend|Production|
+```bash
+kubectl run pod1 --image=nginx --labels="Label1=Frontend,Label2=Production" --namespace=ns1
+kubectl run pod2 --image=nginx --labels="Label1=Frontend,Label2=Test" --namespace=ns1
+kubectl run pod3 --image=nginx --labels="Label1=Backend,Label2=Production" --namespace=ns1
+```
+
+![[Pasted image 20240307094331.png]]
+
+|      |          |            |
+| ---- | -------- | ---------- |
+|      | Label1   | Label2     |
+| pod1 | Frontend | Production |
+| pod2 | Frontend | Test       |
+| Pod3 | Backend  | Production |
 
 4.     Then: get all pods that have the Production label, get all pods that are in Production and FE.  (1 mark)
+```bash
+kubectl get pods -l Label2=Production --namespace=ns1
+kubectl get pods -l Label1=Frontend,Label2=Production --namespace=ns1
+```
+![[Pasted image 20240307094352.png]]
 5.     Modify the application in the App folder to show your group members names, build the image, and upload it to your docker hub account. (1 mark)
-6.     Create a deployment (3 replicas) imperatively from the container and test the pods, replicasets, deployments, services you have in the cluster. (1 mark)
-7.     Expose the deployment in step 7 imperatively using a service and show that the website is working. (1 mark)
-8.     Clean up all objects in **_ns1_** (1 mark)
 
+```bash
+docker build -t markusbcit/app:tag .
+docker push markusbcit/app:tag
+```
+![[Pasted image 20240307094525.png]]
+![[Pasted image 20240307094546.png]]
+
+6.     Create a deployment (3 replicas) imperatively from the container and test the pods, replicasets, deployments, services you have in the cluster. (1 mark)
+```bash
+kubectl create deployment myapp --image=markusbcit/app:tag --replicas=3
+kubectl get pods,replicasets,deployments,services
+```
+![[Pasted image 20240307094612.png]]
+
+7.     Expose the deployment in step 7 imperatively using a service and show that the website is working. (1 mark)
+```bash
+kubectl expose deployment myapp --port=8080 --type=NodePort
+kubectl get svc
+```
+![[Pasted image 20240307094640.png]]
+![[Pasted image 20240307102720.png]]
+8.     Clean up all objects in **_ns1_** (1 mark)
+```bash
+kubectl delete namespace ns1
+```
+![[Pasted image 20240307102827.png]]
 9.     Compare K8S to Docker Swarm in terms of differences  and similarities (1 mark)
+Similarities:
+
+- Both Kubernetes (K8S) and Docker Swarm are container orchestration platforms used for managing containerized applications.
+- Both offer features like service discovery, load balancing, and scaling to manage containerized applications across a cluster of machines.
+- They both support Docker containers.
+
+Differences:
+- Kubernetes is more feature-rich and complex compared to Docker Swarm. Kubernetes has a larger ecosystem with more advanced features like automatic scaling, rolling updates, and advanced networking capabilities.
+- Kubernetes has a declarative configuration model, where users specify the desired state of the system, and Kubernetes takes care of bringing the actual state to match the desired state. Docker Swarm, on the other hand, uses a more imperative approach where users directly issue commands to manipulate the cluster state.
+- Kubernetes has a larger community and is backed by multiple large companies like Google, while Docker Swarm is maintained by Docker, Inc.
+- Kubernetes has better support for hybrid and multi-cloud environments.
+- Kubernetes has more built-in integrations with other tools and platforms.
+# Lab5
+
+Q1. Deploy pod.yml. Get the details of the pod using commands: _kubectl get pods hello-pod -o wide, kubectl describe pods hello-pod_  (1 mark)
+```bash
+kubectl apply -f pod.yml
+kubectl get pods hello-pod -o wide
+kubectl describe pods hello-pod
+```
+![[Pasted image 20240307084309.png]]
+
+Q2. Apply a watch on the pods using command: _kubectl get pods –watch_ (1 mark)
+```bash
+kubectl get pods --watch
+```
+![[Pasted image 20240307084529.png]]
+Q3. Expose the pod **imperatively** and check if the website is working correctly, then delete the service (don’t delete the pod) (1 mark)
+```bash
+kubectl expose pod hello-pod --port=80 --target-port=8080 --name=hello-service --type=ClusterIP
+kubectl get svc
+kubectl delete service hello-service
+```
+![[Pasted image 20240307084853.png]]
+![[Pasted image 20240307084940.png]]
+Q4. Apply the service declaratively (NodePort) and check if the website is working correctly, then delete the service (don’t delete the pod) (1 mark)
+```bash
+kubectl apply -f .\svc-nodeport.yml
+kubectl get svc
+kubectl delete -f .\svc-nodeport.yml
+```
+![[Pasted image 20240307090616.png]]
+Q5. Apply the service declaratively (LoadBalancer) and check if the website is working correctly. (Keep the service and the pod) (1 mark)
+![[Pasted image 20240307090748.png]]
+Q6. Use file rs1.yml to show how to create a replicaset (declaratively) and scale it up and down. You can open another terminal with a watch on the pods to see details about pods (pending, terminating, running). (1 mark)
+
+Q7. Delete one of the pods and see how K8S self-heal the cluster, then delete the replicaset declaratively. (1 mark)
+
+Q8. Modify the web app, build the docker image and push it to your docker hub account, write a yaml file to create a repliaset with 5 pods of the new app, and expose it using a Load balancer service. (1 mark)
+
+Q9. Refer to this post [https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0) (and chap7 in the book) to demonstrate the differences between ClusterIP service, NodePort service, Load Balancer Service, and Ingress Service. Explain the sequence of steps that happen when a request arrives to each one of the mentioned services  (2 marks)
+
+# Lab 6
+**Deployment Update**
+![[Pasted image 20240307103309.png]]
+```bash
+docker build -t markusbcit/web-app:v2 .
+docker push markusbcit/web-app:v2
+```
+![[Pasted image 20240307103715.png]]
+![[Pasted image 20240307103750.png]]
+
+**Rolling Update**
+![[Pasted image 20240307104139.png]]
+
+![[Pasted image 20240307104553.png]]]]
+![[Pasted image 20240307104636.png]]![[Pasted image 20240307104654.png]]
+![[Pasted image 20240307104926.png]]
+**Blue/Green Deployment**
+![[Pasted image 20240307105210.png]]
+
+![[Pasted image 20240307105201.png]]
+![[Pasted image 20240307105749.png]]
+![[Pasted image 20240307105911.png]]
+
+![[Pasted image 20240307105827.png]]
+
+**Canary Deployment**
+
+![[Pasted image 20240307110016.png]]
+![[Pasted image 20240307110124.png]]
+![[Pasted image 20240307110325.png]]
