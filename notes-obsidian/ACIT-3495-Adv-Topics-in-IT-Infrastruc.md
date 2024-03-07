@@ -555,3 +555,53 @@ kubectl delete namespace ns1
 	        - Easier to set up and manage for smaller-scale deployments.
 	        - Better integration with Docker tools and ecosystem.
 	        - Suitable for simpler applications and smaller teams.
+# Week 6
+## Lab 4
+1.     Create an nginx pod, expose it on a service using port 80 and show that the website is working. (1 mark)
+```bash
+kubectl create deployment nginx --image=nginx
+```
+
+```bash
+kubectl expose deployment nginx --port=80 --type=NodePort
+```
+
+```bash
+kubectl get svc
+```
+
+```bash
+~/3495 on ☁️  acit4640_admin (us-west-2)
+❯ kubectl create deployment nginx --image=nginx
+deployment.apps/nginx created
+
+~/3495 on ☁️  acit4640_admin (us-west-2)
+❯ kubectl expose deployment nginx --port=80 --type=NodePort
+Error from server (AlreadyExists): services "nginx" already exists
+
+~/3495 on ☁️  acit4640_admin (us-west-2)
+❯ kubectl get svc
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        8m56s
+nginx        NodePort    10.110.203.162   <none>        80:30917/TCP   8m25s
+
+~/3495 on ☁️  acit4640_admin (us-west-2)
+❯ S
+```
+2.     Create a namespace **_ns1_** and a create a pod that belongs to ns1 (1 mark).
+3.     Create 3 pods under ns1, and attach two labels to each one of them,  according to this table (2 marks)
+
+|   |   |   |
+|---|---|---|
+||Label1|Label2|
+|pod1|Frontend|Production|
+|pod2|Frontend|Test|
+|Pod3|Backend|Production|
+
+4.     Then: get all pods that have the Production label, get all pods that are in Production and FE.  (1 mark)
+5.     Modify the application in the App folder to show your group members names, build the image, and upload it to your docker hub account. (1 mark)
+6.     Create a deployment (3 replicas) imperatively from the container and test the pods, replicasets, deployments, services you have in the cluster. (1 mark)
+7.     Expose the deployment in step 7 imperatively using a service and show that the website is working. (1 mark)
+8.     Clean up all objects in **_ns1_** (1 mark)
+
+9.     Compare K8S to Docker Swarm in terms of differences  and similarities (1 mark)

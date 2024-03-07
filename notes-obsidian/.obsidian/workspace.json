@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc.md"
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
               }
             }
           }
@@ -170,16 +170,17 @@
   },
   "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
+    "ACIT-4630-Info-Assurance-and-Security.md",
+    "ACIT-3855-Service-Based-Architectures.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "4640_notes_w24/assignments/Assignment-2.md",
+    "4640_notes_w24/assignments/Assignment-1.md",
+    "misc.md",
     "presentation.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
-    "4640_notes_w24/assignments/Assignment-2.md",
-    "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "images/Pasted image 20240221184134.png",
     "images/Pasted image 20240221184026.png",
-    "ACIT-3855-Service-Based-Architectures.md",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
-    "4640_notes_w24/assignments/Assignment-1.md",
     "as1.md",
     "as1 1.md",
     "4640_notes_w24/solutions/week05_inclass/files/index.html",
@@ -209,7 +210,6 @@
     "images/Pasted image 20240208110337.png",
     "4640_notes_w24/lab-4-markus-afonso.md",
     "().md",
-    "misc.md",
     "4640_notes_w24/4640_Notes/Week2.md",
     "4640_notes_w24/README.md",
     "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
