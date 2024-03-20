@@ -1,0 +1,209 @@
+---
+
+- name: initial setup
+  hosts: all
+  tasks:
+
+    - name: set hostname to inventory name
+      ansible.builtin.hostname:
+        name: "{{ inventory_hostname }}"
+      become: true
+
+    - name: setup hosts file with inventory names
+      ansible.builtin.template:
+        src: templates/hosts.j2
+        dest: /etc/hosts
+        group: root
+        owner: root
+        mode: u=rw,g=r,o=r
+      become: true
+
+  tags:
+    - initial
+    - configure
+
+- name: initial setup
+  hosts: all
+  tasks:
+
+    - name: install network debugging tools
+      ansible.builtin.package:
+        update_cache: true
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - bind9-dnsutils
+        - tcpdump
+        - nmap
+        - netcat-openbsd
+      become: true
+
+  tags:
+    - debug_tools
+    - configure
+
+
+- name: install and enable nginx
+  hosts: role_web
+  tasks:
+    - name: install nginx package
+      ansible.builtin.package:
+        name: nginx
+        state: latest
+      become: true
+
+    - name: copy example HTML document to /var/www/html
+      ansible.builtin.copy:
+        src: index.html
+        dest: /var/www/html/index.html
+        mode: u=rw,g=r,o=r
+      become: true
+      notify:
+        - start and enable nginx service
+
+  tags:
+    - web
+    - configure
+
+  handlers:
+    - name: start and enable nginx service
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+        daemon_reload: true
+      become: true
+
+
+# ---
+
+# - name: initial setup
+#   hosts: all
+#   tasks:
+
+#     - name: set hostname to inventory name
+#       ansible.builtin.hostname:
+#         name: "{{ inventory_hostname }}"
+#       become: true
+
+#     - name: setup hosts file with inventory names
+#       ansible.builtin.template:
+#         src: templates/hosts.j2
+#         dest: /etc/hosts
+#         group: root
+#         owner: root
+#         mode: u=rw,g=r,o=r
+#       become: true
+
+#   tags:
+#     - initial
+#     - configure
+
+# - name: initial setup
+#   hosts: all
+#   tasks:
+
+#     - name: install network debugging tools
+#       ansible.builtin.package:
+#         update_cache: true
+#         name: "{{ item }}"
+#         state: latest
+#       with_items:
+#         - bind9-dnsutils
+#         - tcpdump
+#         - nmap
+#         - netcat-openbsd
+#       become: true
+
+#   tags:
+#     - debug_tools
+#     - configure
+
+
+# - name: install and enable nginx
+#   hosts: role_web
+#   tasks:
+#     - name: install nginx package
+#       ansible.builtin.package:
+#         name: nginx
+#         state: latest
+#       become: true
+
+#     - name: copy example HTML document to /var/www/html
+#       ansible.builtin.copy:
+#         src: index.html
+#         dest: /var/www/html/index.html
+#         mode: u=rw,g=r,o=r
+#       become: true
+#       notify:
+#         - start and enable nginx service
+
+#   tags:
+#     - web
+#     - configure
+
+#   handlers:
+#     - name: start and enable nginx service
+#       ansible.builtin.service:
+#         name: nginx
+#         state: restarted
+#         daemon_reload: true
+#       become: true
+# ---
+# - name: Configure EC2 Instances for Application Deployment
+#   hosts: ec2_instances
+#   become: yes
+
+#   tasks:
+#     - name: Install dependencies (Bun and Caddy)
+#       package:
+#         name: "{{ item }}"
+#         state: present
+#       with_items:
+#         - bun
+#         - caddy
+
+#     - name: Create regular user "bun"
+#       user:
+#         name: bun
+#         state: present
+
+#     - name: Transfer application files
+#       synchronize:
+#         src: /path/to/your/local/application/files
+#         dest: /var/www/  # Change this to the appropriate directory
+#         delete: yes
+
+#     - name: Replace default Caddyfile
+#       copy:
+#         src: /path/to/your/local/Caddyfile
+#         dest: /etc/caddy/Caddyfile  # Change this to the appropriate location
+#         owner: root
+#         group: root
+#         mode: 0644
+
+#     - name: Transfer service file
+#       copy:
+#         src: /path/to/your/local/service/file
+#         dest: /etc/systemd/system/  # Change this to the appropriate directory
+#         owner: root
+#         group: root
+#         mode: 0644
+
+#     - name: Enable and start services (Bun and Caddy)
+#       systemd:
+#         name: "{{ item }}"
+#         state: started
+#         enabled: yes
+#       with_items:
+#         - bun
+#         - caddy
+#       notify: reload services
+
+#   handlers:
+#     - name: reload services
+#       systemd:
+#         name: "{{ item }}"
+#         state: restarted
+#       with_items:
+#         - bun
+#         - caddy

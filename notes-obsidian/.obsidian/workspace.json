@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/assignments/Assignment-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/assignments/Assignment-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/assignments/Assignment-2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
+                "file": "4640_notes_w24/assignments/Assignment-2.md"
               }
             }
           }
@@ -170,6 +170,31 @@
   },
   "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
+    "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
+    "4640_notes_w24/subject_notes/ansible_notes.md",
+    "4640_notes_w24/4640_Notes/Week9.md",
+    "4640_notes_w24/4640_Notes/Week8.md",
+    "4640_notes_w24/4640_Notes/Week6.md",
+    "4640_notes_w24/4640_Notes/Week7.md",
+    "4640_notes_w24/4640_Notes/Week11.md",
+    "ACIT-4880-Introduction-to-Data-Analytics.md",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/tests/valid_key_setup.tftest.hcl",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/variables.tf",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/tests",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/outputs.tf",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/main.tf",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair",
+    "4640_notes_w24/starter_code/count_dyn_inv/ansible/templates/hosts.j2",
+    "4640_notes_w24/starter_code/count_dyn_inv/ansible/inventory/hosts_aws_ec2.yml",
+    "4640_notes_w24/starter_code/count_dyn_inv/ansible/files/index.html",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/variables.tf",
+    "4640_notes_w24/starter_code/count_dyn_inv/terraform/README.md",
+    "4640_notes_w24/starter_code/count_dyn_inv/ansible/README.md",
+    "4640_notes_w24/attachments/dynamodb-drawing.png",
+    "4640_notes_w24/attachments/1710787032_grim.png",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "misc.md",
+    "images/Pasted image 20240221184134.png",
     "images/Pasted image 20240307110325.png",
     "images/Pasted image 20240307110124.png",
     "images/Pasted image 20240307110016.png",
@@ -177,44 +202,19 @@
     "images/Pasted image 20240307105827.png",
     "images/Pasted image 20240307105749.png",
     "images/Pasted image 20240307105210.png",
-    "images/Pasted image 20240307105201.png",
-    "images/Pasted image 20240307104926.png",
-    "images/Pasted image 20240307104847.png",
-    "images/Pasted image 20240307104823.png",
     "ACIT-4630-Info-Assurance-and-Security.md",
     "ACIT-3855-Service-Based-Architectures.md",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "4640_notes_w24/assignments/Assignment-2.md",
     "4640_notes_w24/assignments/Assignment-1.md",
-    "misc.md",
     "presentation.md",
-    "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
-    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "as1.md",
     "as1 1.md",
-    "4640_notes_w24/solutions/week05_inclass/files/index.html",
-    "4640_notes_w24/solutions/week05_inclass/main.tf",
-    "4640_notes_w24/solutions/week05_inclass/site.yaml",
-    "4640_notes_w24/solutions/week05_inclass/files",
     "4640_notes_w24/solutions/week02_inclass/readme.md",
-    "4640_notes_w24/solutions/week05_inclass/ansible_adhoc.sh",
-    "4640_notes_w24/solutions/week02_inclass/01_ssh_key_setup.sh",
-    "4640_notes_w24/solutions/week02_inclass/03_ec2_setup.sh",
-    "4640_notes_w24/solutions/week02_inclass/02_vpc_setup.sh",
-    "4640_notes_w24/solutions/week02_inclass/00_s3_setup.sh",
-    "4640_notes_w24/solutions/week03_inclass/main.tf",
-    "4640_notes_w24/subject_notes/ansible_notes.md",
     "4640_notes_w24/4640_Notes/resources.md",
-    "4640_notes_w24/4640_Notes/Week6.md",
     "4640_notes_w24/4640_Notes/Week5.md",
     "4640_notes_w24/4640_Notes/Week4.md",
     "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
     "4640_notes_w24/lab-4-markus-afonso.md",
-    "().md",
-    "4640_notes_w24/4640_Notes/Week2.md",
-    "4640_notes_w24/README.md",
-    "4640_notes_w24/4640_Notes/Week2_aws_cli_user_setup.md",
-    "4640_notes_w24/4640_Notes/Week2_bash_vscode_config.md",
-    "ACIT-4850-Enterprise-System-Integration.md"
+    "().md"
   ]
 }

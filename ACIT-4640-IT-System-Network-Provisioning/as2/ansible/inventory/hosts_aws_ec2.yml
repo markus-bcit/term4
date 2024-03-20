@@ -1,0 +1,13 @@
+---
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-west-2
+
+# Use the EC2 instance Name as the inventory_hostname
+hostnames:
+  - tag:Name
+
+# Set individual Variables
+compose:
+  # Configure ansible access to EC2 instances to use public DNS name
+  ansible_host: public_dns_name
