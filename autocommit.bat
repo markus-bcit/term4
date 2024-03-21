@@ -1,4 +1,3 @@
-@echo off
 
 set /p message=Enter a message:
 
