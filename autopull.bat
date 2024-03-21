@@ -9,4 +9,5 @@ goto :eof
 :catch
 echo An error occurred.
 pause
+timeout /t 3 >nul
 exit /b 1
