@@ -1,5 +1,5 @@
 @echo off
-set /p message=Enter a message:
+set /p message=
 
 git pull origin main
 git add .
