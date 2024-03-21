@@ -1,77 +1,153 @@
+
 ---
-
-- name: initial setup
+- name: Create user 
   hosts: all
   tasks:
-
-    - name: set hostname to inventory name
-      ansible.builtin.hostname:
-        name: "{{ inventory_hostname }}"
+    - name: Create user 'bun'
       become: true
+      user:
+        name: bun
+        state: present
 
-    - name: setup hosts file with inventory names
-      ansible.builtin.template:
-        src: templates/hosts.j2
-        dest: /etc/hosts
-        group: root
-        owner: root
-        mode: u=rw,g=r,o=r
-      become: true
-
-  tags:
-    - initial
-    - configure
-
-- name: initial setup
+- name: Install packages
   hosts: all
   tasks:
-
-    - name: install network debugging tools
-      ansible.builtin.package:
-        update_cache: true
-        name: "{{ item }}"
-        state: latest
-      with_items:
-        - bind9-dnsutils
-        - tcpdump
-        - nmap
-        - netcat-openbsd
+    - name: Install unzip # install unzip first
       become: true
+      apt:
+        name: unzip
+        state: present
 
-  tags:
-    - debug_tools
-    - configure
+    - name: Install bun
+      become: true
+      shell:
+        cmd: "curl -fsSL https://bun.sh/install | bash"
+        chdir: "/home/bun"
 
+    # - name: Install Caddy
+    #   become_user: bun
+    #   shell: |
+    #     sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+    #     curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+    #     curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+    #     sudo apt update
+    #     sudo apt install caddy
 
-- name: install and enable nginx
-  hosts: role_web
+- name: Copy files
+  hosts: all
   tasks:
-    - name: install nginx package
-      ansible.builtin.package:
-        name: nginx
-        state: latest
+    - name: Copy content
       become: true
-
-    - name: copy example HTML document to /var/www/html
       ansible.builtin.copy:
-        src: index.html
-        dest: /var/www/html/index.html
-        mode: u=rw,g=r,o=r
+        src: /home/markus/4640/as2/ansible/bun-htmx-4640
+        dest: /home/bun/
+
+    - name: Copy service file
       become: true
-      notify:
-        - start and enable nginx service
+      ansible.builtin.copy:
+        src: /home/markus/4640/as2/ansible/bun-4640-project.service
+        dest: /etc/systemd/system/
+    
+    - name: Copy service file 
+      become: true
+      ansible.builtin.copy:
+        src: /home/markus/4640/as2/ansible/Caddyfile
+        dest: /etc/caddy/Caddyfile
 
-  tags:
-    - web
-    - configure
 
-  handlers:
-    - name: start and enable nginx service
+- name: use new caddy
+  hosts: all
+  tasks:
+    - name: Install node_modules
+      become: true
+      shell: 
+        cmd: "bun i"
+        chdir: "/home/bun/bun-htmx-4640"
+    - name: stop caddy
+      become: true
       ansible.builtin.service:
-        name: nginx
-        state: restarted
-        daemon_reload: true
+        name: caddy
+        state: stopped
+    - name: start bun-4640-project
       become: true
+      ansible.builtin.service:
+        name: bun-4640-project
+        state: started
+
+# our web server is working. Now make it work for you. 💪
+
+# Caddy is ready to serve your site over HTTPS:
+
+# Point your domain's A/AAAA DNS records at this machine.
+# Upload your site's files to /var/www/html.
+# Edit your Caddyfile at /etc/caddy/Caddyfile:
+# Replace :80 with your domain name
+# Change the site root to /var/www/html
+# Reload the configuration: systemctl reload caddy
+# Visit your site!
+
+
+
+
+    # - name: set hostname to inventory name
+    #   ansible.builtin.hostname:
+    #     name: "{{ inventory_hostname }}"
+    #   become: true
+    # - name: Clone the application repository
+    #   git:
+    #     repo: https://gitlab.com/cit_4640/4640-assignment-app-files.git
+    #     dest: /path/to/application
+    #     clone: yes
+
+
+    # - name: Install Bun on CentOS/RHEL
+    #   yum:
+    #     name: bun
+    #     state: present
+    #   when: ansible_distribution == 'CentOS' or ansible_distribution == 'RedHat'
+
+    # - name: Download and install Caddy
+    #   get_url:
+    #     url: https://caddyserver.com/download/linux/amd64
+    #     dest: /tmp/caddy.tar.gz
+
+    # - name: Extract Caddy
+    #   unarchive:
+    #     src: /tmp/caddy.tar.gz
+    #     dest: /usr/local/bin
+    #     remote_src: yes
+    #     creates: /usr/local/bin/caddy
+
+
+  #   - name: Transfer application files
+  #     synchronize:
+  #       src: /path/to/local/application
+  #       dest: /path/to/application
+  #       recursive: yes
+
+  #   - name: Transfer service file
+  #     copy:
+  #       src: /path/to/local/service_file
+  #       dest: /etc/systemd/system/your_service.service
+
+  #   - name: Transfer Caddyfile
+  #     copy:
+  #       src: /path/to/local/Caddyfile
+  #       dest: /etc/caddy/Caddyfile
+
+  #   - name: Enable and start the service
+  #     systemd:
+  #       name: your_service
+  #       state: started
+  #       enabled: yes
+  #     notify:
+  #       - reload caddy
+
+  # handlers:
+  #   - name: reload caddy
+  #     systemd:
+  #       name: caddy
+  #       state: reloaded
 
 
 # ---
@@ -80,10 +156,10 @@
 #   hosts: all
 #   tasks:
 
-#     - name: set hostname to inventory name
-#       ansible.builtin.hostname:
-#         name: "{{ inventory_hostname }}"
-#       become: true
+    # - name: set hostname to inventory name
+    #   ansible.builtin.hostname:
+    #     name: "{{ inventory_hostname }}"
+    #   become: true
 
 #     - name: setup hosts file with inventory names
 #       ansible.builtin.template:

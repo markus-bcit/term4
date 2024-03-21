@@ -11,3 +11,7 @@ hostnames:
 compose:
   # Configure ansible access to EC2 instances to use public DNS name
   ansible_host: public_dns_name
+
+keyed_groups:
+  - key: tag_Name
+  - key: instance-id

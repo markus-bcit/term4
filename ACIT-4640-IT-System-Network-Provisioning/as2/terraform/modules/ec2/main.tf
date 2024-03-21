@@ -8,7 +8,7 @@ resource "aws_instance" "ec2_instance" {
   vpc_security_group_ids = var.vpc_security_group_ids
   tags = {
     Project = var.project_name
-    Name = var.tags
+    Name = join("_", [var.tags, count.index])
   }
 }
 
