@@ -14,5 +14,5 @@ goto :eof
 :catch
 echo An error occurred.
 pause
-ping -n 4 127.0.0.1 >nul
+set /p message='
 exit /b 1
