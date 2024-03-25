@@ -1,0 +1,45 @@
+# group 45 - Markus Afonso, Ramith Rajan
+stages:
+  - build
+  - test
+  - deliver
+
+variables:
+  MAVEN_CACHE: ${CI_PROJECT_DIR}/.m2
+  MAVEN_OPTS: "-Dmaven.repo.local=${MAVEN_CACHE}"
+
+cache:
+  paths:
+    - .m2/
+
+build:
+  image: maven:3.8.1-jdk-11
+  stage: build
+  script:
+    - mvn -B package -DskipTests
+  artifacts:
+    paths:
+      - target/
+  tags:
+    - docker-runner
+
+test:
+  image: maven:3.8.1-jdk-11
+  stage: test
+  script:
+    - mvn test
+  dependencies:
+    - build
+  tags:
+    - docker-runner
+
+deliver:
+  image: maven:3.8.1-jdk-11
+  stage: deliver
+  script:
+    - chmod +x ci/scripts/deliver.sh
+    - ./ci/scripts/deliver.sh
+  dependencies:
+    - build
+  tags:
+    - docker-runner
