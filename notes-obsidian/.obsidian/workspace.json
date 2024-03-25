@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/4640_Notes/Week11.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/4640_Notes/Week11.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+                "file": "4640_notes_w24/4640_Notes/Week11.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
+                "file": "4640_notes_w24/4640_Notes/Week11.md"
               }
             }
           }
@@ -183,6 +183,8 @@
   },
   "active": "f93590983f53a8ba",
   "lastOpenFiles": [
+    "4640_notes_w24/assignments/Assignment-3.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "ACIT-3855-Service-Based-Architectures.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
     "4640_notes_w24/subject_notes/ansible_notes.md",
@@ -206,7 +208,6 @@
     "4640_notes_w24/starter_code/count_dyn_inv/ansible/README.md",
     "4640_notes_w24/attachments/dynamodb-drawing.png",
     "4640_notes_w24/attachments/1710787032_grim.png",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "misc.md",
     "images/Pasted image 20240221184134.png",
     "images/Pasted image 20240307110325.png",
@@ -227,7 +228,6 @@
     "4640_notes_w24/4640_Notes/Week5.md",
     "4640_notes_w24/4640_Notes/Week4.md",
     "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
-    "4640_notes_w24/lab-4-markus-afonso.md",
-    "().md"
+    "4640_notes_w24/lab-4-markus-afonso.md"
   ]
 }
