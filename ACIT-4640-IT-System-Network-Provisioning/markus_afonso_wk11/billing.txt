@@ -1,0 +1,4 @@
+There's two billing options for dynamoDB:
+  - on-demand capacity mode: pay based on reads and writes of a table, but is not always available/scales down to save $
+  - provisioned capacity mode: specify the reads and writes you expect to make on a table. Since you've already pay for it, will always be available. 
+

@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4640_notes_w24/assignments/Assignment-2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f93590983f53a8ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4640_notes_w24/4640_Notes/Week11.md",
+                "file": "4640_notes_w24/assignments/Assignment-3.md",
                 "mode": "source",
                 "source": false
               }
@@ -53,8 +41,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week11.md",
+                "file": "4640_notes_w24/assignments/Assignment-3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week11.md",
+                "file": "4640_notes_w24/assignments/Assignment-3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4640_notes_w24/4640_Notes/Week11.md"
+                "file": "4640_notes_w24/assignments/Assignment-3.md"
               }
             }
           }
@@ -181,9 +168,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f93590983f53a8ba",
+  "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
+    "4640_notes_w24/4640_Notes/Week12.md",
     "4640_notes_w24/assignments/Assignment-3.md",
+    "4640_notes_w24/assignments/Assignment-2.md",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/aws_ssh_key_pair/tests/valid_key_setup.tftest.hcl",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_vpc_simple/variables.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_vpc_simple/outputs.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_vpc_simple/main.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_security_group/variables.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_security_group/outputs.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_security_group/main.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/variables.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/outputs.tf",
+    "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/main.tf",
+    "ACIT-4630-Info-Assurance-and-Security.md",
+    "4640_notes_w24/4640_Notes/Week11.md",
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "ACIT-3855-Service-Based-Architectures.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
@@ -192,18 +193,7 @@
     "4640_notes_w24/4640_Notes/Week8.md",
     "4640_notes_w24/4640_Notes/Week6.md",
     "4640_notes_w24/4640_Notes/Week7.md",
-    "4640_notes_w24/4640_Notes/Week11.md",
     "ACIT-4880-Introduction-to-Data-Analytics.md",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/tests/valid_key_setup.tftest.hcl",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/variables.tf",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/tests",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/outputs.tf",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair/main.tf",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/modules/aws_ssh_key_pair",
-    "4640_notes_w24/starter_code/count_dyn_inv/ansible/templates/hosts.j2",
-    "4640_notes_w24/starter_code/count_dyn_inv/ansible/inventory/hosts_aws_ec2.yml",
-    "4640_notes_w24/starter_code/count_dyn_inv/ansible/files/index.html",
-    "4640_notes_w24/starter_code/count_dyn_inv/terraform/variables.tf",
     "4640_notes_w24/starter_code/count_dyn_inv/terraform/README.md",
     "4640_notes_w24/starter_code/count_dyn_inv/ansible/README.md",
     "4640_notes_w24/attachments/dynamodb-drawing.png",
@@ -217,8 +207,6 @@
     "images/Pasted image 20240307105827.png",
     "images/Pasted image 20240307105749.png",
     "images/Pasted image 20240307105210.png",
-    "ACIT-4630-Info-Assurance-and-Security.md",
-    "4640_notes_w24/assignments/Assignment-2.md",
     "4640_notes_w24/assignments/Assignment-1.md",
     "presentation.md",
     "as1.md",
@@ -227,7 +215,6 @@
     "4640_notes_w24/4640_Notes/resources.md",
     "4640_notes_w24/4640_Notes/Week5.md",
     "4640_notes_w24/4640_Notes/Week4.md",
-    "4640_notes_w24/4640_Notes/Week3_ssh_keys.md",
-    "4640_notes_w24/lab-4-markus-afonso.md"
+    "4640_notes_w24/4640_Notes/Week3_ssh_keys.md"
   ]
 }
