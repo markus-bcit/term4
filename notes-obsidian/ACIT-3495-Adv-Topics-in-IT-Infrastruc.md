@@ -713,3 +713,90 @@ docker push markusbcit/web-app:v2
 ![[Pasted image 20240307110016.png]]
 ![[Pasted image 20240307110124.png]]
 ![[Pasted image 20240307110325.png]]
+# lab 7
+(3 marks)
+
+1.     Create a Pod YAML file with two containers that use the image alpine Provide a command for both containers that keep them running forever.
+![[Pasted image 20240328110530.png]]
+
+2.     Define a Volume of type emptyDir for the Pod. Container 1 should mount the Volume to path /etc/a, and container 2 should mount the Volume to path /etc/b.
+
+3.     Open an interactive shell for container 1 and create the directory data in the mount path. Navigate to the directory and create the file hello.txt with the contents “Hello World.” Exit out of the container.
+
+![[Pasted image 20240328110552.png]]
+
+4.     Open an interactive shell for container 2 and navigate to the directory /etc/b/data. Inspect the contents of file hello.txt. Exit out of the container.
+
+![[Pasted image 20240328110602.png]]
+
+(4 marks)
+
+5.     Create a PersistentVolume named logs-pv that maps to the hostPath /var/logs. The access mode should be ReadWriteOnce. Provision a storage capacity of 5Gi. Ensure that the status of the PersistentVolume shows Available.
+![[Pasted image 20240328110616.png]]
+![[Pasted image 20240328110622.png]]
+
+6.     Create a PersistentVolumeClaim named logs-pvc. The access it uses is ReadWriteOnce. Request a capacity of 2Gi. Ensure that the status of the PersistentVolume shows Bound.
+![[Pasted image 20240328110632.png]]
+![[Pasted image 20240328110640.png]]
+7.     Mount the PersistentVolumeClaim in a Pod running the image nginx at the mount path /var/log/nginx.
+![[Pasted image 20240328110711.png]]
+8.     Open an interactive shell to the container and create a new file named my-nginx.log in /var/log/nginx. Exit out of the Pod.
+![[Pasted image 20240328110703.png]]
+9.     Delete the Pod and re-create it with the same YAML manifest. Open an interactive shell to the Pod, navigate to the directory /var/log/nginx, and find the file you created before.
+![[Pasted image 20240328110729.png]]
+10.  Run the Init Container pattern example (1 mark)
+![[Pasted image 20240328110352.png]]
+
+11.  Run the web-app.yaml (Sidecar pattern first example). What is the difference between this and the one in step 10? (1 mark)
+this created a service 
+![[Pasted image 20240328110327.png]]
+![[Pasted image 20240328111359.png]]
+12.  Run the sidecar.yaml  (Sidecar pattern second example). Use the commands in the example.txt file to demo how it works:
+![[Pasted image 20240328110418.png]]
+![[Pasted image 20240328110440.png]]
+
+kubectl create -f sidecar.yaml
+
+kubectl get pods webserver
+
+kubectl logs webserver -c sidecar
+
+kubectl exec webserver -it -c sidecar -- /bin/sh
+
+wget -O- localhost?unknown
+
+cat /var/log/nginx/error.log
+
+(1 mark)
+
+```bash
+kubectl create -f pod-with-vol.yaml
+kubectl get pod business-app
+kubectl exec business-app -it -c nginx -- /bin/sh
+kubectl exec business-app -it -c app -- /bin/sh
+
+kubectl create -f db-pv.yaml
+kubectl get pv db-pv
+
+kubectl create -f db-pvc.yaml
+kubectl get pvc db-pvc
+kubectl describe pvc db-pvc
+
+kubectl create -f app-consuming-pvc.yaml
+kubectl get pods
+kubectl describe pod app-consuming-pvc
+
+kubectl describe pvc db-pvc
+kubectl exec app-consuming-pvc -it -- /bin/sh
+
+kubectl create -f pod.yml
+kubectl create -f service.yml
+
+kubectl create -f web-app.yml
+kubectl create -f sidecar.yaml
+kubectl get pods webserver
+kubectl logs webserver -c sidecar
+ kubectl exec webserver -it -c sidecar -- /bin/sh
+wget -O- localhost?unknown
+cat /var/log/nginx/error.log
+```

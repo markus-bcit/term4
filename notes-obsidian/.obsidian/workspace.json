@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4640_notes_w24/assignments/Assignment-3.md",
-                "mode": "source",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4640_notes_w24/assignments/Assignment-3.md",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4640_notes_w24/assignments/Assignment-3.md",
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4640_notes_w24/assignments/Assignment-3.md"
+                "file": "ACIT-4880-Introduction-to-Data-Analytics.md"
               }
             }
           }
@@ -170,8 +170,20 @@
   },
   "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
-    "4640_notes_w24/4640_Notes/Week12.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
+    "images/Pasted image 20240328111359.png",
+    "images/Pasted image 20240328110729.png",
+    "images/Pasted image 20240328110711.png",
+    "images/Pasted image 20240328110703.png",
+    "images/Pasted image 20240328110657.png",
+    "images/Pasted image 20240328110640.png",
+    "images/Pasted image 20240328110638.png",
+    "images/Pasted image 20240328110632.png",
+    "images/Pasted image 20240328110622.png",
+    "images/Pasted image 20240328110616.png",
+    "ACIT-4630-Info-Assurance-and-Security.md",
     "4640_notes_w24/assignments/Assignment-3.md",
+    "4640_notes_w24/4640_Notes/Week12.md",
     "4640_notes_w24/assignments/Assignment-2.md",
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/aws_ssh_key_pair/tests/valid_key_setup.tftest.hcl",
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_vpc_simple/variables.tf",
@@ -183,9 +195,7 @@
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/variables.tf",
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/outputs.tf",
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/main.tf",
-    "ACIT-4630-Info-Assurance-and-Security.md",
     "4640_notes_w24/4640_Notes/Week11.md",
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "ACIT-3855-Service-Based-Architectures.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
     "4640_notes_w24/subject_notes/ansible_notes.md",
@@ -196,17 +206,7 @@
     "ACIT-4880-Introduction-to-Data-Analytics.md",
     "4640_notes_w24/starter_code/count_dyn_inv/terraform/README.md",
     "4640_notes_w24/starter_code/count_dyn_inv/ansible/README.md",
-    "4640_notes_w24/attachments/dynamodb-drawing.png",
-    "4640_notes_w24/attachments/1710787032_grim.png",
     "misc.md",
-    "images/Pasted image 20240221184134.png",
-    "images/Pasted image 20240307110325.png",
-    "images/Pasted image 20240307110124.png",
-    "images/Pasted image 20240307110016.png",
-    "images/Pasted image 20240307105911.png",
-    "images/Pasted image 20240307105827.png",
-    "images/Pasted image 20240307105749.png",
-    "images/Pasted image 20240307105210.png",
     "4640_notes_w24/assignments/Assignment-1.md",
     "presentation.md",
     "as1.md",
@@ -214,7 +214,6 @@
     "4640_notes_w24/solutions/week02_inclass/readme.md",
     "4640_notes_w24/4640_Notes/resources.md",
     "4640_notes_w24/4640_Notes/Week5.md",
-    "4640_notes_w24/4640_Notes/Week4.md",
-    "4640_notes_w24/4640_Notes/Week3_ssh_keys.md"
+    "4640_notes_w24/4640_Notes/Week4.md"
   ]
 }
