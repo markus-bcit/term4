@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "mode": "preview",
                 "source": false
               }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md",
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ACIT-4880-Introduction-to-Data-Analytics.md"
+                "file": "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md"
               }
             }
           }
@@ -170,18 +170,22 @@
   },
   "active": "30fed6b8df4b9669",
   "lastOpenFiles": [
-    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
-    "images/Pasted image 20240328111359.png",
-    "images/Pasted image 20240328110729.png",
-    "images/Pasted image 20240328110711.png",
-    "images/Pasted image 20240328110703.png",
-    "images/Pasted image 20240328110657.png",
-    "images/Pasted image 20240328110640.png",
-    "images/Pasted image 20240328110638.png",
-    "images/Pasted image 20240328110632.png",
-    "images/Pasted image 20240328110622.png",
-    "images/Pasted image 20240328110616.png",
+    "images/Pasted image 20240404095044.png",
+    "images/Pasted image 20240404094209.png",
+    "images/Pasted image 20240404094154.png",
+    "images/Pasted image 20240404094110.png",
+    "images/Pasted image 20240404094024.png",
+    "images/Pasted image 20240404094006.png",
+    "images/Pasted image 20240404093943.png",
+    "images/Pasted image 20240404093855.png",
+    "images/Pasted image 20240404093751.png",
+    "images/Pasted image 20240404093715.png",
+    "images/Pasted image 20240404093644.png",
+    "ACIT-3855-Service-Based-Architectures.md",
     "ACIT-4630-Info-Assurance-and-Security.md",
+    "ACIT-4850-Enterprise-System-Integration.md",
+    "ACIT-4880-Introduction-to-Data-Analytics.md",
+    "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "4640_notes_w24/assignments/Assignment-3.md",
     "4640_notes_w24/4640_Notes/Week12.md",
     "4640_notes_w24/assignments/Assignment-2.md",
@@ -196,14 +200,12 @@
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/outputs.tf",
     "4640_notes_w24/starter_code/mod_remote_state/infra/modules/terraform_ec2_simple/main.tf",
     "4640_notes_w24/4640_Notes/Week11.md",
-    "ACIT-3855-Service-Based-Architectures.md",
     "4640_notes_w24/inclass-labs/lab-5-markus-afonso.md",
     "4640_notes_w24/subject_notes/ansible_notes.md",
     "4640_notes_w24/4640_Notes/Week9.md",
     "4640_notes_w24/4640_Notes/Week8.md",
     "4640_notes_w24/4640_Notes/Week6.md",
     "4640_notes_w24/4640_Notes/Week7.md",
-    "ACIT-4880-Introduction-to-Data-Analytics.md",
     "4640_notes_w24/starter_code/count_dyn_inv/terraform/README.md",
     "4640_notes_w24/starter_code/count_dyn_inv/ansible/README.md",
     "misc.md",
@@ -213,7 +215,6 @@
     "as1 1.md",
     "4640_notes_w24/solutions/week02_inclass/readme.md",
     "4640_notes_w24/4640_Notes/resources.md",
-    "4640_notes_w24/4640_Notes/Week5.md",
-    "4640_notes_w24/4640_Notes/Week4.md"
+    "4640_notes_w24/4640_Notes/Week5.md"
   ]
 }

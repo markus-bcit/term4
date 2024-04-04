@@ -800,3 +800,165 @@ kubectl logs webserver -c sidecar
 wget -O- localhost?unknown
 cat /var/log/nginx/error.log
 ```
+# Lab 9
+1.     Create (imperatively) a ConfigMap that has two keys and two values  (1 mark)
+![[Pasted image 20240404085831.png]]
+2.     Write a YAML file to create the same ConfigMap declaratively (1 mark)
+![[Pasted image 20240404090000.png]]
+3.     Create the same ConfigMap from a configuration file (1 mark)
+```bash
+~/3495/lab9 on ☁️  acit4640_admin (us-west-2)
+❯ kubectl create configmap my-configmap --from-file=config
+configmap/my-configmap created
+
+~/3495/lab9 on ☁️  acit4640_admin (us-west-2)
+❯ cat config
+key1=value1
+key2=value2
+```
+4.     Create a Secret imperatively (1 mark)
+![[Pasted image 20240404090133.png]]
+5.     Write a YAML file to create the same Secret declaratively (1 mark)
+![[Pasted image 20240404090339.png]]
+6.     Read all ConfigMaps and Secrets (1 marks)
+![[Pasted image 20240404090933.png]]
+![[Pasted image 20240404090919.png]]
+![[Pasted image 20240404090832.png]]
+
+7.     Get the description of all ConfigMaps and Secrets (1 marks)
+![[Pasted image 20240404090616.png]]
+![[Pasted image 20240404090713.png]]
+![[Pasted image 20240404090722.png]]
+8.     Write a YAML to create a pod based on nginx image, the YAML file should read at least one value from a ConfigMap and one value from a Secret.
+```yml
+❯ cat q8.yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      env:
+        - name: CONFIG_VALUE
+          valueFrom:
+            configMapKeyRef:
+              name: myconfigmap
+              key: data.bar
+        - name: SECRET_VALUE
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: data.pwd
+```
+
+```bash
+kubectl create configmap config1 --from-literal=sleep-interval=25
+kubectl create configmap myconfigmap --from-literal=foo=bar --from-literal=bar=baz
+kubectl get configmap config1 -o yaml
+kubectl get configmaps
+kubectl create -f fortune-config.yaml
+kubectl create -f fortune-pod-env-configmap.yaml
+kubectl get secrets
+kubectl describe secrets
+kubectl create secret generic my-secret --from-literal=pwd=password
+kubectl get secrets my-secret -o yaml
+```
+
+# Lab 10
+Q1. Create a pod using readiness.yml, check if the pod is created.
+![[Pasted image 20240404092612.png]]
+Q2. Get the description of the pod and notice the readiness probe.
+![[Pasted image 20240404092713.png]]
+Q3. Change the readiness probe parameters, recreate the pod,  and notice the effect of that. Make sure that you understand the purpose of using readiness probes and how they work.
+![[Pasted image 20240404093139.png]]
+Q4. Create a pod using liveness.yml, check if the pod is created.
+![[Pasted image 20240404093316.png]]
+Q5. Get the description of the pod and notice the liveness probe.
+![[Pasted image 20240404093308.png]]
+Q6. Change the liveness probe parameters, recreate the pod, and notice the effect of that. Make sure that you understand the purpose of using liveness probes and how they work.
+![[Pasted image 20240404093644.png]]
+Q7. Create a pod using startup.yml, check if the pod is created.
+![[Pasted image 20240404093715.png]]
+Q8. Get the description of the pod and notice the startup probe.
+![[Pasted image 20240404093751.png]]
+Q9. Change the startup probe parameters, recreate the pod, and notice the effect of that. Make sure that you understand the purpose of using startup probes and how they work.
+![[Pasted image 20240404093855.png]]
+Hint: [This reference](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) might help in answering the above questions.
+
+Q10. Create a pod using crash-loop-back.yml
+![[Pasted image 20240404093943.png]]
+Q11. Observe the status of the pod and the logs.
+![[Pasted image 20240404094024.png]]
+![[Pasted image 20240404094110.png]]
+Q12. Create a job using job.yml and notice the job, pod, and the logs.
+![[Pasted image 20240404094209.png]]
+![[Pasted image 20240404094154.png]]
+
+Q13. Create a cronjob using cronjob.yml and notice the job, pod and the logs.
+![[Pasted image 20240404095044.png]]
+Q14. Go to [this tutorial](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
+
+Mainly show the following points:
+
+1. How to create a StatefulSet
+using a `volumeClaimTemplate` to provision persistent storage for each pod in the StatefulSet
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    name: web
+  clusterIP: None
+  selector:
+    app: nginx
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  serviceName: "nginx"
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: registry.k8s.io/nginx-slim:0.8
+        ports:
+        - containerPort: 80
+          name: web
+        volumeMounts:
+        - name: www
+          mountPath: /usr/share/nginx/html
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+```
+3. How a StatefulSet manages its Pods
+A StatefulSet is responsible for managing the deployment and scaling of a set of Pods, and ensuring that each Pod is uniquely identifiable and maintains its identity across restarts. Each Pod in a StatefulSet has a stable network identity and stable storage.
+5. How to delete a StatefulSet
+```bash
+kubectl delete statefulset <name>
+```
+7. How to scale a StatefulSet
+```bash
+kubectl scale statefulset web --replicas=5
+```
