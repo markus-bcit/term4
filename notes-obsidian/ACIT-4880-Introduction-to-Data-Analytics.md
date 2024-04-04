@@ -18,3 +18,21 @@
 		- ![[Pasted image 20240111142456.png]]
 	- Deployment and Tools
 		- ![[Pasted image 20240111142520.png]]
+- Estimation vs Prediction
+	- Estimation: based on present data 
+		- confidence interval, 
+	- prediction: future 
+- Regression
+- Classification
+- Associtation
+- Clustering
+How many more IT staff should be hired, expect to add 100 staff?
+- Prediction: Analyze existing trend to predict how many to fire
+Reason for data mining isage increase
+- commercialziation of produts
+- continual technological advancmenets
+- external pressure
+
+EDA Exploratory data analytics
+- wish to examine variables distribution, histograms 
+
