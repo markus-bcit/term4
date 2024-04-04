@@ -20,6 +20,16 @@
             }
           },
           {
+            "id": "6ab38386c4d81b53",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
+          },
+          {
             "id": "b1f5f937d6869459",
             "type": "leaf",
             "state": {
@@ -41,7 +51,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "30fed6b8df4b9669",
+  "active": "6ab38386c4d81b53",
   "lastOpenFiles": [
     "ACIT-3495-Adv-Topics-in-IT-Infrastruc.md",
     "4640_notes_w24/4640_Notes/Week1.md",
