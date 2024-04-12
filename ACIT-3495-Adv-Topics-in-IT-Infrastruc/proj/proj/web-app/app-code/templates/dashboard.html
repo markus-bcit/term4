@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Your Dashboard!</h1>
+    <p>This is the dashboard page where you can access your account information and other features.</p>
+    <form action="/submit_data" method="post">
+        <label for="data1">Data 1:</label>
+        <input type="text" id="data1" name="data1" required>
+        <br>
+        <label for="data2">Data 2:</label>
+        <input type="text" id="data2" name="data2" required>
+        <br>
+        <label for="data3">Data 3:</label>
+        <input type="text" id="data3" name="data3" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <form action="/logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
