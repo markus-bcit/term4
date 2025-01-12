@@ -1,0 +1,33 @@
+- name: Install unzip 
+  become: true
+  apt:
+    name: unzip
+    state: present
+
+- name: Install bun
+  become: true
+  shell:
+    cmd: "curl -fsSL https://bun.sh/install | bash"
+    # chdir: "/home/bun"
+
+- name: Add lines to .bashrc for user 'bun' # This is only here because I couldn't install as bun user.
+  become: true
+  lineinfile:
+    dest: "/home/bun/.bashrc"
+    line: |
+      # bun
+      export BUN_INSTALL="$HOME/.bun"
+      export PATH=$BUN_INSTALL/bin:$PATH
+
+- name: copy .bun to /home/bun
+  become: true
+  shell: 'cp -r /root/.bun /home/bun/' # https://abdusfauzi.com/2023/11/03/how-to-install-bun-sh-for-global-ubuntu-users-other-than-root/
+
+- name: Install Caddy
+  become: true
+  shell: |
+    apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+    curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+    curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | tee /etc/apt/sources.list.d/caddy-stable.list
+    apt update
+    apt install caddy

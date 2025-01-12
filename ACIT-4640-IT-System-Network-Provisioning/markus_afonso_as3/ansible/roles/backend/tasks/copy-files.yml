@@ -1,0 +1,17 @@
+- name: Copy content
+  become: true
+  ansible.builtin.copy:
+    src: "roles/backend/files/hello-server"
+    dest: /var/www/backend/
+
+- name: Copy service file
+  become: true
+  ansible.builtin.copy:
+    src: "roles/backend/files/hello-server.service"
+    dest: /etc/systemd/system/
+
+- name: Copy service file 
+  become: true
+  ansible.builtin.copy:
+    src: "roles/backend/files/Caddyfile"
+    dest: /etc/caddy/Caddyfile
