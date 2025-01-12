@@ -1,0 +1,19 @@
+- name: Update apt cache
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: install nginx package
+  ansible.builtin.package:
+    name: nginx
+    state: latest
+  become: true
+
+- name: copy  HTML document to /var/www/frontend
+  become: true
+  ansible.builtin.copy:
+    src: "roles/frontend/files/index.html"
+    dest: /var/www/frontend/
+    mode: u=rw,g=r,o=r
+  notify:
+    - start and enable nginx service
+

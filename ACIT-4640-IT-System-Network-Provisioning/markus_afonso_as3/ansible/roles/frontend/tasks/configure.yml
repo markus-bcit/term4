@@ -1,0 +1,24 @@
+- name: Copy Nginx configuration file
+  ansible.builtin.copy:
+    src: "roles/frontend/files/hello.conf"  
+    dest: /etc/nginx/sites-available/hello.conf
+    owner: root  
+    group: root  
+    mode: '0644' 
+
+- name: Remove default Nginx configuration file
+  become: true
+  ansible.builtin.file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+- name: Create symbolic link to enable the site
+  ansible.builtin.file:
+    src: /etc/nginx/sites-available/hello.conf
+    dest: /etc/nginx/sites-enabled/hello.conf
+    state: link  
+
+- name: Restart Nginx
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
