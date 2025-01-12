@@ -1,0 +1,12 @@
+[Unit]
+Description=A web api that echos a post request
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/var/www/backend/hello-server
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,29 @@
+
+---
+- name: Roles for the backend servers
+  hosts: backend
+  become: true
+  roles:
+    - backend
+  tasks:
+    - include_tasks: roles/backend/tasks/create-user.yml
+    - include_tasks: roles/backend/tasks/install-packages.yml
+    - include_tasks: roles/backend/tasks/copy-files.yml
+    - include_tasks: roles/backend/tasks/configure.yml
+
+- name: Roles for the frontend servers
+  hosts: frontend
+  become: true
+  roles:
+    - frontend
+  tasks:
+    - include_tasks: roles/frontend/tasks/install-nginx.yml
+    - include_tasks: roles/frontend/tasks/configure.yml
+
+  handlers:
+    - name: start and enable nginx service
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+        daemon_reload: true
+      become: true

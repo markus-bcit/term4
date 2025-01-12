@@ -1,0 +1,17 @@
+
+- name: Set permissions to 777 for hello-server file
+  ansible.builtin.file:
+    path: /var/www/backend/hello-server
+    mode: "0777"
+
+- name: Start hello-server
+  become: true
+  ansible.builtin.service:
+    name: hello-server
+    state: started
+    enabled: yes
+- name: Restart caddy
+  become: true
+  ansible.builtin.service:
+    name: caddy
+    state: restarted

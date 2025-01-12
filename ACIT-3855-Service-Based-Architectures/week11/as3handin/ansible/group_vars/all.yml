@@ -1,0 +1,2 @@
+ansible_ssh_private_key_file: "/home/markus/4640/as3/terraform/infra/acit4640_as3.pem"
+ansible_user: ubuntu

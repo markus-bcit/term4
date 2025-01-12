@@ -1,0 +1,444 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: analytics
+  name: analytics
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: analytics
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: analytics
+    spec:
+      containers:
+        - image: markusbcit/analytics:latest
+          name: analytics
+          ports:
+            - containerPort: 8081
+          resources: {}
+      restartPolicy: Always
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: analytics
+  name: analytics
+spec:
+  ports:
+    - name: "8081"
+      port: 8081
+      targetPort: 8081
+  selector:
+    io.kompose.service: analytics
+  type: LoadBalancer  # Expose service externally
+status:
+  loadBalancer: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: auth
+  name: auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: auth
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: auth
+    spec:
+      containers:
+        - image: markusbcit/auth:latest
+          name: auth
+          ports:
+            - containerPort: 8000
+          resources: {}
+      restartPolicy: Always
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: auth
+  name: auth
+spec:
+  ports:
+    - name: "8000"
+      port: 8000
+      targetPort: 8000
+  selector:
+    io.kompose.service: auth
+  type: LoadBalancer  # Expose service externally
+status:
+  loadBalancer: {}
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mongodb-claim0
+  name: mongodb-claim0
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+status: {}
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mongodb-claim1
+  name: mongodb-claim1
+spec:
+  accessModes:
+    - ReadOnlyMany
+  resources:
+    requests:
+      storage: 100Mi
+status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mongodb
+  name: mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: mongodb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: mongodb
+    spec:
+      containers:
+        - env:
+            - name: MONGO_INITDB_DATABASE
+              value: analyticsDb
+          image: mongo:latest
+          name: mongodb
+          ports:
+            - containerPort: 27017
+          resources: {}
+          volumeMounts:
+            - mountPath: /data/db
+              name: mongodb-claim0
+            - mountPath: /docker-entrypoint-initdb.d/mongo-init.js
+              name: mongodb-claim1
+              readOnly: true
+      restartPolicy: Always
+      volumes:
+        - name: mongodb-claim0
+          persistentVolumeClaim:
+            claimName: mongodb-claim0
+        - name: mongodb-claim1
+          persistentVolumeClaim:
+            claimName: mongodb-claim1
+            readOnly: true
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mongodb
+  name: mongodb
+spec:
+  ports:
+    - name: "27017"
+      port: 27017
+      targetPort: 27017
+  selector:
+    io.kompose.service: mongodb
+  type: LoadBalancer  # Expose service externally
+status:
+  loadBalancer: {}
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mysql-data
+  name: mysql-data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mysql
+  name: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: mysql
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: mysql
+    spec:
+      containers:
+        - env:
+            - name: MYSQL_DATABASE
+              value: db
+            - name: MYSQL_ROOT_PASSWORD
+              value: password
+          image: markusbcit/mysql:latest
+          name: mysql
+          ports:
+            - containerPort: 3306
+          resources: {}
+          volumeMounts:
+            - mountPath: /data
+              name: mysql-data
+      restartPolicy: Always
+      volumes:
+        - name: mysql-data
+          persistentVolumeClaim:
+            claimName: mysql-data
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: mysql
+  name: mysql
+spec:
+  ports:
+    - name: "3306"
+      port: 3306
+      targetPort: 3306
+  selector:
+    io.kompose.service: mysql
+  type: LoadBalancer  # Expose service externally
+status:
+  loadBalancer: {}
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: null
+  name: network
+spec:
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.network/network: "true"
+  podSelector:
+    matchLabels:
+      io.kompose.network/network: "true"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node-app
+  name: node-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: node-app
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: node-app
+    spec:
+      containers:
+        - image: markusbcit/node-app:latest
+          name: node-app
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              memory: 25Mi  # Corrected capitalization
+      restartPolicy: Always
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node-app
+  name: node-app
+spec:
+  ports:
+    - name: "http"
+      port: 3000
+      targetPort: 3000
+      nodePort: 32000   # Specify the desired external port here
+  selector:
+    io.kompose.service: node-app
+  type: NodePort        # Ensure the service type is set to NodePort
+status:
+  loadBalancer: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: web-app
+  name: web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: web-app
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: "1.26.0 (40646f47)"
+      creationTimestamp: null
+      labels:
+        io.kompose.network/network: "true"
+        io.kompose.service: web-app
+    spec:
+      containers:
+        - image: markusbcit/web-app:latest
+          name: web-app
+          ports:
+            - containerPort: 5005
+          resources: {}
+      restartPolicy: Always
+status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: "1.26.0 (40646f47)"
+  creationTimestamp: null
+  labels:
+    io.kompose.service: web-app
+  name: web-app
+spec:
+  ports:
+    - name: "5005"
+      port: 5005
+      targetPort: 5005
+      nodePort: 32001
+  selector:
+    io.kompose.service: web-app
+  type: NodePort 
+status:
+  loadBalancer: {}

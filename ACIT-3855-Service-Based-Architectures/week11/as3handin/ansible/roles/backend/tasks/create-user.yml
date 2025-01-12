@@ -1,0 +1,7 @@
+- name: Create user bum
+  become: true
+  user:
+    name: bun
+    state: present
+    shell: /bin/bash
+    create_home: yes
