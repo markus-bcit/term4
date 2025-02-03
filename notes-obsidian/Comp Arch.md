@@ -26,3 +26,12 @@ Microcontrollers typically have three types of memory on board:
 - **Flash** memory is programmable using an external interface and high voltages, and this is where program code and data are stored. Flash RAM is nonvolatile, so even if the system is powered down, the flash memory will remember what was written to it. 
 - **EEPROM** is also nonvolatile, but unlike flash RAM, it can be changed by the program while it is running. This is the storage in which an embedded system would keep user configuration information. 
 - **RAM** is where program variables will be stored as the program runs. This memory is volatile, so any value stored here will be lost once the system loses power. EEPROM = Electrically Erasable Programmable Read-Only Memory
+
+## Day 2
+
+- [File](file:///C:/Users/Markus/OneDrive%20-%20BCIT/Desktop/term4/COMP-2825-Comp-Architecture/day2/pts_part_2.pdf)
+- 
+- Assignment Sunday night and quiz on this
+## Day3
+- ![[Pasted image 20250126192257.png]]
+- 
