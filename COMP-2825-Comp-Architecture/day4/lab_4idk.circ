@@ -59,7 +59,31 @@
       <a name="facing" val="east"/>
       <a name="label" val="B0"/>
     </comp>
-    <comp lib="0" loc="(250,200)" name="Pin">
+    <comp lib="0" loc="(180,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A1"/>
+    </comp>
+    <comp lib="0" loc="(180,230)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(180,280)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="0" loc="(180,310)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A3"/>
+    </comp>
+    <comp lib="0" loc="(180,390)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B3"/>
+    </comp>
+    <comp lib="0" loc="(250,450)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
     </comp>
@@ -67,6 +91,18 @@
       <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(310,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,220)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,300)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(310,380)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
@@ -105,13 +141,40 @@
     <comp loc="(250,170)" name="FullAdder1Bit">
       <a name="facing" val="south"/>
     </comp>
+    <comp loc="(250,250)" name="FullAdder1Bit">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp loc="(250,330)" name="FullAdder1Bit">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp loc="(250,410)" name="FullAdder1Bit">
+      <a name="facing" val="south"/>
+    </comp>
     <wire from="(180,120)" to="(190,120)"/>
     <wire from="(180,150)" to="(220,150)"/>
+    <wire from="(180,200)" to="(190,200)"/>
+    <wire from="(180,230)" to="(220,230)"/>
+    <wire from="(180,280)" to="(190,280)"/>
+    <wire from="(180,310)" to="(220,310)"/>
+    <wire from="(180,360)" to="(190,360)"/>
+    <wire from="(180,390)" to="(220,390)"/>
     <wire from="(190,120)" to="(190,130)"/>
     <wire from="(190,130)" to="(220,130)"/>
+    <wire from="(190,200)" to="(190,210)"/>
+    <wire from="(190,210)" to="(220,210)"/>
+    <wire from="(190,280)" to="(190,290)"/>
+    <wire from="(190,290)" to="(220,290)"/>
+    <wire from="(190,360)" to="(190,370)"/>
+    <wire from="(190,370)" to="(220,370)"/>
     <wire from="(250,170)" to="(250,200)"/>
+    <wire from="(250,250)" to="(250,280)"/>
+    <wire from="(250,330)" to="(250,360)"/>
+    <wire from="(250,410)" to="(250,450)"/>
     <wire from="(250,70)" to="(250,120)"/>
     <wire from="(270,140)" to="(310,140)"/>
+    <wire from="(270,220)" to="(310,220)"/>
+    <wire from="(270,300)" to="(310,300)"/>
+    <wire from="(270,380)" to="(310,380)"/>
     <wire from="(60,120)" to="(80,120)"/>
     <wire from="(60,150)" to="(80,150)"/>
     <wire from="(60,180)" to="(80,180)"/>

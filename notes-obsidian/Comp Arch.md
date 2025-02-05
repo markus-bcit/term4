@@ -11,6 +11,7 @@
 | 10⁻²¹      | 0.000000000000000000001     | zepto   | 10²¹       | 1,000,000,000,000,000,000,000 | zetta   | 2⁷⁰ = zebi           |
 | 10⁻²⁴      | 0.000000000000000000000001  | yocto   | 10²⁴       | 1,000,000,000,000,000,000,000,000 | yotta   | 2⁸⁰ = yobi           |
 
+[outline](https://www.bcit.ca/outlines/20251091798/)
 ## Day 1
 - [File](file:///C:/Users/Markus/OneDrive%20-%20BCIT/Desktop/term4/COMP-2825-Comp-Architecture/pts_part_1.pdf)
 - [Quiz 1](file:///C:/Users/Markus/OneDrive%20-%20BCIT/Desktop/term4/COMP-2825-Comp-Architecture/Quiz%201.pdf)
