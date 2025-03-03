@@ -35,4 +35,4 @@ Microcontrollers typically have three types of memory on board:
 - Assignment Sunday night and quiz on this
 ## Day3
 - ![[Pasted image 20250126192257.png]]
-![[Pasted image 20250218191106.png]]
+![[Pasted image 20250218191106.png]]![[Pasted image 20250225202742.png]]
