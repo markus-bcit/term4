@@ -35,4 +35,25 @@ Microcontrollers typically have three types of memory on board:
 - Assignment Sunday night and quiz on this
 ## Day3
 - ![[Pasted image 20250126192257.png]]
+# Midterm Cutoff
+
+
 ![[Pasted image 20250218191106.png]]![[Pasted image 20250225202742.png]]
+![[Pasted image 20250304180704.png]]
+- Little Endian => Least significant is first
+	- matches memory address
+- Big Endian => most significant is first
+- ![[Pasted image 20250304181836.png]]
+- Parity = count of 1s + 1 (if needed)
+	- odd parity => 3 (1s) does not need 1
+	- even parity => 4 (1s) does not need 1
+	- if all bytes are even and destination is not => corrupted 
+- ![[{63E92599-A6D4-4D87-9B41-40A638368DE8}.png]]
+- PRIMARY MEMORY crc
+	- if starts with 1
+		- use genertor
+	- else 
+		- use 000
+	- If reader != 000
+		- corrupted
+	- 
