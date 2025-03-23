@@ -56,4 +56,7 @@ Microcontrollers typically have three types of memory on board:
 		- use 000
 	- If reader != 000
 		- corrupted
-	- 
+- SECONDARY MEMORY Compact Disc (CD)
+- UTF first character 
+- ![[{5652E9D2-1C41-4895-812B-40E96402A34C}.png]]
+- 64 part9
