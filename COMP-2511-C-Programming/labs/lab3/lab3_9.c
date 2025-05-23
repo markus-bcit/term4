@@ -1,17 +1,15 @@
 #include <stdio.h>
+#include <math.h>
 
-int Compare(int firstNumber, int secondNumber)
+void sinAndPrint(float x)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    printf("%f", 2 * sin(x) * cos(x));
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    float x;
+    scanf("%f", &x);
+    sinAndPrint(x);
     return 0;
 }

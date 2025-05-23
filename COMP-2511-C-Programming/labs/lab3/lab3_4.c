@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
-int Compare(int firstNumber, int secondNumber)
+void printHundredTimes(char character)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    for (int x = 1; x <= 100; x++)
+    {
+        printf("%c\n", character);
+    }
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    char character;
+    scanf("%c", &character);
+    printHundredTimes(character);
     return 0;
 }

@@ -1,17 +1,17 @@
 #include <stdio.h>
+#include <math.h>
 
-int Compare(int firstNumber, int secondNumber)
+float printAndAbs(float number)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    printf("%f", number);
+    return fabs(number);
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    float number;
+    scanf("%f", &number);
+    float blah = printAndAbs(number);
+    printf("%f", blah);
     return 0;
 }

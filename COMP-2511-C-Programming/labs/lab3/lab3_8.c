@@ -1,17 +1,17 @@
 #include <stdio.h>
+#include <math.h>
 
-int Compare(int firstNumber, int secondNumber)
+void compareAndPrint(double first, double second)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    if (fabs(first) >= fabs(second)) printf("%f", first);
+    else printf("%f", second);
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    double first;
+    double second;
+    scanf("%lf %lf", &first, &second);
+    compareAndPrint(first, second);
     return 0;
 }

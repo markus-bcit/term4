@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
-int Compare(int firstNumber, int secondNumber)
+void printDifference(double first, double second)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    if (first > second) printf("%f", first - second);
+    else if (first  == second) printf("0");
+    else printf("%f", second - first);
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    double first;
+    double second;
+    scanf("%lf %lf", &first, &second);
+    printDifference(first, second);
     return 0;
 }

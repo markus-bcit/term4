@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-int Compare(int firstNumber, int secondNumber)
+void divider(int first, int second)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    printf("%f", (double)first / second);
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    int first;
+    int second;
+    scanf("%d %d", &first, &second);
+    divider(first, second);
     return 0;
 }

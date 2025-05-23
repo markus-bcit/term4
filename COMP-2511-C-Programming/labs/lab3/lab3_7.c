@@ -1,17 +1,14 @@
 #include <stdio.h>
 
-int Compare(int firstNumber, int secondNumber)
+void printer(double number)
 {
-    if (firstNumber < secondNumber) return firstNumber;
-    return secondNumber;
+    printf("%d %f %f", (int)number, number, (float)number);
 }
 
 int main()
 {
-    int firstNumber;
-    int secondNumber;
-    scanf("%d %d", &firstNumber, &secondNumber);
-    int blah = Compare(firstNumber, secondNumber);
-    printf("%d", blah);
+    double number;
+    scanf("%lf", &number);
+    printer(number);
     return 0;
 }
