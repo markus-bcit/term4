@@ -4,9 +4,12 @@ int main()
 {
     char name[100] = "";
     scanf("%s", name);
-    for (int i = 1; i < 100; i++)
+    
+    int length = 0;
+    while (name[length] != '\0') length++;
+
+    for (int i = 1; i < length - 1; i++)
     {
-        if (name[i] == '\0') break;
         printf("%c", name[i]);
     }
     return 0;
