@@ -1,8 +1,11 @@
 #include <stdio.h>
-const int n = 12;
-int main()
-{
-    int c[3] = {1, 2, 3};
-    printf("%d", c[5]);
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+
+    printf("%d", set[rand() % 5])
+
     return 0;
 }

@@ -7,3 +7,12 @@
 Assingment 2
 - do question 1, 4, 2, 3
 - 3 beneficial for quiz
+- Log identities in assignment ??
+
+mudle 3
+- uni polar and bipolar
+	- why and pros and cons
+	- combining or switching the two
+- return to zero schemes
+- issues and solutions to solving them
+- ![[Pasted image 20250523153038.png]]

@@ -3,7 +3,7 @@
 int isPrime(int number)
 {
 
-    if ((number % 2 == 0) || (number % 3 == 0)) return 1;
+    if ((number % 2 == 0) || (number % 3 == 0)|| (number % 5 == 0) || (number % 7 == 0)) return 1;
     return 0;
 }
 
