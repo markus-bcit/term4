@@ -1,17 +1,24 @@
 #include <stdio.h>
 
-void max_min( int x, int y, int* pmin, int* pmax)
+void max_min(int x, int y, int* pmin, int* pmax)
 {
-    int tmp = *m;
-    *m = *n;
-    *n = tmp;
-
-    return *m > *n ? *m : *n;
+    if (x > y)
+    {
+        *pmax = x;
+        *pmin = y;
+        return;
+    }
+    *pmax = y;
+    *pmin = x;
 }
 
 int main(void)
 {
-    int m = 22, n = 11;
-    printf("%d", swap(&m, &n)); /*should print 22*/
-    printf("%d", m);            /*should print 11*/
+    int x = 22;
+    int y = 11;
+    int pmin;
+    int pmax;
+    printf("%d %d\n", pmax, pmin);
+    max_min(x, y, &pmin, &pmax);
+    printf("%d %d", pmax, pmin);
 }
