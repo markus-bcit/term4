@@ -1,12 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
-    const char *string = "apple-pineapple";
-    char character = 'a';
+int main() {
+    const char *str = "apple-pineapple";
+    const char *first = strchr(str, 'a');
 
-    printf("%d", strchr(string, character));
+    if (first) {
+        const char *second = strchr(first + 1, 'a');
+        if (second) {
+            int index = second - str;
+            printf("yes\n");
+            printf("Index of second 'a': %d", index);
+        } else {
+            printf("no\n");
+        }
+    } else {
+        printf("no\n");
+    }
 
     return 0;
 }

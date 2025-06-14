@@ -39,3 +39,14 @@ mudle 3
 	- each simple wave has a frequesncy 
 	- mimunm sampling raite is 2xmax
 - no vertical line connecting mismatch graphs
+- ![[Pasted image 20250613140042.png]]
+- coderate up so N down
+  ![[Pasted image 20250613145234.png]]
+	- or r should be as low as possible
+	- somewhere between codewords and code rate is an optimal r
+## Hamming Distance Review
+- ![[Pasted image 20250613151429.png]]
+- ![[Pasted image 20250613151453.png]]
+- CRC
+- ![[Pasted image 20250613152350.png]]
+- 
