@@ -49,4 +49,5 @@ mudle 3
 - ![[Pasted image 20250613151453.png]]
 - CRC
 - ![[Pasted image 20250613152350.png]]
-- 
+- 6.2.6
+- question 2b currupted  just fliped
