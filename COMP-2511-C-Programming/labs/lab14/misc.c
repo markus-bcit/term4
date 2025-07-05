@@ -1,12 +1,22 @@
 #include <stdio.h>
 
+struct card
+{
+    char *face;
+    char *suit;
+};
+
+struct card aCard;
+
 int main()
 {
-    int m = 1, n = 2;
-    int *p = &m;
-    int *q = &n;
-    *q = *p;
-    ++n;
-    m--;
-    printf("%d %d", *p, *q);
+    struct card deck[10];
+
+    printf("%c\n", *((*deck).face));
+
+    printf("%c\n", *(deck[3].face));
+
+    printf("%c\n", *(deck->face));
+
+    printf("%c\n", *(*(deck + 3).face));
 }

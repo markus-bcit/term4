@@ -51,3 +51,9 @@ mudle 3
 - ![[Pasted image 20250613152350.png]]
 - 6.2.6
 - question 2b currupted  just fliped
+- ![[Pasted image 20250627160820.png]]
+- ![[Pasted image 20250704131750.png]]
+- 10 mc 3 written
+	- short answer similar to assignments
+	- no look up for information
+	- do problems from the textbook
