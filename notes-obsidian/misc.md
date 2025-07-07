@@ -42,13 +42,3 @@ Keypair
 #makes a key named 4640-key to ~/.ssh/
 ssh-keygen -C "4640-key" -f ~/.ssh/4640-key -m PEM -t ed25519 -N ''
 ```
-
-COMP 2121 Quiz Mark Correction
-Hi Jason,  
-  
-Please find the attached image (quiz2.JPEG) of the quiz 2 mark correction we discussed in class today.  
-  
-Thanks,  
-  
-Markus Afonso  
-A01333486
