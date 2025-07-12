@@ -57,3 +57,5 @@ mudle 3
 	- short answer similar to assignments
 	- no look up for information
 	- do problems from the textbook
+- multiplex tdm question on final 
+- 1640 bytes on right track

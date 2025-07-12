@@ -1,23 +1,17 @@
-
 typedef struct node node;
 struct node
 {
     int data;
     node *next;
 };
-int find_sum(node *head);
 
-int main()
-{
+int find_sum (node* head) {
     node *p;
-    int m = 0;
+    int sum = 0;
 
     for (p = head; p != 0; p = p->next)
     {
-        if (p->data > m)
-        {
-            m = p->data;
-        }
+        sum += p->data;
     }
+    return sum;
 }
-/* return the sum of all nodes’ value, return 0 if the list is empty or head is null */
